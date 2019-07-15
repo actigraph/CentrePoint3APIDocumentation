@@ -2,7 +2,7 @@
 
 -----
 
-**NOTE: These requests require the *CentrePoint* scope. (see [Scopes](scopes.md))**
+**NOTE: These requests require the *CentrePoint* API scope. (see [Scopes](scopes.md))**
 
 ## List Study Subjects
 
@@ -123,19 +123,18 @@ Content-Type: application/json
 
 Field|Type|Min|Max|Required|Accepted Values|Description|Notes
 -----|----|---|---|--------|---------------|-----------|-----
-subjectIdentifier|String|||Yes||User specified Subject Identifier that is unique within
-study|Subject Identifier should NOT be prefixed with Site Identifier.|
+subjectIdentifier|String|||Yes||User specified Subject Identifier that is unique within study|Subject Identifier should NOT be prefixed with Site Identifier.|
 siteId|Number|||Yes|||
-dob|ISO8601 Date||day before present day|Yes|||must be day before present day
-gender|String|||Yes|<ul><li>Male</li><li>Female</li></ul>||Study/site shall be configured to utilize this field
-weight|Number|1|2000|Yes|||Study/site shall be configured to utilize this field
-weightUnit|String|||Yes|lbs, kg||
-wearPosition|String|||Yes|<ul><li>Non-Dominant Wrist</li><li>Dominant Wrist</li><li>Left Non-Dominant Wrist</li><li>Left Dominant Wrist</li><li>Right Non-Dominant Wrist</li><li>Right Dominant Wrist</li><li>Waist</li><li>Left Wrist</li><li>Right Wrist</li><li>Ankle</li></ul>||Study/site shall be configured in order to utilize this field
+dob|ISO8601 Date||day before present day|Yes (if allowed by site)|||must be day before present day
+gender|String|||Yes (if allowed by site)|<ul><li>Male</li><li>Female</li></ul>||Study/site shall be configured to utilize this field
+weight|Number|1|2000|Yes (if allowed by site)|||Study/site shall be configured to utilize this field
+weightUnit|String|||Yes (if allowed by site)|lbs, kg||
+wearPosition|String|||Yes (if changes allowed by study)|<ul><li>Non-Dominant Wrist</li><li>Dominant Wrist</li><li>Left Non-Dominant Wrist</li><li>Left Dominant Wrist</li><li>Right Non-Dominant Wrist</li><li>Right Dominant Wrist</li><li>Waist</li><li>Left Wrist</li><li>Right Wrist</li><li>Ankle</li></ul>||Study/site shall be configured in order to utilize this field
 
 **Additional Notes:**
 
 - Depending on the study/site configuration of subject being added, the **gender**, **dob**, and/or **weight** fields may or may not be allowed. If the fields are allowed, then they will be required. If not allowed, then these fields must be excluded from the JSON request.
-- Depending on the study/site configuration of subject being added, the **wearPosition** may or may not limit to utilize only one of the following values:
+- Depending on the study/site configuration of subject being added, the **wearPosition** may or may not be limited to only one of the following values:
   - Left Non-Dominant Wrist
   - Right Non-Dominant Wrist
   - Left Dominant Wrist
@@ -199,13 +198,12 @@ subjectId|Number|||Yes|||Site write access enforced
 subjectIdentifier|String|||Yes|||Unique within study
 wearPosition|String|||Yes|<ul><li>Non-Dominant Wrist</li><li>Dominant Wrist</li><li>Left Non-Dominant Wrist</li><li>Left Dominant Wrist</li><li>Right Non-Dominant Wrist</li><li>Right Dominant Wrist</li><li>Waist</li><li>Left Wrist</li><li>Right Wrist</li><li>Ankle</li></ul>||Study/site shall be configured to utilize this field
 weight|Number|1|2000|Yes|||Study/site shall be configured to utilize this field
-changeReason|String|||Yes|||Study/site shall be configured to utilize this field. Captured in operator audit record in accordance  with FDA 21 CFR Part 11. 
+changeReason|String|||Yes|||Study/site shall be configured to utilize this field. Captured in operator audit record in accordance  with FDA 21 CFR Part 11.
 
+**Additional Notes:**
 
-**Additional Notes:** 
-
-- Depending on the study/site configuration of subject being edited, the **Gender**, **DOB**, and/or **WeightLBS** fields may or may not be allowed. If the fields are allowed, then they will be required. If not allowed, then these fields must be excluded from the JSON request.
-- Depending on the study/site configuration of subject being edited, the **WearPosition** may or may not limit to utilize only one of the following values: 
+- Depending on the study/site configuration of subject being edited, the **Gender**, **DOB**, and/or **Weight** fields may or may not be allowed. If the fields are allowed, then they will be required. If not allowed, then these fields must be excluded from the JSON request.
+- Depending on the study/site configuration of subject being edited, the **WearPosition** may or may not limit to utilize only one of the following values:
   - Left Non-Dominant Wrist
   - Right Non-Dominant Wrist
   - Left Dominant Wrist
@@ -221,3 +219,76 @@ changeReason|String|||Yes|||Study/site shall be configured to utilize this field
 **Response:**
 
 200 OK
+
+## Get Subject Milestones
+
+Retrieves list of subject milestones
+
+**Request:**
+
+```http
+GET /centrepoint/v1/Studies/{studyId}/Subjects/{subjectId}/milestones
+Content-Type: application/json
+{
+    "subjectIdentifier": "string",
+    "dob": "2019-07-10T18:56:43.609Z",
+    "gender": "Male",
+    "weight": 0,
+    "weightUnit": "Lbs",
+    "wearPosition": "Left Wrist",
+    "changeReason": "string"
+}
+```
+
+**Request Properties:**
+
+**Response:**
+
+This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+
+|Field|Description|
+|-----|-----------|
+|**id**|Subject Milestone ID|
+|**subjectId**|CentrePoint Subject ID (see [Subjects](subjects.md))|
+|**studyMilestoneId**|Study Milestone ID (see [Study Milestones](study_milestones.md))|
+|**timestamp**|Timestamp of milestone in UTC|
+|**timestampSubjectTZ**|Timestamp of milestone in subject's timezone|
+
+```json
+{
+    "items": [
+        {
+            "id": 78,
+            "subjectId": 596,
+            "studyMilestoneId": 16,
+            "timestamp": "2014-05-28T00:00:00Z",
+            "timestampSubjectTZ": "2014-05-27T19:00:00-05:00"
+        },
+        {
+            "id": 205,
+            "subjectId": 596,
+            "studyMilestoneId": 17,
+            "timestamp": "2014-06-04T00:00:00Z",
+            "timestampSubjectTZ": "2014-06-03T19:00:00-05:00"
+        },
+        {
+            "id": 319,
+            "subjectId": 596,
+            "studyMilestoneId": 19,
+            "timestamp": "2014-06-18T00:00:00Z",
+            "timestampSubjectTZ": "2014-06-17T19:00:00-05:00"
+        },
+        {
+            "id": 12856,
+            "subjectId": 596,
+            "studyMilestoneId": 20,
+            "timestamp": "2017-09-02T04:59:59Z",
+            "timestampSubjectTZ": "2017-09-01T23:59:59-05:00"
+        }
+    ],
+    "links": {},
+    "totalCount": 4,
+    "limit": 100,
+    "offset": 0
+}
+```

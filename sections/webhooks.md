@@ -1,8 +1,6 @@
 # Webhooks
 
-------
-
-**NOTE: These requests require the *CentrePoint* scope. (see [Scopes](scopes.md))**
+**NOTE: These requests require the *CentrePoint* API scope. (see [Scopes](scopes.md))**
 
 ## CentrePoint WebHooks System
 

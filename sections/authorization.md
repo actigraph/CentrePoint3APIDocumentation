@@ -1,7 +1,5 @@
 # Authorization
 
-------
-
 In order to acccess the CentrePoint API, you must have [ActiGraph](http://www.actigraphcorp.com/support/contact-support/) enable API access for your account. ActiGraph will generate and provide you with a "*client ID*" and "*client secret*."  This key pair is what you will use to retrieve an access token. The access token must be sent in the authorization header of each request to the CentrePoint API.
 
 ## Keep Your API Credentials Safe
@@ -10,7 +8,7 @@ Remember that anyone who has your client ID and client secret can see and change
 
 ### Retrieving an Access Token
 
-To retrieve an access token, you will need to make a POST request to the ActiGraph authorization token endpoint. (https://ag-auth-server-staging.azurewebsites.net/connect/token)
+To retrieve an access token, you will need to make a POST request to the ActiGraph authorization token endpoint. [https://ag-auth-server-staging.azurewebsites.net/connect/token](https://ag-auth-server-staging.azurewebsites.net/connect/token)
 
 The content type should be set to *application/x-www-form-urlencoded*
 The body should contain your *client ID*, *client secret*, a *scope* set to a valid scope for the resource(s) you wish to access, and a *grant_type* set to *client_credentials*.

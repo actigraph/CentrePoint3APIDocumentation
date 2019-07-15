@@ -1,7 +1,5 @@
 # CentrePoint API Resource Scopes
 
-------
-
 ## Scopes
 
 When requesting an access token, you will need to provide the requested scope(s) to which the token should have access.

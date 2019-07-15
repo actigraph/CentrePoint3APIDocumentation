@@ -11,7 +11,7 @@ All list type responses from the CentrePoint API will be paginated.
 
 **Pagination Request Example:**
 
-The request below would return the third and fourth items.
+The request below would return the third and fourth items of a collection.
 
 ```http
 POST /Studies?offset=2&limit=2

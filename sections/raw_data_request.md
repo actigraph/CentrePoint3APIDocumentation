@@ -2,7 +2,7 @@
 
 -----
 
-**NOTE: These requests require the *DataRetrieval* scope. (see [Scopes](scopes.md))**
+**NOTE: These requests require the *DataRetrieval* API scope. (see [Scopes](scopes.md))**
 
 ## Make request for raw activity data
 
@@ -44,7 +44,7 @@ GET /dataretrieval/v1/RawActivityRequests/{trackingId}
 
 |Field|Description|
 |-----|-----------|
-|**fileFormat**|gt3x, csv, or avro|
+|**fileFormat**|gt3x, csv, or avro (see [Raw Data File Formats](raw_data_file_formats.md))|
 |**id**|Data Retrieval Requests Tracking ID|
 |**studyId**|CentrePoint Study ID (see [Studies](studies.md))|
 |**subjectId**|CentrePoint Subject ID (see [Subjects](subjects.md))|

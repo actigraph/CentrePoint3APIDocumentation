@@ -1,7 +1,5 @@
 # Epoch Data Requests
 
------
-
 **NOTE: These requests require the *DataRetrieval* scope. (see [Scopes](scopes.md))**
 
 ## Make request for epoch summary data

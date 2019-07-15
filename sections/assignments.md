@@ -1,8 +1,8 @@
 # Assignments
 
------
+**NOTE: These requests require the *CentrePoint* API scope. (see [Scopes](scopes.md))**
 
-**NOTE: These requests require the *CentrePoint* scope. (see [Scopes](scopes.md))**
+See [Subject Activity Monitor Assignment Workflow](assignment_workflow.md) for details on the assingment workflow process.
 
 ## List Study Subject Device Assignments
 
@@ -96,10 +96,17 @@ Creates a subject device assignment to link an activity monitor to a subject.
 ```http
 POST /centrepoint/v1/Studies/{studyId}/Assignments
 {
-    "SubjectId": 12345678,
-    "ActivityMonitorSerial": "TAS1Z12345678"
+    "subjectId": 12345678,
+    "activityMonitorSerial": "TAS1Z12345678"
 }
 ```
+
+**Request Body Parameters:**
+
+|Field|Description|
+|-----|-----------|
+|**subjectId**|CentrePoint Subject ID (see [Subjects](subjects.md))|
+|**activityMonitorSerial**|Activity Monitor Serial Number (see [Activity Monitors](activity_monitors.md))
 
 **Response:**
 
@@ -117,3 +124,18 @@ POST /centrepoint/v1/Studies/{studyId}/Assignments
   "status": "Incomplete Assignment"
 }
 ```
+
+**Response Body Fields:**
+
+|Field|Description|
+|-----|-----------|
+|**id**|Assignment ID|
+|**activityMonitorSerial**|Activity Monitor Serial Number (see [Activity Monitors](activity_monitors.md))|
+|**subjectId**|CentrePoint Subject ID (see [Subjects](subjects.md))|
+|**studyId**|CentrePoint Study ID (see [Studies](studies.md))|
+|**createdDate**|Date/Time of assignment creation|
+|**collectionStartedDate**|Date/Time of activity monitor collection start|
+|**collectionStoppedDate**|Date/Time of activity monitor collection end|
+|**endedDate**|Date/Time of assignment ended|
+|**scheduledCollectionStopDate**|Date/Time of scheduled collection stop date (see [Subject Activity Monitor Assignment Workflow](assignment_workflow.md))|
+|**status**|Status of assignment|
