@@ -35,5 +35,5 @@ The CentrePoint scope allows for:
 
 The data retrieval scope allows for:
 
-* Generate raw activity data requests to retrieve raw activity data. (see [Raw Data Activity Requests](raw_data_requests.md))
+* Generate raw activity data requests to retrieve raw activity data. (see [Raw Data Activity Requests](raw_data_request.md))
 * Generate epoch data requests to retrieve epoch data. (see [Epoch Requests](epoch_data_requests.md))
