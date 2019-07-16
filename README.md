@@ -17,7 +17,7 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 ## API Resources
 
 * Retrieval of information about activity monitors in a CentrePoint study. (see [Activity Monitors](./sections/activity_monitors.md))
-* Creating, ending, and retrieving information about subject activity monitor assignments. (see [Subject Activity Monitor Assignment Workflow](assignment_workflow.md) and [Assignments](./sections/assignments.md))
+* Creating, ending, and retrieving information about subject activity monitor assignments. (see [Subject Activity Monitor Assignment Workflow](./sections/assignment_workflow.md) and [Assignments](./sections/assignments.md))
 * Retrieval of information about sites in a CentrePoint study. (see [Sites](./sections/sites.md))
 * Retrieval of information about CentrePoint studies to which you have access. (see [Studies](./sections/studies.md))
 * Retrieval of information about milestones in a CentrePoint study. (see [Study Milestones](./sections/study_milestones.md))
