@@ -53,6 +53,6 @@ See the following example:
 
 ```http
 GET /centrepoint/v1/Studies HTTP/1.1
-Host: centrepoint-api.actigraphcorp.com
+Host: ag-api-management-service.azure-api.net
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ```

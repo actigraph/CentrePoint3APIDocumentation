@@ -16,8 +16,8 @@ POST /dataretrieval/v1/EpochRequests
   "summaryLengthSeconds": 60,
   "includePartialEpochs": true,
   "deviceSerial": "string",
-  "studyId": 0,
-  "subjectId": 0,
+  "studyId": 1,
+  "subjectId": 123,
   "beginTimestampUtc": "2019-07-11T19:44:08.417Z",
   "endTimestampUtc": "2019-07-11T19:44:08.417Z"
 }
@@ -25,16 +25,16 @@ POST /dataretrieval/v1/EpochRequests
 
 **Request Parameters:**
 
-|Field|Description|Allowed Values|
-|-----|-----------|--------------|
-|**fileFormat**|The requested file format for the exported raw data.|gt3x, csv, avro|
-|**summaryLengthSeconds**|Epoch summary length in seconds|
-|**includePartialEpochs**|Indicates whether or not to include epochs with less than epoch summary length of data (defaults to false)|
-|**activityMonitorSerial**|Activity monitor serial number|
-|**studyId**|CentrePoint Study ID (see [Studies](studies.md))||
-|**subjectId**|CentrePoint Subject ID (see [Subjects](subjects.md))||
-|**beginTimestampUtc**|The start of the time range in UTC for which export data.||
-|**endTimestampUtc**|The end of the time range in UTC for which export data.||
+|Field|Type|Description|Allowed Values|
+|-----|----|-----------|--------------|
+|**fileFormat**|String|The requested file format for the exported raw data.|csv|
+|**summaryLengthSeconds**|Number|Epoch summary length in seconds|1 - 3600
+|**includePartialEpochs**|Boolean|Indicates whether or not to include epochs with less than epoch summary length of data (defaults to false)|true or false
+|**activityMonitorSerial**|String|Activity monitor serial number|
+|**studyId**|Number|CentrePoint Study ID (see [Studies](studies.md))||
+|**subjectId**|Number|CentrePoint Subject ID (see [Subjects](subjects.md))||
+|**beginTimestampUtc**|String (ISO8601 Date)|The start of the time range in UTC for which export data.||
+|**endTimestampUtc**|String (ISO8601 Date)|The end of the time range in UTC for which export data.||
 
 ## Get information about a epoch data request
 
@@ -46,18 +46,18 @@ GET /dataretrieval/v1/EpochRequests/{trackingId}
 
 **Response:**
 
-|Field|Description|
-|-----|-----------|
-|**fileFormat**|csv|
-|**summaryLengthSeconds**|Epoch summary length in seconds|
-|**includePartialEpochs**|Indicates if request includes epochs with less than epoch summary length of data|
-|**id**|Data Retrieval Requests Tracking ID|
-|**studyId**|CentrePoint Study ID (see [Studies](studies.md))|
-|**subjectId**|CentrePoint Subject ID (see [Subjects](subjects.md))|
-|**status**|pending, processing, completed, error|
-|**createdDateTimeUtc**|Date of assignment creation|
-|**startDateTimeUtc**|Date request processing started|
-|**completedDateTimeUtc**|Date request processing completed|
+|Field|Type|Description|
+|-----|----|-----------|
+|**fileFormat**|String|csv|
+|**summaryLengthSeconds**|Number|Epoch summary length in seconds|
+|**includePartialEpochs**|Boolean|Indicates if request includes epochs with less than epoch summary length of data|
+|**id**|String (GUID)|Data Retrieval Requests Tracking ID|
+|**studyId**|Number|CentrePoint Study ID (see [Studies](studies.md))|
+|**subjectId**|Number|CentrePoint Subject ID (see [Subjects](subjects.md))|
+|**status**|String|pending, processing, completed, error|
+|**createdDateTimeUtc**|String (ISO8601 Date)|Date of assignment creation|
+|**startDateTimeUtc**|String (ISO8601 Date)|Date request processing started|
+|**completedDateTimeUtc**|String (ISO8601 Date)|Date request processing completed|
 
 ```json
 {
@@ -83,12 +83,12 @@ GET /dataretrieval/v1/EpochRequests/{trackingId}/datafiles
 
 **Response:**
 
-|Field|Description|
-|-----|-----------|
-|**id**|Data file ID|
-|**fileName**|Data file name|
-|**expirationDateUtc**|Date time after which Data File will no longer be available|
-|**fileSizeBytes**|File size in bytes|
+|Field|Type|Description|
+|-----|----|-----------|
+|**id**|String (GUID)|Data file ID|
+|**fileName**|String|Data file name|
+|**expirationDateUtc**|String (ISO8601 Date)|Date time after which Data File will no longer be available|
+|**fileSizeBytes**|Number|File size in bytes|
 
 ```json
 [
@@ -136,10 +136,10 @@ GET /dataretrieval/v1/EpochRequests/{trackingId}/datafiles/{dataFileId}/download
 
 **Response:**
 
-|Field|Description|
-|-----|-----------|
-|**downloadUrl**|URL to download data file|
-|**expirationDateUtc**|Date time after which download link expires. For security reasons, data file URL's are only valid for a short length of time. If the link has expired, you can make another request to receive a new URL.|
+|Field|Type|Description|
+|-----|----|-----------|
+|**downloadUrl**|String (URL)|URL to download data file|
+|**expirationDateUtc**|String (ISO8601 Date)|Date time after which download link expires. For security reasons, data file URL's are only valid for a short length of time. If the link has expired, you can make another request to receive a new download URL.|
 
 ```json
 {

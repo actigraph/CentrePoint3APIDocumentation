@@ -1,7 +1,5 @@
 # Studies
 
------
-
 **NOTE: These requests require the *CentrePoint* API scope. (see [Scopes](scopes.md))**
 
 ## List Studies
@@ -18,15 +16,15 @@ GET /centrepoint/v1/Studies
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
 
-|Field|Description|
-|-----|-----------|
-|**id**|CentrePoint Study ID|
-|**name**|CentrePoint Study Name|
-|**organizationName**|CentrePoint Organization Name|
-|**createdDateTime**|Creation Date of Study|
-|**studyStatus**|The study status.|
-|**defaultWearPosition**|The default selected wear position for the study.|
-|**wearPositions**|The allowed wear positions selected for the study.|
+|Field|Type|Description|
+|-----|----|-----------|
+|**id**|Number|CentrePoint Study ID|
+|**name**|String|CentrePoint Study Name|
+|**organizationName**|String|CentrePoint Organization Name|
+|**createdDateTime**|String (ISO8601 Date)|Creation Date of Study|
+|**studyStatus**|String|The study status.|
+|**defaultWearPosition**|String|The default wear position for the study.|
+|**wearPositions**|Array(String)|The wear positions allowed by the study.|
 
 ```json
 {

@@ -9,6 +9,7 @@ Your study must be configured to *Allow Partial Monitor Assignment Workflow*. Co
 1. With *Allow Partial Monitor Assignment Workflow* enabled on your study, you can create a partial assignment through the *Create Study Subject Device Assignment* API request (see [Assignments](assignments.md)).
 1. You must complete the assignment by docking the device with ActiSync or with a CentrePoint Data Hub.
 1. The activity monitor will now be collecting activity data.
-1. You may stop collecting by making a request to the *Change Study Subject Device Assignment Status* endpoint  (see [Assignments](assignments.md)).
-1. The device will stop activity collection.
-1. You can end the assignment by docking the activity monitor with ActiSync or with a CentrePoint Data Hub to perform the final data upload.
+1. You may stop collecting by making a request to the *Change Study Subject Device Assignment Status* endpoint  (see [Assignments](assignments.md)). During normal usage this will place the activity monitor into the *Collection Stopped* state. The device will stop activity collection. It is also possible to force end an assignment by setting the assignment status to *Forcefully Ended*, however this should only be performed when an activity monitor cannot go through the normal workflow (i.e. activity monitor is lost or broken).
+1. You can now end the assignment by docking the activity monitor with ActiSync or with a CentrePoint Data Hub to perform the final data upload to collect any remaining data on the activity monitor.
+
+Your study may be configured to automatically stop collection after a set time period. This will show as **scheduledCollectionStopDate** when looking at assignment information returned from the API. Contact [ActiGraph](http://www.actigraphcorp.com/support/contact-support/) for more information on this feature.

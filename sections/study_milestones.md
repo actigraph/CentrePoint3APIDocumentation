@@ -1,7 +1,5 @@
 # Study Milestones
 
------
-
 **NOTE: These requests require the *CentrePoint* API scope. (see [Scopes](scopes.md))**
 
 ## List Study Milestones
@@ -10,11 +8,20 @@ Returns a list of all study milestones within the requested study.
 
 **Request:**
 
-    GET /centrepoint/v1/Studies/{studyId}/Milestones
+```http
+GET /centrepoint/v1/Studies/{studyId}/Milestones
+```
 
 **Response:**
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+
+|Field|Type|Description|
+|-----|----|-----------|
+|id|Number|Subejct Milestone ID|
+|studyId|Number|CentrePoint Study ID|
+|name|String|Milestone Name|
+|order|Number|Milestone Order|
 
 ```json
 {

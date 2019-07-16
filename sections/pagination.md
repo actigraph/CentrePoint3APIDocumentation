@@ -14,7 +14,7 @@ All list type responses from the CentrePoint API will be paginated.
 The request below would return the third and fourth items of a collection.
 
 ```http
-POST /Studies?offset=2&limit=2
+POST centrepoint/v1/Studies?offset=2&limit=2
 ```
 
 **Pagination Response Example:**
@@ -46,8 +46,8 @@ POST /Studies?offset=2&limit=2
         }
     ],
     "links": {
-        "next": "https://centrepoint3-api.azurewebsites.net/Studies?offset=4&limit=2",
-        "prev": "https://centrepoint3-api.azurewebsites.net/Studies?offset=0&limit=2"
+        "next": "https://ag-api-management-service.azure-api.net/Studies?offset=4&limit=2",
+        "prev": "https://ag-api-management-service.azure-api.net/Studies?offset=0&limit=2"
     },
     "totalCount": 6,
     "limit": 2,

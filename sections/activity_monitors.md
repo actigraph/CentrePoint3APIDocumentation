@@ -16,13 +16,13 @@ GET /centrepoint/v1/Studies/{studyId}/ActivityMonitors
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
 
-|Field|Description|
-|-----|-----------|
-|**serial**|Activity monitor serial number|
-|**studyId**|CentrePoint Study ID (see [Studies](studies.md))|
-|**assignmentId**|Assignment ID if the activity monitor is assigned to a Subject (see [Assignments](assignments.md))|
-|**assignmentStatus**|Indicates if monitor is assigned or not|
-|**dataHubSerialNumber**|The CentrePoint DataHub (CDH) device serial number that was packaged/distributed with the activity monitor (if applicable)|
+|Field|Type|Description|
+|-----|----|-----------|
+|**serial**|String|Activity monitor serial number|
+|**studyId**|Number|CentrePoint Study ID (see [Studies](studies.md))|
+|**assignmentId**|Number|Assignment ID if the activity monitor is assigned to a Subject (see [Assignments](assignments.md))|
+|**assignmentStatus**|String|Indicates if monitor is assigned or not|
+|**dataHubSerialNumber**|String|The CentrePoint DataHub (CDH) device serial number that was packaged/distributed with the activity monitor (if applicable)|
 
 ```json
 {

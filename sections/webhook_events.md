@@ -16,11 +16,11 @@ GET /centrepoint/v1/WebhookEvents
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
 
-|Field|Description|
-|-----|-----------|
-|**id**|CentrePoint Webhook Event ID|
-|**name**|Webhook Event Name|
-|**description**|Webhook Event Description|
+|Field|Type|Description|
+|-----|----|-----------|
+|**id**|Number|CentrePoint Webhook Event ID|
+|**name**|String|Webhook Event Name|
+|**description**|String|Webhook Event Description|
 
 ```json
 {

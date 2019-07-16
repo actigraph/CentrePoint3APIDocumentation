@@ -20,14 +20,35 @@ GET /centrepoint/v1/Studies/{studyId}/Webhooks
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
 
-|Field|Description|
-|-----|-----------|
-|**id**|Webhook Registration ID|
-|**studyId**|CentrePoint Study ID (see [Studies](studies.md))|
-|**url**|Webhook URL|
-|**createdDate**|Date webhook registration was created|
-|**isDisabled**|Is webhook disabled|
-|**webhookEvents**|List of webhook events for which webhook is registered (see [Webhook Events](webhook_events.md))
+|Field|Type|Description|
+|-----|----|-----------|
+|**id**|Number|Webhook Registration ID|
+|**studyId**|Number|CentrePoint Study ID (see [Studies](studies.md))|
+|**url**|String (URL)|Webhook URL|
+|**createdDate**|String (ISO8601 Date)|Date webhook registration was created|
+|**isDisabled**|Boolean|Is webhook disabled|
+|**webhookEvents**|Array([Webhook Event](webhook_events.md))|List of webhook events for which webhook is registered (see [Webhook Events](webhook_events.md))
+
+## Get Webhook Registration by ID
+
+Retrieves a webhook registration to which a study is subscribed.
+
+**Request:**
+
+```http
+GET /centrepoint/v1/Studies/{studyId}/Webhooks/{webhookId}
+```
+
+**Response:**
+
+|Field|Type|Description|
+|-----|----|-----------|
+|**id**|Number|Webhook Registration ID|
+|**studyId**|Number|CentrePoint Study ID (see [Studies](studies.md))|
+|**url**|String (URL)|Webhook URL|
+|**createdDate**|String (ISO8601 Date)|Date webhook registration was created|
+|**isDisabled**|Boolean|Is webhook disabled|
+|**webhookEvents**|Array([Webhook Event](webhook_events.md))|List of webhook events for which webhook is registered (see [Webhook Events](webhook_events.md))
 
 ## Webhooks History
 
