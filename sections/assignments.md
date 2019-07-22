@@ -4,9 +4,9 @@
 
 See [Subject Activity Monitor Assignment Workflow](assignment_workflow.md) for details on the assignment workflow process.
 
-## List Study Subject Device Assignments
+## List Study Subject Activity Monitor Assignments
 
-Returns a list of all study subject device assignments within the requested study.
+Returns a list of all study subject activity monitor assignments within the requested study.
 
 **Request:**
 
@@ -66,9 +66,9 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 }
 ```
 
-## Get Study Subject Device Assignment Details By ID
+## Get Study Subject Activity Monitor Assignment Details By ID
 
-Returns a list of all study subject device assignments within the requested study.
+Returns a list of all study subject activity monitor assignments within the requested study.
 
 ### Request
 
@@ -92,9 +92,9 @@ GET /centrepoint/v3/Studies/{studyId}/Assignments/{assignmentId}
 }
 ```
 
-## Create Study Subject Device Assignment
+## Create Study Subject Activity Monitor Assignment
 
-Creates a subject device assignment to link an activity monitor to a subject.
+Creates a subject activity monitor assignment to link an activity monitor to a subject.
 
 **Request:**
 
@@ -145,7 +145,7 @@ POST /centrepoint/v3/Studies/{studyId}/Assignments
 |**scheduledCollectionStopDate**|String (ISO8601 Date)|Date/Time of scheduled collection stop date (see [Subject Activity Monitor Assignment Workflow](assignment_workflow.md))|
 |**status**|String|Status of assignment|
 
-## Change Study Subject Device Assignment Status
+## Change Study Subject Activity Monitor Assignment Status
 
 Allows for stopping collection on or forcefully ending an assignment.
 

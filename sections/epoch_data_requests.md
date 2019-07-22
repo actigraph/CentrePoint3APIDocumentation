@@ -15,7 +15,7 @@ POST /dataretrieval/v3/EpochRequests
   "fileFormat": "csv",
   "summaryLengthSeconds": 60,
   "includePartialEpochs": true,
-  "deviceSerial": "string",
+  "activityMonitorSerial": "string",
   "studyId": 1,
   "subjectId": 123,
   "beginTimestampUtc": "2019-07-11T19:44:08.417Z",
