@@ -9,7 +9,7 @@ A list of sites you can access.
 **Request:**
 
 ```http
-GET /centrepoint/v1/Studies/{studyId}/Sites
+GET /centrepoint/v3/Studies/{studyId}/Sites
 ```
 
 **Response:**
@@ -55,7 +55,7 @@ Retrieves site details by ID.
 **Request:**
 
 ```http
-GET /centrepoint/v1/Studies/{studyId}/Sites/{siteId}
+GET /centrepoint/v3/Studies/{studyId}/Sites/{siteId}
 ```
 
 **Response:**

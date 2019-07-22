@@ -13,7 +13,7 @@ Retrieves a list of webhooks to which a study is subscribed.
 **Request:**
 
 ```http
-GET /centrepoint/v1/Studies/{studyId}/Webhooks
+GET /centrepoint/v3/Studies/{studyId}/Webhooks
 ```
 
 **Response:**
@@ -36,7 +36,7 @@ Retrieves a webhook registration to which a study is subscribed.
 **Request:**
 
 ```http
-GET /centrepoint/v1/Studies/{studyId}/Webhooks/{webhookId}
+GET /centrepoint/v3/Studies/{studyId}/Webhooks/{webhookId}
 ```
 
 **Response:**
@@ -57,7 +57,7 @@ Returns a history log of Webhook requests for a given study.
 **Request:**
 
 ```http
-GET /centrepoint/v1/Studies/{studyId}/Webhooks/{webhookId}/history
+GET /centrepoint/v3/Studies/{studyId}/Webhooks/{webhookId}/history
 ```
 
 **Response:**

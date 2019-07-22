@@ -9,7 +9,7 @@ Returns a list of activity monitors within a study.
 **Request:**
 
 ```http
-GET /centrepoint/v1/Studies/{studyId}/ActivityMonitors
+GET /centrepoint/v3/Studies/{studyId}/ActivityMonitors
 ```
 
 **Response:**
@@ -56,7 +56,7 @@ Returns a list of activity monitors within a study.
 **Request:**
 
 ```http
-GET /centrepoint/v1/Studies/{studyId}/ActivityMonitors/{activityMonitorSerial}
+GET /centrepoint/v3/Studies/{studyId}/ActivityMonitors/{activityMonitorSerial}
 ```
 
 **Response:**

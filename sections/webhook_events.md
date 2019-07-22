@@ -9,7 +9,7 @@ Returns a list of webhook events to which you can subscribe.
 ### Request
 
 ```http
-GET /centrepoint/v1/WebhookEvents
+GET /centrepoint/v3/WebhookEvents
 ```
 
 ### Response

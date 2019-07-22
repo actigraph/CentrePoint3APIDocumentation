@@ -9,7 +9,7 @@ Returns a list of all subjects within the requested study.
 ### Request
 
 ```http
-GET /centrepoint/v1/Studies/{studyId}/Subjects
+GET /centrepoint/v3/Studies/{studyId}/Subjects
 ```
 
 ### Response
@@ -79,7 +79,7 @@ Returns detailed information about the requested subject.
 **Request:**
 
 ```http
-GET /centrepoint/v1/Studies/{studyId}/Subjects/{subjectId}
+GET /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}
 ```
 
 **Response:**
@@ -108,7 +108,7 @@ Creates a new subject. Subjects are created at the site level.  List sites to fi
 **Request:**
 
 ```http
-POST /centrepoint/v1/Studies/{studyId}/subjects
+POST /centrepoint/v3/Studies/{studyId}/subjects
 Content-Type: application/json
 {
     "subjectIdentifier": "TEST003",
@@ -176,7 +176,7 @@ Modifies an existing subject.  List sites to find out which you can access. A 20
 **Request:**
 
 ```http
-PUT /centrepoint/v1/Studies/{studyId}/Subjects/{subjectId}
+PUT /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}
 Content-Type: application/json
 {
     "subjectIdentifier": "string",
@@ -228,7 +228,7 @@ Retrieves list of subject milestones
 **Request:**
 
 ```http
-GET /centrepoint/v1/Studies/{studyId}/Subjects/{subjectId}/milestones
+GET /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}/milestones
 Content-Type: application/json
 {
     "subjectIdentifier": "string",

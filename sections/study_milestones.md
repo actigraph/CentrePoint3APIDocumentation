@@ -9,7 +9,7 @@ Returns a list of all study milestones within the requested study.
 **Request:**
 
 ```http
-GET /centrepoint/v1/Studies/{studyId}/Milestones
+GET /centrepoint/v3/Studies/{studyId}/Milestones
 ```
 
 **Response:**

@@ -11,7 +11,7 @@ Returns a list of all study subject device assignments within the requested stud
 **Request:**
 
 ```http
-GET /centrepoint/v1/Studies/{studyId}/Assignments
+GET /centrepoint/v3/Studies/{studyId}/Assignments
 ```
 
 **Response:**
@@ -73,7 +73,7 @@ Returns a list of all study subject device assignments within the requested stud
 ### Request
 
 ```http
-GET /centrepoint/v1/Studies/{studyId}/Assignments/{assignmentId}
+GET /centrepoint/v3/Studies/{studyId}/Assignments/{assignmentId}
 ```
 
 ### Response
@@ -99,7 +99,7 @@ Creates a subject device assignment to link an activity monitor to a subject.
 **Request:**
 
 ```http
-POST /centrepoint/v1/Studies/{studyId}/Assignments
+POST /centrepoint/v3/Studies/{studyId}/Assignments
 {
     "subjectId": 12345678,
     "activityMonitorSerial": "TAS1Z12345678"
@@ -152,7 +152,7 @@ Allows for stopping collection on or forcefully ending an assignment.
 **Request:**
 
 ```http
-PUT /centrepoint/v1/Studies/{studyId}/Assignments/{assignmentId}
+PUT /centrepoint/v3/Studies/{studyId}/Assignments/{assignmentId}
 {
     "status": "Collection Stopped"
 }

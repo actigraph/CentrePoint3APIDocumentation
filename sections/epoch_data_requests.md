@@ -7,7 +7,7 @@
 **Request:**
 
 ```http
-POST /dataretrieval/v1/EpochRequests
+POST /dataretrieval/v3/EpochRequests
 ```
 
 ```json
@@ -41,7 +41,7 @@ POST /dataretrieval/v1/EpochRequests
 **Request:**
 
 ```http
-GET /dataretrieval/v1/EpochRequests/{trackingId}
+GET /dataretrieval/v3/EpochRequests/{trackingId}
 ```
 
 **Response:**
@@ -78,7 +78,7 @@ GET /dataretrieval/v1/EpochRequests/{trackingId}
 **Request:**
 
 ```http
-GET /dataretrieval/v1/EpochRequests/{trackingId}/datafiles
+GET /dataretrieval/v3/EpochRequests/{trackingId}/datafiles
 ```
 
 **Response:**
@@ -112,7 +112,7 @@ GET /dataretrieval/v1/EpochRequests/{trackingId}/datafiles
 **Request:**
 
 ```http
-GET /dataretrieval/v1/EpochRequests/{trackingId}/datafiles/{dataFileId}
+GET /dataretrieval/v3/EpochRequests/{trackingId}/datafiles/{dataFileId}
 ```
 
 **Response:**
@@ -131,7 +131,7 @@ GET /dataretrieval/v1/EpochRequests/{trackingId}/datafiles/{dataFileId}
 **Request:**
 
 ```http
-GET /dataretrieval/v1/EpochRequests/{trackingId}/datafiles/{dataFileId}/downloadurl
+GET /dataretrieval/v3/EpochRequests/{trackingId}/datafiles/{dataFileId}/downloadurl
 ```
 
 **Response:**

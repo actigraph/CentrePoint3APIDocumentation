@@ -52,7 +52,7 @@ All requests will be authorized by including the HTTP authorization header.  The
 See the following example:
 
 ```http
-GET /centrepoint/v1/Studies HTTP/1.1
+GET /centrepoint/v3/Studies HTTP/1.1
 Host: ag-api-management-service.azure-api.net
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ```

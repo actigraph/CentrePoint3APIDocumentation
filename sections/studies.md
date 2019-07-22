@@ -9,7 +9,7 @@ Returns a list of studies that are within your organization.
 **Request:**
 
 ```http
-GET /centrepoint/v1/Studies
+GET /centrepoint/v3/Studies
 ```
 
 **Response:**
@@ -66,7 +66,7 @@ Returns detailed information about the requested study.
 **Request:**
 
 ```http
-GET /centrepoint/v1/Studies/{studyId}
+GET /centrepoint/v3/Studies/{studyId}
 ```
 
 **Response:**
