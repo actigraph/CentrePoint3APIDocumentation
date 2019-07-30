@@ -4,8 +4,8 @@
 
 The CentrePoint API was developed to provide other software systems a web interface to the study admin web portal. The API provides access to the same core study and de-identified subject data that can be accessed within [CentrePoint](http://studyadmin.actigraphcorp.com).
 
-API Base URL: [http://api.actigraphcorp.com](http://api.actigraphcorp.com)
-Authorization Base URL: [http://auth.actigraphcorp.com](http://auth.actigraphcorp.com)
+API Base URL: [https://api.actigraphcorp.com](https://api.actigraphcorp.com)
+Authorization Base URL: [https://auth.actigraphcorp.com](https://auth.actigraphcorp.com)
 
 ## Enabling API Access
 
