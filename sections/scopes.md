@@ -10,7 +10,6 @@ If desired you can request a token with access to more than one scope by adding 
 
 ```http
 POST /connect/token HTTP/1.1
-Host: https://ag-auth-server-prod.azurewebsites.net
 Content-Type: application/x-www-form-urlencoded
 
 client_id=xxxxxxxxxx&client_secret=xxxxxxxxxx&scope=CentrePoint+DataRetrieval&grant_type=client_credentials

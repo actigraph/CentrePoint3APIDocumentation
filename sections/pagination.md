@@ -46,8 +46,8 @@ POST centrepoint/v3/Studies?offset=2&limit=2
         }
     ],
     "links": {
-        "next": "https://ag-api-management-service-prod.azure-api.net/DataRetrieval/v3/Studies?offset=4&limit=2",
-        "prev": "https://ag-api-management-service-prod.azure-api.net/DataRetrieval/v3/Studies?offset=0&limit=2"
+        "next": "https://api.actigraphcorp.com/DataRetrieval/v3/Studies?offset=4&limit=2",
+        "prev": "https://api.actigraphcorp.com/DataRetrieval/v3/Studies?offset=0&limit=2"
     },
     "totalCount": 6,
     "limit": 2,
