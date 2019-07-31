@@ -8,7 +8,7 @@ Remember that anyone who has your client ID and client secret can see and change
 
 ### Retrieving an Access Token
 
-To retrieve an access token, you will need to make a POST request to the ActiGraph authorization token endpoint. [https://ag-auth-server-prod.azurewebsites.net/connect/token](https://ag-auth-server-prod.azurewebsites.net/connect/token)
+To retrieve an access token, you will need to make a POST request to the ActiGraph authorization token endpoint. [https://auth.actigraphcorp.com/connect/token](https://auth.actigraphcorp.com/connect/token)
 
 The content type should be set to *application/x-www-form-urlencoded*
 The body should contain your *client ID*, *client secret*, a *scope* set to a valid scope for the resource(s) you wish to access, and a *grant_type* set to *client_credentials*.
@@ -24,7 +24,6 @@ The body should contain your *client ID*, *client secret*, a *scope* set to a va
 
 ```http
 POST /connect/token HTTP/1.1
-Host: https://ag-auth-server-prod.azurewebsites.net
 Content-Type: application/x-www-form-urlencoded
 
 client_id=xxxxxxxxxx&client_secret=xxxxxxxxxx
@@ -53,6 +52,5 @@ See the following example:
 
 ```http
 GET /centrepoint/v3/Studies HTTP/1.1
-Host: ag-api-management-service.azure-api.net
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ```
