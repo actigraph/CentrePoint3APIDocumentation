@@ -112,7 +112,7 @@ GET /dataretrieval/v3/EpochRequests/{trackingId}/datafiles
 **Request:**
 
 ```http
-GET /dataretrieval/v3/EpochRequests/{trackingId}/datafiles/{dataFileId}
+GET /dataretrieval/v3/DataFiles/{dataFileId}
 ```
 
 **Response:**
@@ -131,7 +131,7 @@ GET /dataretrieval/v3/EpochRequests/{trackingId}/datafiles/{dataFileId}
 **Request:**
 
 ```http
-GET /dataretrieval/v3/EpochRequests/{trackingId}/datafiles/{dataFileId}/downloadurl
+GET /dataretrieval/v3/DataFiles/{dataFileId}/downloadurl
 ```
 
 **Response:**
