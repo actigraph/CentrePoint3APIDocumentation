@@ -15,7 +15,7 @@ POST /dataretrieval/v3/EpochRequests
   "fileFormat": "csv",
   "summaryLengthSeconds": 60,
   "includePartialEpochs": true,
-  "activityMonitorSerial": "string",
+  "activityMonitorSerial": "CPW1A23190055",
   "studyId": 1,
   "subjectId": 123,
   "beginTimestampUtc": "2019-07-11T19:44:08.417Z",
@@ -35,6 +35,32 @@ POST /dataretrieval/v3/EpochRequests
 |**subjectId**|Number|CentrePoint Subject ID (see [Subjects](subjects.md))||
 |**beginTimestampUtc**|String (ISO8601 Date)|The start of the time range in UTC for which export data.||
 |**endTimestampUtc**|String (ISO8601 Date)|The end of the time range in UTC for which export data.||
+
+**Response**
+
+
+```json
+201 Created
+{
+    "fileFormat": "Csv",
+    "summaryLengthSeconds": 60,
+    "includePartialEpochs": false,
+    "id": "4b911d04-45c4-480b-a1c6-e53894f41869",
+    "studyId": 1,
+    "subjectId": 123,
+    "status": "Pending",
+    "beginTimestampUtc": "2019-07-11T19:44:08.417Z",
+    "endTimestampUtc": "2019-07-11T19:44:08.417Z"
+    "createdDateTimeUtc": "2019-10-21T14:13:33.5082033+00:00"
+}
+```
+**Response Parameters:**
+
+|Field|Type|Description|
+|-----|----|-----------|
+|**id**|String|Epoch Data Retrieval Request Tracking ID|
+
+
 
 ## Get information about a epoch data request
 
