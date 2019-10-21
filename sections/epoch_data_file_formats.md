@@ -30,7 +30,7 @@ Standard comma separated values format.
 |**Study Id**|Study Id of subject||
 |**Subject Id**|Subject Id||
 |**Device Serial**|Activity Monitor Serial Number||
-|**Timestamp**|UNIX UTC timestamp in seconds||
+|**Timestamp**|UNIX (UTC) timestamp in seconds||
 |**X**|Axis X Counts||
 |**Y**|Axis Y Counts||
 |**Z**|Axis Z Counts||
