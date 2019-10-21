@@ -27,7 +27,7 @@ POST /dataretrieval/v3/EpochRequests
 
 |Field|Type|Description|Allowed Values|
 |-----|----|-----------|--------------|
-|**fileFormat**|String|The requested file format for the exported raw data.|csv|
+|**fileFormat**|String|The requested file format for the exported raw data.|csv (see [Epoch Data File Formats](epoch_data_file_formats.md))|
 |**summaryLengthSeconds**|Number|Epoch summary length in seconds|1 - 3600
 |**includePartialEpochs**|Boolean|Indicates whether or not to include epochs with less than epoch summary length of data (defaults to false)|true or false
 |**activityMonitorSerial**|String|Activity monitor serial number|
