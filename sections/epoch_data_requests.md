@@ -40,7 +40,6 @@ POST /dataretrieval/v3/EpochRequests
 
 
 ```json
-201 Created
 {
     "fileFormat": "Csv",
     "summaryLengthSeconds": 60,
@@ -50,7 +49,7 @@ POST /dataretrieval/v3/EpochRequests
     "subjectId": 123,
     "status": "Pending",
     "beginTimestampUtc": "2019-07-11T19:44:08.417Z",
-    "endTimestampUtc": "2019-07-11T19:44:08.417Z"
+    "endTimestampUtc": "2019-07-11T19:44:08.417Z",
     "createdDateTimeUtc": "2019-10-21T14:13:33.5082033+00:00"
 }
 ```
