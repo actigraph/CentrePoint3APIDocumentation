@@ -34,7 +34,7 @@ Standard comma separated values format.
 |**X**|Axis X Counts||
 |**Y**|Axis Y Counts||
 |**Z**|Axis Z Counts||
-|**HeartRate**|HeartRate|***Field Not Supported***|
-|**Capsense**|HeartRate|***Field Not Supported***|
-|**Lux**|HeartRate|***Field Not Supported***|
-|**Steps**|HeartRate|***Field Not Supported***|
+|**HeartRate**|Heart Rate Sensor Reading|***Field Not Supported***|
+|**Capsense**|Capacitive Touch Sensor Reading|***Field Not Supported***|
+|**Lux**|Lux|***Field Not Supported***|
+|**Steps**|Steps|***Field Not Supported***|
