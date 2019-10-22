@@ -22,7 +22,10 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |studyId|Number|CentrePoint Study ID (see [Studies](studies.md))|
 |siteName|String|Site Name|
 |siteIdentifier|String|Unique site identifier (used as prefix to subject identifier)|
-|Description|String|Site description
+|description|String|Site description
+|requireDob|Boolean|Indicates if subject date of birth is required
+|requireGender|Boolean|Indicates if subject gender is required
+|requireWeight|Boolean|Indicates if subject weight is required
 
 ```json
 {
