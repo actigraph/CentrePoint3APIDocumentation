@@ -11,9 +11,9 @@ Standard comma separated values format.
 
 **Header:**
 
-* Study Id
-* Subject Id
-* Device Serial
+* StudyId
+* SubjectId
+* DeviceSerial
 * Timestamp
 * X
 * Y
