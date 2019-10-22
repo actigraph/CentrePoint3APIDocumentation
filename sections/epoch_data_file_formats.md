@@ -27,9 +27,9 @@ Standard comma separated values format.
 
 |Column|Description|Notes|
 |------|-----------|-----------|
-|**Study Id**|Study Id of subject||
-|**Subject Id**|Subject Id||
-|**Device Serial**|Activity Monitor Serial Number||
+|**StudyId**|Study Id of subject||
+|**SubjectId**|Subject Id||
+|**DeviceSerial**|Activity Monitor Serial Number||
 |**Timestamp**|UNIX (UTC) timestamp in seconds||
 |**X**|Axis X Counts||
 |**Y**|Axis Y Counts||
