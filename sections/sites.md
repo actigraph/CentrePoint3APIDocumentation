@@ -22,7 +22,10 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |studyId|Number|CentrePoint Study ID (see [Studies](studies.md))|
 |siteName|String|Site Name|
 |siteIdentifier|String|Unique site identifier (used as prefix to subject identifier)|
-|Description|String|Site description
+|description|String|Site description
+|requireDob|Boolean|Indicates if subject date of birth is required
+|requireGender|Boolean|Indicates if subject gender is required
+|requireWeight|Boolean|Indicates if subject weight is required
 
 ```json
 {
@@ -32,13 +35,19 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "studyId": 242,
             "siteName": "Default",
             "siteIdentifier": "123",
-            "description": "This site was automatically generated when the study was created"
+            "description": "This site was automatically generated when the study was created",
+            "requireDob": true,
+            "requireGender": true,
+            "requireWeight": true
         },
         {
             "id": 2932,
             "studyId": 242,
             "siteName": "Test Site 2",
-            "siteIdentifier": "999"
+            "siteIdentifier": "999",
+            "requireDob": false,
+            "requireGender": false,
+            "requireWeight": false
         }
     ],
     "links": {},
@@ -66,6 +75,9 @@ GET /centrepoint/v3/Studies/{studyId}/Sites/{siteId}
     "studyId": 242,
     "siteName": "Default",
     "siteIdentifier": "123",
-    "description": "This site was automatically generated when the study was created"
+    "description": "This site was automatically generated when the study was created",
+    "requireDob": true,
+    "requireGender": true,
+    "requireWeight": true
 }
 ```
