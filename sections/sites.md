@@ -23,9 +23,9 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |siteName|String|Site Name|
 |siteIdentifier|String|Unique site identifier (used as prefix to subject identifier)|
 |description|String|Site description
-|requireDob|Boolean|Indicates if subject date of birth is required
-|requireGender|Boolean|Indicates if subject gender is required
-|requireWeight|Boolean|Indicates if subject weight is required
+|requireDob|Boolean|Indicates if subject date of birth is required based on study/site configuration 
+|requireGender|Boolean|Indicates if subject gender is required based on study/site configuration 
+|requireWeight|Boolean|Indicates if subject weight is required based on study/site configuration
 
 ```json
 {
