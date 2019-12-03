@@ -47,4 +47,4 @@ Any non-[HTTPS](http://tools.ietf.org/html/rfc2818) request will result in a For
 
 ### Request Limiting
 
-This API is request limited. We only allow a certain number of requests per day. Please contact [ActiGraph](http://www.actigraphcorp.com/support/contact-support/) for more information.
+This API is request limited. We only allow a certain number of requests. If an API consumer exceeds 10 requests within a second, then the API will block any further requests with a 429 response code.
