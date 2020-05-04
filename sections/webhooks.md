@@ -71,7 +71,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
           "id": 34,
           "webhookId": 236,
           "webhookEventId": 4,
-          "webhookEvent": "raw_processing_complete",
+          "webhookEvent": "upload",
           "createdDate": "2019-06-03T20:41:01",
           "lastSentDate": "2019-06-03T20:41:01",
           "request": {
@@ -88,7 +88,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
           "id": 35,
           "webhookId": 236,
           "webhookEventId": 4,
-          "webhookEvent": "raw_processing_complete",
+          "webhookEvent": "upload",
           "createdDate": "2019-06-03T20:41:01",
           "lastSentDate": "2019-06-04T21:27:00",
           "errorMessage": "An error occurred while attempting to send a webhook message: Failed to resolve domain",
