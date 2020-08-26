@@ -229,16 +229,6 @@ Retrieves list of subject milestones
 
 ```http
 GET /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}/milestones
-Content-Type: application/json
-{
-    "subjectIdentifier": "string",
-    "dob": "2019-07-10T18:56:43.609Z",
-    "gender": "Male",
-    "weight": 0,
-    "weightUnit": "Lbs",
-    "wearPosition": "Left Wrist",
-    "changeReason": "string"
-}
 ```
 
 **Request Properties:**
