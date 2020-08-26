@@ -231,8 +231,6 @@ Retrieves list of subject milestones
 GET /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}/milestones
 ```
 
-**Request Properties:**
-
 **Response:**
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
