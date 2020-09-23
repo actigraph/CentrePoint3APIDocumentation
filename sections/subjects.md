@@ -238,6 +238,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |Field|Type|Description|
 |-----|----|-----------|
 |**id**|Number|Subject Milestone ID|
+|**name**|String|Name inherited from the Study Milestone|
 |**subjectId**|Number|CentrePoint Subject ID (see [Subjects](subjects.md))|
 |**studyMilestoneId**|Number|Study Milestone ID (see [Study Milestones](study_milestones.md))|
 |**timestamp**|String (ISO8601 Date)|Timestamp of milestone in UTC|
@@ -248,6 +249,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
     "items": [
         {
             "id": 78,
+            "name": "Visit 1",
             "subjectId": 596,
             "studyMilestoneId": 16,
             "timestamp": "2014-05-28T00:00:00Z",
@@ -255,6 +257,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
         },
         {
             "id": 205,
+            "name": "Visit 2",
             "subjectId": 596,
             "studyMilestoneId": 17,
             "timestamp": "2014-06-04T00:00:00Z",
@@ -262,6 +265,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
         },
         {
             "id": 319,
+            "name": "Visit 3",
             "subjectId": 596,
             "studyMilestoneId": 19,
             "timestamp": "2014-06-18T00:00:00Z",
@@ -269,6 +273,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
         },
         {
             "id": 12856,
+            "name": "Visit 4",
             "subjectId": 596,
             "studyMilestoneId": 20,
             "timestamp": "2017-09-02T04:59:59Z",
