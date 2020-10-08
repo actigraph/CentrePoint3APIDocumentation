@@ -36,3 +36,13 @@ The data retrieval scope allows for:
 
 * Generate raw activity data requests to retrieve raw activity data. (see [Raw Data Activity Requests](raw_data_request.md))
 * Generate epoch data requests to retrieve epoch data. (see [Epoch Requests](epoch_data_requests.md))
+
+### Analytics Scope
+
+The analytics scope allows for:
+
+* Retrieval of Daily Statistics. (see [Daily Statistics](daily_statistics.md))
+* Retrieval of Minute Summaries. (see [Minute Summary](minute_summary.md))
+* Retrieval of Algorithm Settings. (see [Algorithm Settings](algorithm_settings.md))
+* Retrieval of Event Markers. (see [Event Markers](event_markers.md))
+* Retrieval of Dustin Tracy Sleep Periods. (see [Dustin Tracy Sleep Periods](dustin_tracy_sleep_periods.md))
