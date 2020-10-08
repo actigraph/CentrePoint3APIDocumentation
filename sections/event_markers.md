@@ -106,7 +106,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 
 |Field|Type|Description|
 |-----|----|-----------|
-|**id**|String (GUID)|Minute Summary Setting ID|
+|**id**|String (GUID)|Event Marker Setting ID|
 |**studyId**|Number|CentrePoint Study ID (see [Studies](studies.md))|
 |**name**|String|The Custom Name of the Event Marker Setting|
 |**algorithmType**|String|The Algorithm Type for the Setting|
