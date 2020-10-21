@@ -8,9 +8,7 @@ API Base URL: [https://api.actigraphcorp.com](https://api.actigraphcorp.com)
 
 Authorization Base URL: [https://auth.actigraphcorp.com](https://auth.actigraphcorp.com)
 
-## CentrePoint Integration Guide
 
-To view ALL options/alternatives to integrate with the CentrePoint System, refer to the [CentrePoint Integration Guide](https://github.com/actigraph/CentrePointIntegrationGuide#centrepoint-system-integration-guide).
 
 ## Enabling API Access
 
@@ -53,3 +51,7 @@ Any non-[HTTPS](http://tools.ietf.org/html/rfc2818) request will result in a For
 ### Request Limiting
 
 This API is request limited. We only allow a certain number of requests. If an API consumer exceeds 10 requests within a second, then the API will block any further requests with a 429 response code.
+
+## CentrePoint Integration Guide
+
+To view ALL options/alternatives to integrate with the CentrePoint System, refer to the [CentrePoint Integration Guide](https://github.com/actigraph/CentrePointIntegrationGuide#centrepoint-system-integration-guide).
