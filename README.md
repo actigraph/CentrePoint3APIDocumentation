@@ -8,6 +8,10 @@ API Base URL: [https://api.actigraphcorp.com](https://api.actigraphcorp.com)
 
 Authorization Base URL: [https://auth.actigraphcorp.com](https://auth.actigraphcorp.com)
 
+## CentrePoint Integration Guide
+
+To view ALL options/alternatives to integrate with the CentrePoint System, refer to the [CentrePoint Integration Guide](https://github.com/actigraph/CentrePointIntegrationGuide#centrepoint-system-integration-guide).
+
 ## Enabling API Access
 
 Please contact [ActiGraph](http://www.actigraphcorp.com/support/contact-support/) for more information.
@@ -17,6 +21,7 @@ Please contact [ActiGraph](http://www.actigraphcorp.com/support/contact-support/
 The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization flow.
 
  Refer to the [Authorization](./sections/authorization.md) section for specifics and examples.
+
 
 ## API Resources
 
