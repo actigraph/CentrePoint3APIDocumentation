@@ -53,7 +53,7 @@ GET /dataretrieval/v3/RawActivityRequests/{trackingId}
 
 ```json
 {
-    "fileFormat": "gt3x",
+    "fileFormat": "avro",
     "id": "8b2fbb54-f635-47e6-8cb9-e187d3457b8c",
     "studyId": 236,
     "subjectId": 17896,
