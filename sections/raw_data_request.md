@@ -12,7 +12,7 @@ POST /dataretrieval/v3/RawActivityRequests
 
 ```json
 {
-  "fileFormat": "gt3x",
+  "fileFormat": "avro",
   "studyId": 236,
   "subjectId": 17896,
   "beginTimestampUtc": "2019-07-11T17:31:36.860Z",
