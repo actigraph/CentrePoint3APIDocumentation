@@ -26,10 +26,17 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 * Retrieval of information about CentrePoint studies to which you have access. (see [Studies](./sections/studies.md))
 * Retrieval of information about milestones in a CentrePoint study. (see [Study Milestones](./sections/study_milestones.md))
 * Adding, editing, and retrieving information about subjects in a CentrePoint study. (see [Subjects](./sections/subjects.md))
+* Retrieving information about uploads for a CentrePoint subject. (see [Uploads](./sections/uploads.md))
 * Retrieval of listing of webhook events. (see [Webhook Events](./sections/webhook_events.md))
 * Retrieval of a list of the webhook subscriptions for a particular study as well as the history or webhook requests. (see [Webhooks](./sections/webhooks.md))
 * Generate raw activity data requests to retrieve raw activity data. (see [Raw Data Activity Requests](./sections/raw_data_request.md))
 * Generate epoch data requests to retrieve epoch data. (see [Epoch Requests](./sections/epoch_data_requests.md))
+* Retrieval of Analytics Algorithm Settings. (see [Algorithm Settings](./sections/algorithm_settings.md))
+* Retrieval of Analytics Daily Statistics. (see [Daily Statistics](./sections/daily_statistics.md))
+* Retrieval of Analytics Dustin Tracy Sleep Periods. (see [Dustin Tracy Sleep Periods](./sections/dustin_tracy_sleep_periods.md))
+* Retrieval of Analytics Event Markers. (see [Event Markers](./sections/event_markers.md))
+* Retrieval of Analytics Minute Summaries. (see [Minute Summary](./sections/minute_summary.md))
+
 
 ### JSON
 
