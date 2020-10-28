@@ -54,4 +54,4 @@ This API is request limited. We only allow a certain number of requests. If an A
 
 ## CentrePoint Integration Guide
 
-To view ALL options/alternatives to integrate with the CentrePoint System, refer to the [CentrePoint Integration Guide](https://github.com/actigraph/CentrePointIntegrationGuide#centrepoint-system-integration-guide).
+To view ALL options/alternatives to integrate with the CentrePoint System, refer to the [CentrePoint Integration Guide](https://github.com/actigraph/CentrePointIntegrationGuide).
