@@ -9,7 +9,7 @@ Returns a list of Event Markers within the requested study.
 **Request:**
 
 ```http
-GET /analytics/v3/Studies/{studyId}/EventMarkers
+GET /analytics/v3/Studies/{studyId}/Subjects/{subjectId}/EventMarkers
 ```
 
 **Query Options**

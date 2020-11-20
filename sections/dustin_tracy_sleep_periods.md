@@ -9,7 +9,7 @@ Returns a list of Dustin Tracy Sleep Periods within the requested study.
 **Request:**
 
 ```http
-GET /analytics/v3/Studies/{studyId}/DustinTracySleepPeriods
+GET /analytics/v3/Studies/{studyId}/Subjects/{subjectId}/DustinTracySleepPeriods
 ```
 
 **Query Options**

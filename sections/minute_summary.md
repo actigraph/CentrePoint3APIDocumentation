@@ -9,7 +9,7 @@ Returns a list of Minute Summaries within the requested study.
 **Request:**
 
 ```http
-GET /analytics/v3/Studies/{studyId}/MinuteSummaries
+GET /analytics/v3/Studies/{studyId}/Subjects/{subjectId}/MinuteSummaries
 ```
 
 **Query Options**

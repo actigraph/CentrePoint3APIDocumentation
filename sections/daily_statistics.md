@@ -9,7 +9,7 @@ Returns a list of Daily Statistics within the requested study.
 **Request:**
 
 ```http
-GET /analytics/v3/Studies/{studyId}/DailyStatistics
+GET /analytics/v3/Studies/{studyId}/Subjects/{subjectId}/DailyStatistics
 ```
 
 **Query Options**
