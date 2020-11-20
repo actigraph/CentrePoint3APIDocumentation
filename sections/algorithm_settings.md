@@ -4,7 +4,7 @@
 
 ## List Study Algorithm Settings
 
-Returns a list of Algorithm Settings within the requested study.
+Returns a list of Algorithm Settings that are associated with a given study.
 
 **Request:**
 
