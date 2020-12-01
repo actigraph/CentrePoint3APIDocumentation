@@ -286,3 +286,39 @@ This response is paginated. See [Pagination](pagination.md) for a description of
     "offset": 0
 }
 ```
+
+## Get Subject Timezone History
+
+Retrieves list of subject timezone history entries
+
+**Request:**
+
+```http
+GET /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}/TimezoneHistory
+```
+
+**Response:**
+
+This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+
+|Field|Type|Description|
+|-----|----|-----------|
+|**subjectId**|Number|CentrePoint Subject ID (see [Subjects](subjects.md))|
+|**timezone**|String|IANA timezone name|
+|**effectiveDateUtc**|String (ISO8601 Date)|Timestamp of when the subject was placed in the timezone|
+
+```json
+{
+    "items": [
+        {
+            "subjectId": 596,
+            "timezone": "US/Central",
+            "effectiveDateUtc": "2014-05-27T19:00:00Z"
+        }
+    ],
+    "links": {},
+    "totalCount": 1,
+    "limit": 100,
+    "offset": 0
+}
+```
