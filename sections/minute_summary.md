@@ -2,7 +2,7 @@
 
 **NOTE: These requests require the *Analytics* API scope. (see [Scopes](scopes.md))**
 
-## List Study Minute Summaries
+## Retrieve Subject Minute Summary Data
 
 Returns a list of Minute Summaries within the requested study.
 
