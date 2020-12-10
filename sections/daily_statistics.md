@@ -238,9 +238,15 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 
 |Name|Type|Description|
 |:---|:---|:----------|
-|**metsSum**|Number|Total METS for the day|
-|**metsAvg**|Number|Average METS for the day|
-|**calories**|Number|Total Calories for the day|
+|**nonFilteredMets**|Number|Total METS for the day|
+|**wearMets**|Number|Total METS where activity monitor was considered worn|
+|**wearAwakeMets**|Number|Total METS where activity monitor was worn and subject was considered awake|
+|**nonFilteredMetsAverage**|Number|Average METS for the day|
+|**wearMetsAverage**|Number|Average METS where activity monitor was considered worn|
+|**wearAwakeMetsAverage**|Number|Average METS where activity monitor was worn and subject was considered awake|
+|**nonFilteredCalories**|Number|Total Calories for the day|
+|**wearCalories**|Number|Total Calories where activity monitor was considered worn|
+|**wearAwakeCalories**|Number|Total Calories where activity monitor was worn and subject was considered awake|
 
 **Response Example:**
 
