@@ -41,6 +41,8 @@ Field|Type|Description|Notes
 **fileType**|String|Type of the data contained in the file||
 **totalRecords**|Number|Total number of records contained in the file||
 **recordsInserted**|Number|Total number of records inserted for storage in CentrePoint||
+**beginOfData**|Number|The start UTC timestamp of the data in the upload file||
+**endOfData**|Number|The end UTC timestamp of the data in the upload file||
 
 **Response Example**
 
@@ -62,7 +64,9 @@ Field|Type|Description|Notes
           "id": 8456,
           "fileType": "RAW",
           "totalRecords": 322,
-          "recordsInserted": 322
+          "recordsInserted": 322,
+          "beginOfData": "2020-10-20T18:39:57Z",
+          "endOfData": "2020-10-26T18:39:57Z"
         }
       ]
     }
@@ -104,7 +108,9 @@ GET /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}/Uploads/{uploadId}
         "id": 8456,
         "fileType": "RAW",
         "totalRecords": 322,
-        "recordsInserted": 322
+        "recordsInserted": 322,
+        "beginOfData": "2020-10-20T18:39:57Z",
+        "endOfData": "2020-10-26T18:39:57Z"
     }]
 }
 ```
