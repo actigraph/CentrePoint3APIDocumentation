@@ -1,7 +1,7 @@
 # Raw Activity Data Request
 
 **IMPORTANT:**
-RAW data retrieval requests SHALL NOT be performed to attempt to retrieve ALL the historic RAW data for all subjects in a given study. Instead, requests shall be used in conjunction with the [raw-processing-complete](https://github.com/actigraph/CentrePointWebhookDocumentation/blob/main/event_types.md#raw-processing-complete-event) webhook to support the retrieval of raw data for a given upload as it is uploaded/processed in a near real-time fashion.
+RAW data retrieval requests SHALL NOT be performed to retrieve ALL the historic RAW data for all subjects in a given study. Instead, requests shall be used in conjunction with the [raw-processing-complete](https://github.com/actigraph/CentrePointWebhookDocumentation/blob/main/event_types.md#raw-processing-complete-event) webhook to support the retrieval of raw data for a given upload as it is uploaded/processed in a near real-time fashion.
 
 **NOTE: These requests require the *DataRetrieval* API scope. (see [Scopes](scopes.md))**
 
