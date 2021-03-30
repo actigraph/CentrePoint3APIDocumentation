@@ -42,7 +42,7 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 #### Analytics/Algorithmic Data-Retrieval
 
 * Retrieval of Analytics Algorithm Settings. (see [Algorithm Settings](./sections/algorithm_settings.md))
-* Retrieval of Minute Summary Data. (see [Minute Summary](./sections/minute_summary.md))
+* Retrieval of Epochs/Minute Summary Data. (see [Minute Summary](./sections/minute_summary.md))
 * Retrieval of Daily Summary Data. (see [Daily Statistics](./sections/daily_statistics.md))
 * Retrieval of (Dustin Tracy) Sleep Periods. (see [Dustin Tracy Sleep Periods](./sections/dustin_tracy_sleep_periods.md))
 * Retrieval of CPW01 Insight Watch button press/release Events (or 'Event Markers'). (see [Event Markers](./sections/event_markers.md))
