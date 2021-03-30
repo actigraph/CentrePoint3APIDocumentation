@@ -1,7 +1,7 @@
 # Raw Activity Data Request
 
 **IMPORTANT:**
-RAW activty data requests support the retrieval of RAW sub-second activity data for a given subject between a given time-range. These requests are performed in a aynchronous manner as there's post-processing that needs to occur to the RAW data before it can be retrieved. RAW data retrieval requests SHALL NOT be performed in a manner to attempt to retrieve ALL the historic RAW data for a given study. Instead, requests shall be used in conjunction with the [raw-processing-complete](https://github.com/actigraph/CentrePointWebhookDocumentation/blob/main/event_types.md#raw-processing-complete-event) webhook to support the retrieval of raw data for a given upload as it is uploaded/processed in a near real-time fahsion.
+IMPORTANT: RAW activity data requests support the retrieval of RAW sub-second activity data for a given subject between a given time-range. These requests are performed in a asynchronous manner as there's post-processing that needs to occur to the RAW data before it can be retrieved. RAW data retrieval requests SHALL NOT be performed in a manner to attempt to retrieve ALL the historic RAW data for a given study. Instead, requests shall be used in conjunction with the [raw-processing-complete](https://github.com/actigraph/CentrePointWebhookDocumentation/blob/main/event_types.md#raw-processing-complete-event) webhook to support the retrieval of raw data for a given upload as it is uploaded/processed in a near real-time fashion.
 
 **NOTE: These requests require the *DataRetrieval* API scope. (see [Scopes](scopes.md))**
 
