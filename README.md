@@ -38,7 +38,6 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 #### RAW Data Retrieval
 
 * Generate raw activity data requests to retrieve raw activity data. (see [Raw Data Activity Requests](./sections/raw_data_request.md))
-* Generate epoch data requests to retrieve epoch data. (see [Epoch Requests](./sections/epoch_data_requests.md))
 
 #### Analytics/Algorithmic Data-Retrieval
 
