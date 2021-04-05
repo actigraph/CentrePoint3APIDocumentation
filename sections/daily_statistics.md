@@ -16,8 +16,7 @@ GET /analytics/v3/Studies/{studyId}/Subjects/{subjectId}/DailyStatistics
 
 |Field|Type|Description|
 |-----|----|-----------|
-|**settingIds**|String Array of GUIDs|GUIDs of the Settings Used To Create the Daily Statistics|
-|**subjectId**|Number|CentrePoint Subject ID (see [Subjects](subjects.md))|
+|**dailyStatisticsSettingId**|GUID|ID of the Settings Used To Create the Daily Statistics|
 |**fromDate**|String (ISO8601 Date)|Starting Date for the Daily Statistics Query (Inclusive)|
 |**toDate**|String (ISO8601 Date)|Ending Date for the Daily Statistics Query (Inclusive)|
 
@@ -531,8 +530,8 @@ GET /analytics/v3/Studies/{studyId}/DailyStatisticsSettings/{dailyStatisticsSett
 |**sleepPeriodSettingId**|String (GUID)|The ID of the Sleep Period Algorithm Setting Used In the Daily Statistics|
 |**epochSummarySettingId**|String (GUID)|The ID of the Epoch Algorithm Setting Used In the Daily Statistics|
 |**cutpointSettingIds**|String Array (GUID)|The IDs of the Cutpoint Algorithm Settings Used In the Daily Statistics|
-|**StepsSettingId**|String (GUID)|The ID of the Steps Algorithm Setting Used In the Daily Statistics (This property is only present if there is a steps algorithm associated with the Daily Statistics Setting)|
-|**MetsCaloriesSettingId**|String (GUID)|The ID of the METs/Calories Algorithm Setting Used In the Daily Statistics (This property is only present if there is a METs/Calories algorithm associated with the Daily Statistics Setting)|
+|**stepsSettingId**|String (GUID)|The ID of the Steps Algorithm Setting Used In the Daily Statistics (This property is only present if there is a steps algorithm associated with the Daily Statistics Setting)|
+|**metsCaloriesSettingId**|String (GUID)|The ID of the METs/Calories Algorithm Setting Used In the Daily Statistics (This property is only present if there is a METs/Calories algorithm associated with the Daily Statistics Setting)|
 
 **Response Example:**
 

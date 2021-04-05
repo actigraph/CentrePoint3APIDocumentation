@@ -17,7 +17,6 @@ GET /analytics/v3/Studies/{studyId}/Subjects/{subjectId}/EventMarkers
 |Field|Type|Description|
 |-----|----|-----------|
 |**algorithmSettingId**|String (GUID)|GUID of the Settings Used To Create the Event Markers|
-|**subjectId**|Number|CentrePoint Subject ID (see [Subjects](subjects.md))|
 |**fromDate**|String (ISO8601 Date)|Starting Date for the Event Markers Query (Inclusive)|
 |**toDate**|String (ISO8601 Date)|Ending Date for the Event Markers Query (Inclusive)|
 

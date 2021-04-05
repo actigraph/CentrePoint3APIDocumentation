@@ -16,7 +16,7 @@ GET /analytics/v3/Studies/{studyId}/Subjects/{subjectId}/MinuteSummaries
 
 |Field|Type|Description|
 |-----|----|-----------|
-|**subjectId**|Number|CentrePoint Subject ID (see [Subjects](subjects.md))|
+|**minuteSummarySettingId**|GUID|ID of the Settings Used To Create the Minute Summary|
 |**fromDate**|String (ISO8601 Date)|Starting Date for the Minute Summary Query (Inclusive)|
 |**toDate**|String (ISO8601 Date)|Ending Date for the Minute Summary Query (Inclusive)|
 
