@@ -31,7 +31,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "wearPosition": "Left Wrist",
             "weight": 100.00,
             "weightUnit": "Lbs",
-            "assignmentStatus": "Not Assigned"
+            "assignmentStatus": "Assigned",
+            "assignmentId": 1423
         },
         {
             "id": 17911,
@@ -49,7 +50,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
         }
     ],
     "links": {},
-    "totalCount": 40,
+    "totalCount": 2,
     "limit": 100,
     "offset": 0
 }
@@ -71,6 +72,7 @@ wearPosition|String|Subject's activity monitor wear position|
 weight|Number|Subject's weight|(if collected by study)|
 weightUnit|String|Pounds (lbs) or Kilograms (kg)|
 assignmentStatus|String|Indicates if activity monitor is assigned to subject|
+assignmentId|Number|The ID of the subject's current assignment if the subject has an active assignment|
 
 ## Subject Details
 
@@ -182,7 +184,7 @@ Content-Type: application/json
     "subjectIdentifier": "string",
     "dob": "2019-07-10T18:56:43.609Z",
     "gender": "Male",
-    "weight": 0,
+    "weight": 180,
     "weightUnit": "Lbs",
     "wearPosition": "Left Wrist",
     "changeReason": "string"

@@ -25,6 +25,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**studyStatus**|String|The study status.|
 |**defaultWearPosition**|String|The default wear position for the study.|
 |**wearPositions**|Array(String)|The wear positions allowed by the study.|
+|**monitorDataCollectionMode**|String|Indicates if monitors are collection Raw data, Epoch data, or both for the study.|
 
 ```json
 {
@@ -38,7 +39,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "defaultWearPosition": "Left Non-Dominant Wrist",
             "wearPositions": [
                 "Left Non-Dominant Wrist"
-            ]
+            ],
+            "monitorDataCollectionMode": "Raw Only"
         },
         {
             "id": 2,
@@ -49,7 +51,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "defaultWearPosition": "Left Non-Dominant Wrist",
             "wearPositions": [
                 "Left Non-Dominant Wrist"
-            ]
+            ],
+            "monitorDataCollectionMode": "Epoch+Raw"
         }
     ],
     "links": {},
@@ -81,5 +84,6 @@ GET /centrepoint/v3/Studies/{studyId}
     "defaultWearPosition": "Left Non-Dominant Wrist",
     "wearPositions": [
         "Left Non-Dominant Wrist"
-    ]
+    ],
+    "monitorDataCollectionMode": "Raw Only"
 }
