@@ -1,5 +1,8 @@
 # Epoch Data Requests
 
+**IMPORTANT:**
+Epoch data retrieval requests SHALL NOT be performed to retrieve ALL the historic epoch data for all subjects in a given study. To this end, a maximum of 10 active requests are allowed at one time.
+
 **NOTE: These requests require the *DataRetrieval* scope. (see [Scopes](scopes.md))**
 
 ## Make request for epoch summary data
