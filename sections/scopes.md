@@ -30,12 +30,11 @@ The CentrePoint scope allows for:
 * Retrieval of listing of webhook events. (see [Webhook Events](webhook_events.md))
 * Retrieval of a list of the webhook subscriptions for a particular study as well as the history or webhook requests. (see [Webhooks](webhooks.md))
 
-### DataRetrieval Scope
+### DataAccess Scope
 
-The data retrieval scope allows for:
+The data access scope allows for:
 
-* Generate raw activity data requests to retrieve raw activity data. (see [Raw Data Activity Requests](raw_data_request.md))
-* Generate epoch data requests to retrieve epoch data. (see [Epoch Requests](epoch_data_requests.md))
+* Access to pre-made day files of study data. (see [Data Access Files](data_access_files.md))
 
 ### Analytics Scope
 
@@ -46,3 +45,10 @@ The analytics scope allows for:
 * Retrieval of Algorithm Settings. (see [Algorithm Settings](algorithm_settings.md))
 * Retrieval of Event Markers. (see [Event Markers](event_markers.md))
 * Retrieval of Dustin Tracy Sleep Periods. (see [Dustin Tracy Sleep Periods](dustin_tracy_sleep_periods.md))
+
+### DataRetrieval Scope
+
+The data retrieval scope allows for:
+
+* Generate raw activity data requests to retrieve raw activity data. (see [Raw Data Activity Requests](raw_data_request.md)) **Note:** It is now recommended to use the [Data Access Files](data_access_files.md) for retrieving raw accelerometer data.
+* Generate epoch data requests to retrieve epoch data. (see [Epoch Requests](epoch_data_requests.md))
