@@ -142,7 +142,7 @@ Same response format as Query Subject Data Files
 
 ## Query Subject Data Files By Day
 
-A list of data files that can be accessed for a particular year.
+A list of data files that can be accessed for a particular day.
 
 **Request:**
 
