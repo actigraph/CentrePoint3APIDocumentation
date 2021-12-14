@@ -37,7 +37,7 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 
 #### Large Data File Access
 
-* Access to pre-made day files of large study data like raw accelerometer data. (see [Data Access Files](data_access_files.md))
+* Access to pre-made day files of large study data like raw accelerometer data. (see [Data Access Files](./sections/data_access_files.md))
 
 #### Analytics/Algorithmic Data-Retrieval
 

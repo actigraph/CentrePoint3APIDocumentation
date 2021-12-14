@@ -4,7 +4,9 @@
 
 ## Query Subject Data Files
 
-A list of data files that can be accessed.
+A list of data files that can be accessed by category. The currently available categories are as follows:
+
+- raw-accelerometer
 
 **Request:**
 
@@ -38,6 +40,10 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |modifiedDate|String (ISO8601 Date)|The date of the last modification to the particular day of data
 |downloadUrl|String|The signed URL that can be used to download the file
 |downloadUrlExpiresOn|String (ISO8601 Date)|The date that the download URL expires
+
+```
+/dataaccess/v3/files/studies/652/subjects/47589/raw-accelerometer?startDate=2021-01-01T00:00:00&endDate=2021-01-02T00:00:00
+```
 
 ```json
 {
