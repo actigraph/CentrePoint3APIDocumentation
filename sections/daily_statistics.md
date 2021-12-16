@@ -45,7 +45,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**evensonAggregations**|Object Array (See *EvensonAggregations* below)|The Aggregation of the Evenson Cutpoints Used in the Daily Statistic (This property is only present when Evenson Cutpoints are present in the study)|
 |**mavmAggregation**|Object (See *MavmAggregation* below)|The Aggregation of the MAVM Steps Used in the Daily Statistic (This property is only present when MAVM Steps are present in the study)|
 |**uwfAggregation**|Object (See *UwfAggregation* below)|The Aggregation of the UWF Steps Used in the Daily Statistic (This property is only present when UWF Steps are present in the study)|
-|**hildebrandMetCalorieAggregation**|Object (See *HildebrandMetCalorieAggregation* below)|The Aggregation of the Hildebrand/METs Calories Used in the Daily Statistic (This property is only present when Hildebrand/METs Calories are present in the study)|
+|**hildebrandMetCalorieAggregation**|Object (See *HildebrandMetCalorieAggregation* below)|The Aggregation of the Hildebrand METs/Calories Used in the Daily Statistic (This property is only present when Hildebrand METs/Calories are present in the study)|
+|**crouterYouthMetCalorieAggregation**|Object (See *CrouterYouthMetCalorieAggregation* below)|The Aggregation of the Crouter Youth METs/Calories Used in the Daily Statistic (This property is only present when CrouterYouth METs/Calories are present in the study)|
 
 
 *Epoch Aggregation*
@@ -234,6 +235,20 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**wearSleepFilteredSteps**|Number|Total steps where activity monitor was worn and subject was considered asleep|
 
 *HildebrandMetCalorieAggregation*
+
+|Name|Type|Description|
+|:---|:---|:----------|
+|**nonFilteredMets**|Number|Total METS for the day|
+|**wearMets**|Number|Total METS where activity monitor was considered worn|
+|**wearAwakeMets**|Number|Total METS where activity monitor was worn and subject was considered awake|
+|**nonFilteredMetsAverage**|Number|Average METS for the day|
+|**wearMetsAverage**|Number|Average METS where activity monitor was considered worn|
+|**wearAwakeMetsAverage**|Number|Average METS where activity monitor was worn and subject was considered awake|
+|**nonFilteredCalories**|Number|Total Calories for the day|
+|**wearCalories**|Number|Total Calories where activity monitor was considered worn|
+|**wearAwakeCalories**|Number|Total Calories where activity monitor was worn and subject was considered awake|
+
+*CrouterYouthMetCalorieAggregation*
 
 |Name|Type|Description|
 |:---|:---|:----------|
