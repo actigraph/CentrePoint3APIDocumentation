@@ -35,9 +35,9 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 * Retrieval of listing of webhook events. (see [Webhook Events](./sections/webhook_events.md))
 * Retrieval of a list of the webhook subscriptions for a particular study as well as the history or webhook requests. (see [Webhooks](./sections/webhooks.md))
 
-#### RAW Sub-second Activity Data Retrieval
+#### Large Data File Access
 
-* Generate raw (sub-second) activity data requests to retrieve raw activity data for a given subject. (see [Raw Data Activity Requests](./sections/raw_data_request.md))
+* Access to pre-made day files of large study data like raw accelerometer data. (see [Data Access Files](./sections/data_access_files.md))
 
 #### Analytics/Algorithmic Data-Retrieval
 
@@ -46,6 +46,10 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 * Retrieval of Daily Summary Data. (see [Daily Statistics](./sections/daily_statistics.md))
 * Retrieval of (Dustin Tracy) Sleep Periods. (see [Dustin Tracy Sleep Periods](./sections/dustin_tracy_sleep_periods.md))
 * Retrieval of CPW01 Insight Watch button press/release Events (or 'Event Markers'). (see [Event Markers](./sections/event_markers.md))
+
+#### RAW Sub-second Activity Data Retrieval
+
+* Generate raw (sub-second) activity data requests to retrieve raw activity data for a given subject. (see [Raw Data Activity Requests](./sections/raw_data_request.md)) **Note:** It is now recommended to use the [Data Access Files](data_access_files.md) for retrieving raw accelerometer data.
 
 
 ### JSON
