@@ -147,7 +147,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**totalAggregateBuckets**|Dictionary<String, Number>|A daily aggregate in seconds of each defined daily aggregate cutpoint bucket|
 |**wearAggregateBuckets**|Dictionary<String, Number>|A daily aggregate in seconds of each defined daily aggregate cutpoint bucket where the subject was wearing the monitor|
 |**awakeAggregateBuckets**|Dictionary<String, Number>|A daily aggregate in seconds of each defined daily aggregate cutpoint bucket where the subject was awake|
-|**wearAwakeAggregateBuckets**|Dictionary<String, Number>|A daily aggregate in seconds of each defined daily aggregate cutpoint bucket where the subject was was wearing the monitor and awake|
+|**wearAwakeAggregateBuckets**|Dictionary<String, Number>|A daily aggregate in seconds of each defined daily aggregate cutpoint bucket where the subject was wearing the monitor and awake|
 
 *MAVMAggregation*
 
