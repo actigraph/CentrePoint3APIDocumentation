@@ -46,6 +46,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**freedsonCutPointsMinuteAggregations**|Object Array (See *FreedsonCutPointsMinuteAggregation* below)|The Total Freedson Cutpoint Classifications in the Minute|
 |**evensonCutPointsMinuteAggregations**|Object Array (See *EvensonCutPointsMinuteAggregation* below)|The Total Evenson Cutpoint Classifications in the Minute|
 |**staudenmayerCutPointsMinuteAggregations**|Object Array (See *StaudenmayerCutPointsMinuteAggregation* below)|The Total Staudenmayer Cutpoint Classifications in the Minute|
+|**genericCutPointsMinuteAggregations**|Object Array (See *GenericCutPointsMinuteAggregation* below)|The Total Generic Cutpoint Classifications in the Minute|
 
 *CrouterCutPointsMinuteAggregation*
 
@@ -95,6 +96,14 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**moderate**|Number|A minute aggregate in seconds where the Evenson Cut Points Activity Intensity is “Moderate”|
 |**vigorous**|Number|A minute aggregate in seconds where the Evenson Cut Points Activity Intensity is “Vigorous”|
 |**mvpa**|Number|A minute aggregate in seconds where the Evenson Activity Intensity Cut Point between “Moderate” and “Vigorous”|
+
+*GenericCutPointsMinuteAggregation*
+
+|Name|Type|Description|
+|:---|:---|:----------|
+|**algorithmName**|String|Name of the algorithm setting used to generate the generic cutpoints|
+|**cutpointBuckets**|Object Array|Collection of Generic Cutpoint buckets with each object containing the Name of the bucket and the NumberOfSeconds each bucket contains|
+|**aggregateBuckets**|Object Array|Collection of Generic Cutpoint aggregate buckets with each object containing the Name of the aggregate bucket and the NumberOfSeconds each aggregate bucket contains|
 
 **Response Example:**
 
