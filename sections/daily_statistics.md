@@ -374,6 +374,166 @@ This response is paginated. See [Pagination](pagination.md) for a description of
                 "wearAwakeFilteredSteps": 0,
                 "wearSleepFilteredSteps": 0
             },
+            "genericCutpointAggregations": [
+                {
+                    "AlgorithmName": "Puyau Children VA",
+                    "TotalBuckets": {
+                        "Sedentary": 15960,
+                        "Light": 8820,
+                        "Moderate": 0,
+                        "Vigorous": 0
+                    },
+                    "WearBuckets": {
+                        "Sedentary": 13200,
+                        "Light": 8820,
+                        "Moderate": 0,
+                        "Vigorous": 0
+                    },
+                    "AwakeBuckets": {
+                        "Sedentary": 13200,
+                        "Light": 8820,
+                        "Moderate": 0,
+                        "Vigorous": 0
+                    },
+                    "WearAwakeBuckets": {
+                        "Sedentary": 13200,
+                        "Light": 8820,
+                        "Moderate": 0,
+                        "Vigorous": 0
+                    },
+                    "TotalAggregateBuckets": {
+                        "Mvpa": 0,
+                        "Lvpa": 8820
+                    },
+                    "WearAggregateBuckets": {
+                        "Mvpa": 0,
+                        "Lvpa": 8820
+                    },
+                    "AwakeAggregateBuckets": {
+                        "Mvpa": 0,
+                        "Lvpa": 8820
+                    },
+                    "WearAwakeAggregateBuckets": {
+                        "Mvpa": 0,
+                        "Lvpa": 8820
+                    }
+                },
+                {
+                    "AlgorithmName": "Kim VM Hip",
+                    "TotalBuckets": {
+                        "Sedentary": 13379.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "WearBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "AwakeBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "WearAwakeBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "TotalAggregateBuckets": {},
+                    "WearAggregateBuckets": {},
+                    "AwakeAggregateBuckets": {},
+                    "WearAwakeAggregateBuckets": {}
+                },
+                {
+                    "AlgorithmName": "Kim VA Wrist",
+                    "TotalBuckets": {
+                        "Sedentary": 13379.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "WearBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "AwakeBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "WearAwakeBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "TotalAggregateBuckets": {},
+                    "WearAggregateBuckets": {},
+                    "AwakeAggregateBuckets": {},
+                    "WearAwakeAggregateBuckets": {}
+                },
+                {
+                    "AlgorithmName": "Kim VM Wrist",
+                    "TotalBuckets": {
+                        "Sedentary": 13379.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "WearBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "AwakeBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "WearAwakeBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "TotalAggregateBuckets": {},
+                    "WearAggregateBuckets": {},
+                    "AwakeAggregateBuckets": {},
+                    "WearAwakeAggregateBuckets": {}
+                },
+                {
+                    "AlgorithmName": "Koster Non-Dominant Wrist",
+                    "TotalBuckets": {
+                        "Sedentary": 13380,
+                        "Non-Sedentary": 11400
+                    },
+                    "WearBuckets": {
+                        "Sedentary": 10620,
+                        "Non-Sedentary": 11400
+                    },
+                    "AwakeBuckets": {
+                        "Sedentary": 10620,
+                        "Non-Sedentary": 11400
+                    },
+                    "WearAwakeBuckets": {
+                        "Sedentary": 10620,
+                        "Non-Sedentary": 11400
+                    },
+                    "TotalAggregateBuckets": {},
+                    "WearAggregateBuckets": {},
+                    "AwakeAggregateBuckets": {},
+                    "WearAwakeAggregateBuckets": {}
+                },
+                {
+                    "AlgorithmName": "Koster Dominant Wrist",
+                    "TotalBuckets": {
+                        "Sedentary": 13380,
+                        "Non-Sedentary": 11400
+                    },
+                    "WearBuckets": {
+                        "Sedentary": 10620,
+                        "Non-Sedentary": 11400
+                    },
+                    "AwakeBuckets": {
+                        "Sedentary": 10620,
+                        "Non-Sedentary": 11400
+                    },
+                    "WearAwakeBuckets": {
+                        "Sedentary": 10620,
+                        "Non-Sedentary": 11400
+                    },
+                    "TotalAggregateBuckets": {},
+                    "WearAggregateBuckets": {},
+                    "AwakeAggregateBuckets": {},
+                    "WearAwakeAggregateBuckets": {}
+                }
+            ],
             "firstEpochDateTimeUtc": "2020-10-05T06:16:00+00:00",
             "lastEpochDateTimeUtc": "2020-10-05T06:23:00+00:00",
             "firstEpochDateTimeLocal": "2020-10-05T06:16:00+00:00",
@@ -471,6 +631,166 @@ This response is paginated. See [Pagination](pagination.md) for a description of
                 "wearAwakeFilteredSteps": 70,
                 "wearSleepFilteredSteps": 0
             },
+            "genericCutpointAggregations": [
+                {
+                    "AlgorithmName": "Puyau Children VA",
+                    "TotalBuckets": {
+                        "Sedentary": 64140,
+                        "Light": 22260,
+                        "Moderate": 0,
+                        "Vigorous": 0
+                    },
+                    "WearBuckets": {
+                        "Sedentary": 26700,
+                        "Light": 22200,
+                        "Moderate": 0,
+                        "Vigorous": 0
+                    },
+                    "AwakeBuckets": {
+                        "Sedentary": 22620,
+                        "Light": 21780,
+                        "Moderate": 0,
+                        "Vigorous": 0
+                    },
+                    "WearAwakeBuckets": {
+                        "Sedentary": 22620,
+                        "Light": 21780,
+                        "Moderate": 0,
+                        "Vigorous": 0
+                    },
+                    "TotalAggregateBuckets": {
+                        "Mvpa": 0,
+                        "Lvpa": 22260
+                    },
+                    "WearAggregateBuckets": {
+                        "Mvpa": 0,
+                        "Lvpa": 22200
+                    },
+                    "AwakeAggregateBuckets": {
+                        "Mvpa": 0,
+                        "Lvpa": 21780
+                    },
+                    "WearAwakeAggregateBuckets": {
+                        "Mvpa": 0,
+                        "Lvpa": 21780
+                    }
+                },
+                {
+                    "AlgorithmName": "Kim VM Hip",
+                    "TotalBuckets": {
+                        "Sedentary": 13379.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "WearBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "AwakeBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "WearAwakeBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "TotalAggregateBuckets": {},
+                    "WearAggregateBuckets": {},
+                    "AwakeAggregateBuckets": {},
+                    "WearAwakeAggregateBuckets": {}
+                },
+                {
+                    "AlgorithmName": "Kim VA Wrist",
+                    "TotalBuckets": {
+                        "Sedentary": 13379.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "WearBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "AwakeBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "WearAwakeBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "TotalAggregateBuckets": {},
+                    "WearAggregateBuckets": {},
+                    "AwakeAggregateBuckets": {},
+                    "WearAwakeAggregateBuckets": {}
+                },
+                {
+                    "AlgorithmName": "Kim VM Wrist",
+                    "TotalBuckets": {
+                        "Sedentary": 13379.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "WearBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "AwakeBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "WearAwakeBuckets": {
+                        "Sedentary": 10619.5,
+                        "Non-Sedentary": 11399.5
+                    },
+                    "TotalAggregateBuckets": {},
+                    "WearAggregateBuckets": {},
+                    "AwakeAggregateBuckets": {},
+                    "WearAwakeAggregateBuckets": {}
+                },
+                {
+                    "AlgorithmName": "Koster Non-Dominant Wrist",
+                    "TotalBuckets": {
+                        "Sedentary": 13380,
+                        "Non-Sedentary": 11400
+                    },
+                    "WearBuckets": {
+                        "Sedentary": 10620,
+                        "Non-Sedentary": 11400
+                    },
+                    "AwakeBuckets": {
+                        "Sedentary": 10620,
+                        "Non-Sedentary": 11400
+                    },
+                    "WearAwakeBuckets": {
+                        "Sedentary": 10620,
+                        "Non-Sedentary": 11400
+                    },
+                    "TotalAggregateBuckets": {},
+                    "WearAggregateBuckets": {},
+                    "AwakeAggregateBuckets": {},
+                    "WearAwakeAggregateBuckets": {}
+                },
+                {
+                    "AlgorithmName": "Koster Dominant Wrist",
+                    "TotalBuckets": {
+                        "Sedentary": 13380,
+                        "Non-Sedentary": 11400
+                    },
+                    "WearBuckets": {
+                        "Sedentary": 10620,
+                        "Non-Sedentary": 11400
+                    },
+                    "AwakeBuckets": {
+                        "Sedentary": 10620,
+                        "Non-Sedentary": 11400
+                    },
+                    "WearAwakeBuckets": {
+                        "Sedentary": 10620,
+                        "Non-Sedentary": 11400
+                    },
+                    "TotalAggregateBuckets": {},
+                    "WearAggregateBuckets": {},
+                    "AwakeAggregateBuckets": {},
+                    "WearAwakeAggregateBuckets": {}
+                }
+            ],
             "firstEpochDateTimeUtc": "2020-10-05T06:39:00+00:00",
             "lastEpochDateTimeUtc": "2020-10-05T12:28:00+00:00",
             "firstEpochDateTimeLocal": "2020-10-05T06:39:00+00:00",
