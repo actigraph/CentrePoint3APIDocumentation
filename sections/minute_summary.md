@@ -46,6 +46,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**freedsonCutPointsMinuteAggregations**|Object Array (See *FreedsonCutPointsMinuteAggregation* below)|The Total Freedson Cutpoint Classifications in the Minute|
 |**evensonCutPointsMinuteAggregations**|Object Array (See *EvensonCutPointsMinuteAggregation* below)|The Total Evenson Cutpoint Classifications in the Minute|
 |**staudenmayerCutPointsMinuteAggregations**|Object Array (See *StaudenmayerCutPointsMinuteAggregation* below)|The Total Staudenmayer Cutpoint Classifications in the Minute|
+|**genericCutPointsMinuteAggregations**|Object Array (See *GenericCutPointsMinuteAggregation* below)|The Total Generic Cutpoint Classifications in the Minute|
 
 *CrouterCutPointsMinuteAggregation*
 
@@ -96,6 +97,14 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**vigorous**|Number|A minute aggregate in seconds where the Evenson Cut Points Activity Intensity is “Vigorous”|
 |**mvpa**|Number|A minute aggregate in seconds where the Evenson Activity Intensity Cut Point between “Moderate” and “Vigorous”|
 
+*GenericCutPointsMinuteAggregation*
+
+|Name|Type|Description|
+|:---|:---|:----------|
+|**algorithmName**|String|Name of the algorithm setting used to generate the generic cutpoints|
+|**cutpointBuckets**|Object Array|Collection of Generic Cutpoint buckets with each object containing the Name of the bucket and the NumberOfSeconds each bucket contains|
+|**aggregateBuckets**|Object Array|Collection of Generic Cutpoint aggregate buckets with each object containing the Name of the aggregate bucket and the NumberOfSeconds each aggregate bucket contains|
+
 **Response Example:**
 
 ```json
@@ -114,7 +123,146 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "z": 1375,
             "vectorMagnitude": 4275.606857511574,
             "mets": 4.033920550685386,
-            "calories": 7.044567372217769
+            "calories": 7.044567372217769,
+            "GenericCutpointMinuteAggregations": [
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "89bdec49-8826-40e2-a743-359955670624",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Puyau Children VA",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Light",
+                                "NumberOfSeconds": 0
+                            },
+                            {
+                                "Name": "Moderate",
+                                "NumberOfSeconds": 0
+                            },
+                            {
+                                "Name": "Vigorous",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": [
+                            {
+                                "Name": "Mvpa",
+                                "NumberOfSeconds": 0
+                            },
+                            {
+                                "Name": "Lvpa",
+                                "NumberOfSeconds": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "d00bc581-19ef-43d2-b3ee-702d823aa55a",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Kim VM Hip",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Non-Sedentary",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": []
+                    }
+                },
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "60238d54-7cf2-4863-bd72-60c930489250",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Kim VA Wrist",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Non-Sedentary",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": []
+                    }
+                },
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "bd6330de-17ca-47ad-81e9-e9ec25b44699",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Kim VM Wrist",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Non-Sedentary",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": []
+                    }
+                },
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "9399275a-2ed3-4684-bffc-8ffe8ec76765",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Koster Non-Dominant Wrist",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Non-Sedentary",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": []
+                    }
+                },
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "effae796-f3c3-4d0a-a0dc-8d834fa2bf6e",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Koster Dominant Wrist",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Non-Sedentary",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": []
+                    }
+                }
+            ]
         },
         {
             "subjectId": 22524,
@@ -129,7 +277,146 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "z": 1832,
             "vectorMagnitude": 5156.389434478354,
             "mets": 3.5813816724334275,
-            "calories": 6.254283930504439
+            "calories": 6.254283930504439,
+            "GenericCutpointMinuteAggregations": [ 
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "89bdec49-8826-40e2-a743-359955670624",
+                    "Timestamp": 1509536760,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Puyau Children VA",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Light",
+                                "NumberOfSeconds": 0
+                            },
+                            {
+                                "Name": "Moderate",
+                                "NumberOfSeconds": 0
+                            },
+                            {
+                                "Name": "Vigorous",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": [
+                            {
+                                "Name": "Mvpa",
+                                "NumberOfSeconds": 0
+                            },
+                            {
+                                "Name": "Lvpa",
+                                "NumberOfSeconds": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "d00bc581-19ef-43d2-b3ee-702d823aa55a",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Kim VM Hip",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Non-Sedentary",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": []
+                    }
+                },
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "60238d54-7cf2-4863-bd72-60c930489250",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Kim VA Wrist",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Non-Sedentary",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": []
+                    }
+                },
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "bd6330de-17ca-47ad-81e9-e9ec25b44699",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Kim VM Wrist",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Non-Sedentary",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": []
+                    }
+                },
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "9399275a-2ed3-4684-bffc-8ffe8ec76765",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Koster Non-Dominant Wrist",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Non-Sedentary",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": []
+                    }
+                },
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "effae796-f3c3-4d0a-a0dc-8d834fa2bf6e",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Koster Dominant Wrist",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Non-Sedentary",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": []
+                    }
+                }
+            ]
         },
         ...
         {
@@ -145,7 +432,146 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "z": 0,
             "vectorMagnitude": 8008.071990185902,
             "mets": 1.142009567790956,
-            "calories": 1.9943286534619031
+            "calories": 1.9943286534619031,
+            "GenericCutpointMinuteAggregations": [
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "89bdec49-8826-40e2-a743-359955670624",
+                    "Timestamp": 1509542640,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Puyau Children VA",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Light",
+                                "NumberOfSeconds": 0
+                            },
+                            {
+                                "Name": "Moderate",
+                                "NumberOfSeconds": 0
+                            },
+                            {
+                                "Name": "Vigorous",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": [
+                            {
+                                "Name": "Mvpa",
+                                "NumberOfSeconds": 0
+                            },
+                            {
+                                "Name": "Lvpa",
+                                "NumberOfSeconds": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "d00bc581-19ef-43d2-b3ee-702d823aa55a",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Kim VM Hip",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Non-Sedentary",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": []
+                    }
+                },
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "60238d54-7cf2-4863-bd72-60c930489250",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Kim VA Wrist",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Non-Sedentary",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": []
+                    }
+                },
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "bd6330de-17ca-47ad-81e9-e9ec25b44699",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Kim VM Wrist",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Non-Sedentary",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": []
+                    }
+                },
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "9399275a-2ed3-4684-bffc-8ffe8ec76765",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Koster Non-Dominant Wrist",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Non-Sedentary",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": []
+                    }
+                },
+                {
+                    "SubjectId": 22524,
+                    "SettingId": "effae796-f3c3-4d0a-a0dc-8d834fa2bf6e",
+                    "Timestamp": 1509536700,
+                    "DeviceId": "CPW1B01190145",
+                    "BucketsJson": {
+                        "AlgorithmName": "Koster Dominant Wrist",
+                        "CutpointBuckets": [
+                            {
+                                "Name": "Sedentary",
+                                "NumberOfSeconds": 60
+                            },
+                            {
+                                "Name": "Non-Sedentary",
+                                "NumberOfSeconds": 0
+                            }
+                        ],
+                        "AggregateBuckets": []
+                    }
+                }
+            ]
         }
     ],
     "links": {},
@@ -154,7 +580,6 @@ This response is paginated. See [Pagination](pagination.md) for a description of
     "offset": 0
 }
 ```
-
 
 ## List Study Minute Summary Settings
 
