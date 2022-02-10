@@ -49,7 +49,7 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 
 #### RAW Sub-second Activity Data Retrieval
 
-* Generate raw (sub-second) activity data requests to retrieve raw activity data for a given subject. (see [Raw Data Activity Requests](./sections/raw_data_request.md)) **Note:** It is now recommended to use the [Data Access Files](data_access_files.md) for retrieving raw accelerometer data.
+* Generate raw (sub-second) activity data requests to retrieve raw activity data for a given subject. (see [Raw Data Activity Requests](./sections/raw_data_request.md)) **Note:** It is now recommended to use the [Data Access Files](./sections/data_access_files.md) for retrieving raw accelerometer data.
 
 
 ### JSON
