@@ -7,6 +7,7 @@
 A list of data files that can be accessed by category. The currently available categories are as follows:
 
 - raw-accelerometer
+- temperature
 
 **Request:**
 
