@@ -58,7 +58,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**nonWearMinutes**|Number|A daily aggregate, in minutes, of the non-partial epochs for subject that represent when subject was not wearing monitor based on wear detection algorithm|
 |**sleepMinutes**|Number|A daily aggregate of the non-partial epochs for subject that represent when the subject was asleep based on sleep detection algorithm|
 |**awakeMinutes**|Number|A daily aggregate of the non-partial epochs for subject that represent when the subject was awake|
-|**wearAwakeMinute**|Number|A daily aggregate of the non-partial epochs for subject that represent when subject was wearing monitor and awake|
+|**wearAwakeMinutes**|Number|A daily aggregate of the non-partial epochs for subject that represent when subject was wearing monitor and awake|
 |**wearSleepMinutes**|Number|A daily aggregate of the non-partial epochs for subject that represent when subject was wearing monitor and asleep|
 |**totalNonFilteredMinutes**|Number|A daily aggregate of the non-partial epochs for given subject not filtered for wear or sleep|
 |**totalNonFilteredAxisXCounts**|Number|A daily aggregate of the X axis counts from the non-partial epochs for subject|
