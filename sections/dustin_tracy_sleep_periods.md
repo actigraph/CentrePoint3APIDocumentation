@@ -35,8 +35,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**inBedTime**|String (ISO8601 Date)|Start of the Sleep Period|
 |**outBedTime**|String (ISO8601 Date)|End of the Sleep Period|
 |**durationMinutes**|Number|Total number of minutes in the sleep period|
-|**timeAsleepMinutes**|Number|The number of minutes marked as awake between Begin Time and End Time|
-|**timeAwakeMinutes**|Number|Number of minutes marked asleep in the sleep period|
+|**timeAsleepMinutes**|Number|Number of minutes marked asleep in the sleep period|
+|**timeAwakeMinutes**|Number|The number of minutes marked as awake between Begin Time and End Time|
 |**awakeningCount**|Number|Number of awakening periods during the sleep period|
 |**averageAwakening**|Number|Average of the Awakening times (Time Awake / Awakening Count)|
 |**totalCounts**|Number|Sum of the Vertical axis counts for each epoch in the sleep period|
