@@ -2,8 +2,8 @@ import requests
 import time
 
 
-CLIENT_ID = '<YOUR ID PROVIDED BY ACTIGRAPH>'
-CLIENT_SECRET = '<YOUR SECRET PROVIDED BY ACTIGRAPH>'
+CLIENT_ID = '<YOUR CLIENT ID PROVIDED BY ACTIGRAPH>'
+CLIENT_SECRET = '<YOUR CLIENT SECRET PROVIDED BY ACTIGRAPH>'
 
 AUTH_URL = 'https://auth.actigraphcorp.com/connect/token'
 API_URL = 'https://api.actigraphcorp.com'
