@@ -6,6 +6,10 @@ In order to acccess the CentrePoint API, you must have [ActiGraph](http://www.ac
 
 Remember that anyone who has your client ID and client secret can see and change everything you have access to. So you want to guard that as well as you guard your username and password.  If this key pair becomes compromised, [contact us](http://www.actigraphcorp.com/support/contact-support/) immediately and we can deactivate it and provide you a new one.
 
+### Example in Python
+
+Refer to [this script](./python_example.py) to see an example on how to access the access token and make an authorized request in Python. 
+
 ## Retrieving an Access Token
 
 To retrieve an access token, you will need to make a POST request to the ActiGraph authorization token endpoint. [https://auth.actigraphcorp.com/connect/token](https://auth.actigraphcorp.com/connect/token)
