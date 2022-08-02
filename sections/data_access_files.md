@@ -7,7 +7,10 @@
 A list of data files that can be accessed by category. The currently available categories are as follows:
 
 - raw-accelerometer
-- temperature
+- temperature*
+
+
+**Temperature is only available for certain devices, firmware versions, and study configuration, and it is subject to contract restrictions.*
 
 **Request:**
 
