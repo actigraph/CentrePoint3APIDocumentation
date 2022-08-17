@@ -240,7 +240,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**wearSleepFilteredLocomotion**|Number|A daily aggregate in seconds where the Staudenmayer Activity Intensity Cut Point is “Locomotion” representing when subject was wearing the monitor and asleep|
 |**wearSleepFilteredNonLocomotion**|Number|A daily aggregate in seconds where the Staudenmayer Activity Intensity Cut Point is “Non-Locomotion” representing when subject was wearing the monitor and asleep|
 
-*UwfAggregations*
+*UwfAggregation*
 
 |Name|Type|Description|
 |:---|:---|:----------|
