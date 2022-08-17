@@ -50,7 +50,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**crouterYouthMetCalorieAggregation**|Object (See *CrouterYouthMetCalorieAggregation* below)|The Aggregation of the Crouter Youth METs/Calories Used in the Daily Statistic (This property is only present when CrouterYouth METs/Calories are present in the study)|
 
 
-*Epoch Aggregation*
+*EpochAggregation*
 
 |Name|Type|Description|
 |:---|:---|:----------|
