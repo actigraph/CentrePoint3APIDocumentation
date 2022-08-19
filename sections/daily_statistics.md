@@ -50,7 +50,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**crouterYouthMetCalorieAggregation**|Object (See *CrouterYouthMetCalorieAggregation* below)|The Aggregation of the Crouter Youth METs/Calories Used in the Daily Statistic (This property is only present when CrouterYouth METs/Calories are present in the study)|
 
 
-*EpochAggregation*
+*epochAggregation*
 
 |Name|Type|Description|
 |:---|:---|:----------|
@@ -82,7 +82,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**firstEpochDateTimeLocal**|String (ISO8601 Date/Time)|Date Time in subject's timezone of first epoch recorded for this day|
 |**lastEpochDateTimeLocal**|String (ISO8601 Date/Time)|Date Time in subject's timezone of last epoch recorded for this day|
 
-*EventMarkerAggregation*
+*eventMarkerAggregation*
 
 |Name|Type|Description|
 |:---|:---|:----------|
@@ -90,7 +90,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**pressCount**|Number|A daily aggregate of Press Events|
 |**releaseCount**|Number|A daily aggregate of Release Events|
 
-*FreedsonAggregations*
+*freedsonAggregations*
 
 |Name|Type|Description|
 |:---|:---|:----------|
@@ -115,7 +115,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**wearSleepFilteredVAVigorous**|Number|A daily aggregate in seconds where the Freedson Adult Cut Points VA Activity Intensity is “Vigorous” where the subject was wearing the monitor and asleep|
 |**wearSleepFilteredVAVeryVigorous**|Number|A daily aggregate in seconds where the Freedson Adult Cut Points VA Activity Intensity is “Very Vigorous” where the subject was wearing the monitor and asleep|
 
-*EvensonAggregations*
+*evensonAggregations*
 
 |Name|Type|Description|
 |:---|:---|:----------|
@@ -135,7 +135,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**wearAwakeVigorous**|Number|A daily aggregate in seconds where the Evenson Cut Points VA Activity Intensity is “Vigorous” where the subject was wearing the monitor and awake|
 |**wearAwakeMVPA**|Number|A daily aggregate in seconds where the Evenson Activity Intensity Cut Point between “Moderate” and “Vigorous” where the subject was wearing the monitor and awake|
 
-*GenericCutpointAggregations*
+*genericCutpointAggregations*
 
 |Name|Type|Description|
 |:---|:---|:----------|
@@ -149,7 +149,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**awakeAggregateBuckets**|Dictionary<String, Number>|A daily aggregate in seconds of each defined daily aggregate cutpoint bucket where the subject was awake|
 |**wearAwakeAggregateBuckets**|Dictionary<String, Number>|A daily aggregate in seconds of each defined daily aggregate cutpoint bucket where the subject was wearing the monitor and awake|
 
-*MAVMAggregation*
+*mavmAggregation*
 
 |Name|Type|Description|
 |:---|:---|:----------|
@@ -158,7 +158,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**wearAwakeFilteredSteps**|Number|Total steps where activity monitor was worn and subject was considered awake|
 |**wearSleepFilteredSteps**|Number|Total steps where activity monitor was worn and subject was considered asleep|
 
-*CrouterAggregations*
+*crouterAggregations*
 
 |Name|Type|Description|
 |:---|:---|:----------|
@@ -203,7 +203,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**wearSleepFilteredVAVigorous**|Number|A daily aggregate in seconds where the Crouter VA Activity Intensity Cut Point is “Vigorous” which represent where the subject was wearing the monitor and asleep|
 |**wearSleepFilteredVAMVPA**|Number|A daily aggregate in seconds where the Crouter VA Activity Intensity Cut Point is between “Moderate” and “Vigorous” which represent where the subject was wearing the monitor and asleep|
 
-*StaudenmayerAggregations*
+*staudenmayerAggregations*
 
 |Name|Type|Description|
 |:---|:---|:----------|
@@ -215,7 +215,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**nonFilteredNonSedentary**|Number|A daily aggregate in seconds where the Staudenmayer Sedentary Intensity Cut Point is “Non-Sedentary”|
 |**nonFilteredLocomotion**|Number|A daily aggregate in seconds where the Staudenmayer Locomotion Intensity Cut Point is “Locomotion”|
 |**nonFilteredNonLocomotion**|Number|A daily aggregate in seconds where the Staudenmayer Locomotion Intensity Cut Point is “Non-Locomotion”|
-|**WearFilteredLight**|Number|A daily aggregate in seconds where the Staudenmayer Activity Intensity Cut Point is “Light” representing when the subject was wearing the monitor|
+|**wearFilteredLight**|Number|A daily aggregate in seconds where the Staudenmayer Activity Intensity Cut Point is “Light” representing when the subject was wearing the monitor|
 |**wearFilteredModerate**|Number|A daily aggregate in seconds where the Staudenmayer Activity Intensity Cut Point is “Moderate” representing when the subject was wearing the monitor|
 |**wearFilteredVigorous**|Number|A daily aggregate in seconds where the Staudenmayer Activity Intensity Cut Point is “Vigorous” representing when the subject was wearing the monitor|
 |**wearFilteredMVPA**|Number|A daily aggregate in seconds where the summation for the Staudenmayer Activity Intensity Cut Point between “Moderate” and “Vigorous” representing when the subject was wearing the monitor|
@@ -240,7 +240,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**wearSleepFilteredLocomotion**|Number|A daily aggregate in seconds where the Staudenmayer Activity Intensity Cut Point is “Locomotion” representing when subject was wearing the monitor and asleep|
 |**wearSleepFilteredNonLocomotion**|Number|A daily aggregate in seconds where the Staudenmayer Activity Intensity Cut Point is “Non-Locomotion” representing when subject was wearing the monitor and asleep|
 
-*UwfAggregation*
+*uwfAggregation*
 
 |Name|Type|Description|
 |:---|:---|:----------|
@@ -249,7 +249,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**wearAwakeFilteredSteps**|Number|Total steps where activity monitor was worn and subject was considered awake|
 |**wearSleepFilteredSteps**|Number|Total steps where activity monitor was worn and subject was considered asleep|
 
-*HildebrandMetCalorieAggregation*
+*hildebrandMetCalorieAggregation*
 
 |Name|Type|Description|
 |:---|:---|:----------|
@@ -263,7 +263,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**wearCalories**|Number|Total Calories where activity monitor was considered worn|
 |**wearAwakeCalories**|Number|Total Calories where activity monitor was worn and subject was considered awake|
 
-*CrouterYouthMetCalorieAggregation*
+*crouterYouthMetCalorieAggregation*
 
 |Name|Type|Description|
 |:---|:---|:----------|
