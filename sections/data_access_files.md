@@ -7,7 +7,11 @@
 A list of data files that can be accessed by category. The currently available categories are as follows:
 
 - raw-accelerometer
-- temperature
+- temperature*
+
+
+
+**Temperature is only available for certain devices, firmware versions, and study configuration, and it is subject to contract restrictions.*
 
 **Request:**
 
@@ -34,7 +38,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |-----|----|-----------|
 |studyId|Number|CentrePoint Study ID (see [Studies](studies.md))|
 |subjectId|Number|CentrePoint Subject ID (see [Subjects](subjects.md))|
-|dataCategory|String|Values: raw-accelerometer|
+|dataCategory|String|Values: raw-accelerometer
 |date|String (ISO8601 Date)|The day date of the data contained in the file
 |fileName|String|Name of the data file 
 |fileFormat|String|Values: csv, avro 
