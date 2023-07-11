@@ -68,7 +68,7 @@ Any non-[HTTPS](http://tools.ietf.org/html/rfc2818) request will result in a For
 
 ### Request Limiting
 
-This API is request limited. We only allow a certain number of requests. If an API consumer exceeds 10 requests within a second, then the API will block any further requests with a 429 response code.
+This API is request limited. We only allow a certain number of requests from each unique IP address. If an API consumer exceeds 500 requests within a minute, then the API will block any further requests with a 429 response code. This rate limit is a sliding window and the 429 response message will include a Retry-After header that will indicate the amount of seconds to wait before retrying the request.
 
 ## CentrePoint Integration Guide
 
