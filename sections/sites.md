@@ -26,6 +26,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |requireDob|Boolean|Indicates if subject date of birth is required based on study/site configuration 
 |requireGender|Boolean|Indicates if subject gender is required based on study/site configuration 
 |requireWeight|Boolean|Indicates if subject weight is required based on study/site configuration
+|requireHeight|Boolean|Indicates if subject height is required based on study/site configuration
 
 ```json
 {
@@ -38,7 +39,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "description": "This site was automatically generated when the study was created",
             "requireDob": true,
             "requireGender": true,
-            "requireWeight": true
+            "requireWeight": true,
+            "requireHeight": true
         },
         {
             "id": 2932,
@@ -47,7 +49,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "siteIdentifier": "999",
             "requireDob": false,
             "requireGender": false,
-            "requireWeight": false
+            "requireWeight": false,
+            "requireHeight": false
         }
     ],
     "links": {},
@@ -78,6 +81,7 @@ GET /centrepoint/v3/Studies/{studyId}/Sites/{siteId}
     "description": "This site was automatically generated when the study was created",
     "requireDob": true,
     "requireGender": true,
-    "requireWeight": true
+    "requireWeight": true,
+    "requireHeight": true
 }
 ```
