@@ -119,6 +119,8 @@ Content-Type: application/json
     "gender": "Male",
     "weight": 100,
     "weightUnit": "Lbs",
+    "height": 200,
+    "heightUnit": 'cm',
     "wearPosition": "Left Wrist"
 }
 ```
@@ -133,11 +135,13 @@ dob|ISO8601 Date||day before present day|Yes (if allowed by site)|||must be day 
 gender|String|||Yes (if allowed by site)|<ul><li>Male</li><li>Female</li></ul>||Study/site shall be configured to utilize this field
 weight|Number|1|2000|Yes (if allowed by site)|||Study/site shall be configured to utilize this field
 weightUnit|String|||Yes (if allowed by site)|lbs, kg||
+height|Number|1|300|Yes (if allowed by site)|||Study/site shall be configured to utilize this field
+heightUnit|String|||Yes (if allowed by site)|cm, in||
 wearPosition|String|||Yes (if changes allowed by study)|<ul><li>Non-Dominant Wrist</li><li>Dominant Wrist</li><li>Left Non-Dominant Wrist</li><li>Left Dominant Wrist</li><li>Right Non-Dominant Wrist</li><li>Right Dominant Wrist</li><li>Waist</li><li>Left Wrist</li><li>Right Wrist</li><li>Ankle</li></ul>||Study/site shall be configured in order to utilize this field
 
 **Additional Notes:**
 
-- Depending on the study/site configuration of subject being added, the **gender**, **dob**, and/or **weight** fields may or may not be allowed. If the fields are allowed, then they will be required. If not allowed, then these fields must be excluded from the JSON request.
+- Depending on the study/site configuration of subject being added, the **gender**, **dob**, **weight**, and/or **height** fields may or may not be allowed. If the fields are allowed, then they will be required. If not allowed, then these fields must be excluded from the JSON request.
 - Depending on the study/site configuration of subject being added, the **wearPosition** may or may not be limited to only one of the following values:
   - Left Non-Dominant Wrist
   - Right Non-Dominant Wrist
@@ -167,6 +171,8 @@ wearPosition|String|||Yes (if changes allowed by study)|<ul><li>Non-Dominant Wri
     "wearPosition": "Left Wrist",
     "weight": 100,
     "weightUnit": "Lbs",
+    "height": 200,
+    "heightUnit": "cm",
     "assignmentStatus": "Not Assigned"
 }
 ```
@@ -186,6 +192,8 @@ Content-Type: application/json
     "gender": "Male",
     "weight": 180,
     "weightUnit": "Lbs",
+    "height": 200,
+    "heightUnit": 'cm',
     "wearPosition": "Left Wrist",
     "changeReason": "string"
 }
@@ -200,12 +208,14 @@ dob|ISO8601 Date||day before present day|Yes|||must be day before present day
 gender|String|||Yes|<ul><li>Male</li><li>Female</li></ul>||Study/site shall be configured to utilize this field
 weight|Number|1|1000|Yes|||Study/site shall be configured to utilize this field
 weightUnit|String|||Yes|lbs or kg||Study/site shall be configured to utilize this field
+height|Number|1|300|Yes (if allowed by site)|||Study/site shall be configured to utilize this field
+heightUnit|String|||Yes (if allowed by site)|cm or in||
 wearPosition|String|||Yes|<ul><li>Non-Dominant Wrist</li><li>Dominant Wrist</li><li>Left Non-Dominant Wrist</li><li>Left Dominant Wrist</li><li>Right Non-Dominant Wrist</li><li>Right Dominant Wrist</li><li>Waist</li><li>Left Wrist</li><li>Right Wrist</li><li>Ankle</li></ul>||Study/site shall be configured to utilize this field
 changeReason|String|||Yes|||Study/site shall be configured to utilize this field. Captured in operator audit record in accordance  with FDA 21 CFR Part 11.
 
 **Additional Notes:**
 
-- Depending on the study/site configuration of subject being edited, the **Gender**, **DOB**, and/or **Weight** fields may or may not be allowed. If the fields are allowed, then they will be required. If not allowed, then these fields must be excluded from the JSON request.
+- Depending on the study/site configuration of subject being edited, the **Gender**, **DOB**, **Weight**, and/or **Height** fields may or may not be allowed. If the fields are allowed, then they will be required. If not allowed, then these fields must be excluded from the JSON request.
 - Depending on the study/site configuration of subject being edited, the **WearPosition** may or may not limit to utilize only one of the following values:
   - Left Non-Dominant Wrist
   - Right Non-Dominant Wrist
