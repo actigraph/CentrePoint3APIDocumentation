@@ -31,6 +31,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "wearPosition": "Left Wrist",
             "weight": 100.00,
             "weightUnit": "Lbs",
+            "height": 210.00,
+            "heightUnit": "cm",
             "assignmentStatus": "Assigned",
             "assignmentId": 1423
         },
@@ -46,6 +48,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "wearPosition": "Right Wrist",
             "weight": 176.37,
             "weightUnit": "Lbs",
+            "height": 160.00,
+            "heightUnit": "cm",
             "assignmentStatus": "Not Assigned"
         }
     ],
@@ -71,6 +75,8 @@ timezone|String|Subject's Timezone||
 wearPosition|String|Subject's activity monitor wear position|
 weight|Number|Subject's weight|(if collected by study)|
 weightUnit|String|Pounds (lbs) or Kilograms (kg)|
+height|Number|Subject's height|(if collected by study)|
+heightUnit|String|Centimeters (cm) or Inches (in)|
 assignmentStatus|String|Indicates if activity monitor is assigned to subject|
 assignmentId|Number|The ID of the subject's current assignment if the subject has an active assignment|
 
@@ -99,6 +105,8 @@ GET /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}
     "wearPosition": "Right Wrist",
     "weight": 176.37,
     "weightUnit": "Lbs",
+    "height": 210.00,
+    "heightUnit": "cm",
     "assignmentStatus": "Not Assigned"
 }
 ```
