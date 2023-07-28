@@ -136,7 +136,7 @@ gender|String|||Yes (if allowed by site)|<ul><li>Male</li><li>Female</li></ul>||
 weight|Number|1|2000|Yes (if allowed by site)|||Study/site shall be configured to utilize this field
 weightUnit|String|||Yes (if allowed by site)|lbs, kg||
 height|Number|1|300|Yes (if allowed by site)|||Study/site shall be configured to utilize this field
-heightUnit|String|||Yes (if allowed by site)|cm, inches||
+heightUnit|String|||Yes (if allowed by site)|cm, in||
 wearPosition|String|||Yes (if changes allowed by study)|<ul><li>Non-Dominant Wrist</li><li>Dominant Wrist</li><li>Left Non-Dominant Wrist</li><li>Left Dominant Wrist</li><li>Right Non-Dominant Wrist</li><li>Right Dominant Wrist</li><li>Waist</li><li>Left Wrist</li><li>Right Wrist</li><li>Ankle</li></ul>||Study/site shall be configured in order to utilize this field
 
 **Additional Notes:**
@@ -209,7 +209,7 @@ gender|String|||Yes|<ul><li>Male</li><li>Female</li></ul>||Study/site shall be c
 weight|Number|1|1000|Yes|||Study/site shall be configured to utilize this field
 weightUnit|String|||Yes|lbs or kg||Study/site shall be configured to utilize this field
 height|Number|1|300|Yes (if allowed by site)|||Study/site shall be configured to utilize this field
-heightUnit|String|||Yes (if allowed by site)|cm or inches||
+heightUnit|String|||Yes (if allowed by site)|cm or in||
 wearPosition|String|||Yes|<ul><li>Non-Dominant Wrist</li><li>Dominant Wrist</li><li>Left Non-Dominant Wrist</li><li>Left Dominant Wrist</li><li>Right Non-Dominant Wrist</li><li>Right Dominant Wrist</li><li>Waist</li><li>Left Wrist</li><li>Right Wrist</li><li>Ankle</li></ul>||Study/site shall be configured to utilize this field
 changeReason|String|||Yes|||Study/site shall be configured to utilize this field. Captured in operator audit record in accordance  with FDA 21 CFR Part 11.
 
