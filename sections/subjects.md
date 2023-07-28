@@ -141,7 +141,7 @@ wearPosition|String|||Yes (if changes allowed by study)|<ul><li>Non-Dominant Wri
 
 **Additional Notes:**
 
-- Depending on the study/site configuration of subject being added, the **gender**, **dob**, and/or **weight**, and/or **height** fields may or may not be allowed. If the fields are allowed, then they will be required. If not allowed, then these fields must be excluded from the JSON request.
+- Depending on the study/site configuration of subject being added, the **gender**, **dob**, **weight**, and/or **height** fields may or may not be allowed. If the fields are allowed, then they will be required. If not allowed, then these fields must be excluded from the JSON request.
 - Depending on the study/site configuration of subject being added, the **wearPosition** may or may not be limited to only one of the following values:
   - Left Non-Dominant Wrist
   - Right Non-Dominant Wrist
@@ -215,7 +215,7 @@ changeReason|String|||Yes|||Study/site shall be configured to utilize this field
 
 **Additional Notes:**
 
-- Depending on the study/site configuration of subject being edited, the **Gender**, **DOB**, and/or **Weight**, and/or **Height** fields may or may not be allowed. If the fields are allowed, then they will be required. If not allowed, then these fields must be excluded from the JSON request.
+- Depending on the study/site configuration of subject being edited, the **Gender**, **DOB**, **Weight**, and/or **Height** fields may or may not be allowed. If the fields are allowed, then they will be required. If not allowed, then these fields must be excluded from the JSON request.
 - Depending on the study/site configuration of subject being edited, the **WearPosition** may or may not limit to utilize only one of the following values:
   - Left Non-Dominant Wrist
   - Right Non-Dominant Wrist
