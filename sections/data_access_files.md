@@ -8,7 +8,11 @@ A list of data files that can be accessed by category. The currently available c
 
 - raw-accelerometer
 - temperature*
-- green-ppg*
+- ppg-green (25hz)*
+- ppg-green-100-hz*
+- barometer*
+- imu*
+- ppg-red-ir-50-hz*
 
 
 **Data category is only available for certain devices, firmware versions, and study configuration, and it is subject to contract restrictions.*
@@ -38,7 +42,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |-----|----|-----------|
 |studyId|Number|CentrePoint Study ID (see [Studies](studies.md))|
 |subjectId|Number|CentrePoint Subject ID (see [Subjects](subjects.md))|
-|dataCategory|String|Values: raw-accelerometer, temperature, green-ppg
+|dataCategory|String|Values: raw-accelerometer, temperature, ppg-green, ppg-green-100-hz, barometer, imu, ppg-red-ir-50-hz
 |date|String (ISO8601 Date)|The day date of the data contained in the file
 |fileName|String|Name of the data file 
 |fileFormat|String|Values: csv, avro 
@@ -51,7 +55,15 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 or
 /dataaccess/v3/files/studies/652/subjects/47589/temperature?startDate=2021-01-01T00:00:00&endDate=2021-01-02T00:00:00
 or
-/dataaccess/v3/files/studies/652/subjects/47589/green-ppg?startDate=2021-01-01T00:00:00&endDate=2021-01-02T00:00:00
+/dataaccess/v3/files/studies/652/subjects/47589/ppg-green?startDate=2021-01-01T00:00:00&endDate=2021-01-02T00:00:00
+or
+/dataaccess/v3/files/studies/652/subjects/47589/ppg-green-100-hz?startDate=2021-01-01T00:00:00&endDate=2021-01-02T00:00:00
+or
+/dataaccess/v3/files/studies/652/subjects/47589/barometer?startDate=2021-01-01T00:00:00&endDate=2021-01-02T00:00:00
+or
+/dataaccess/v3/files/studies/652/subjects/47589/imu?startDate=2021-01-01T00:00:00&endDate=2021-01-02T00:00:00
+or
+/dataaccess/v3/files/studies/652/subjects/47589/ppg-red-ir-50-hz?startDate=2021-01-01T00:00:00&endDate=2021-01-02T00:00:00
 ```
 
 ```json
