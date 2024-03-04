@@ -16,7 +16,7 @@ All body parameters are optional.
 |-----|----|-----------|
 |subjectId|long|Should be a valid Id of Subject|
 |studyProgramId|String|Should be vaid Guid of Study Program|
-|dataSetName|String|SHould be valid DataSet Name|
+|dataSetName|String|Should be valid DataSet Name|
 
 **Response:**
 
