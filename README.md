@@ -8,8 +8,6 @@ API Base URL: [https://api.actigraphcorp.com](https://api.actigraphcorp.com)
 
 Authorization Base URL: [https://auth.actigraphcorp.com](https://auth.actigraphcorp.com)
 
-
-
 ## Enabling API Access
 
 Please contact [ActiGraph](http://www.actigraphcorp.com/support/contact-support/) for more information.
@@ -19,7 +17,6 @@ Please contact [ActiGraph](http://www.actigraphcorp.com/support/contact-support/
 The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization flow.
 
  Refer to the [Authorization](./sections/authorization.md) section for specifics and examples.
-
 
 ## API Resources
 
@@ -39,6 +36,10 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 
 * Access to pre-made day files of large study data like raw accelerometer data. (see [Data Access Files](./sections/data_access_files.md))
 
+#### Export DataSet Files
+
+* Access to DataSet Export files for a particular Study Id, Study Program combination. (see [DataSet Export Files](./sections/data_set_files.md))
+
 #### Analytics/Algorithmic Data-Retrieval
 
 * Retrieval of Analytics Algorithm Settings. (see [Algorithm Settings](./sections/algorithm_settings.md))
@@ -50,7 +51,6 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 #### RAW Sub-second Activity Data Retrieval
 
 * Generate raw (sub-second) activity data requests to retrieve raw activity data for a given subject. (see [Raw Data Activity Requests](./sections/raw_data_request.md)) **Note:** It is now recommended to use the [Data Access Files](./sections/data_access_files.md) for retrieving raw accelerometer data.
-
 
 ### JSON
 
