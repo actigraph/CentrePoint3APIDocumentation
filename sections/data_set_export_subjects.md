@@ -30,7 +30,7 @@ The study program executions will have following fields.
 |-----|----|-----------|
 |studyProgramId|Guid|Study Program Id of a particular program|
 |studyProgramName|String|Study Program Name of a particular program|
-|lastSuccessfulProgramExecutionTimeStamp|DateTimeOffset|Last Raw Data Uploaded Timestamp|
+|lastSuccessfulProgramExecutionTimeStamp|DateTimeOffset|Timestamp when the program was successfully exscuted for the subject|
 
 ```examples
 /studies/234/subjects
@@ -97,7 +97,7 @@ The study program executions will have following fields.
 |-----|----|-----------|
 |studyProgramId|Guid|Study Program Id of a particular program|
 |studyProgramName|String|Study Program Name of a particular program|
-|lastSuccessfulProgramExecutionTimeStamp|DateTimeOffset|Last Raw Data Uploaded Timestamp|
+|lastSuccessfulProgramExecutionTimeStamp|DateTimeOffset|Timestamp when the program was successfully exscuted for the subject|
 
 ```examples
 /studies/234/subjects/10820
