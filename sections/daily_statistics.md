@@ -76,7 +76,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**totalNonFilteredVectorMagnitude**|Number|A daily aggregate of the Vector Magnitude values (of x, y, and x axis counts) from the non-partial epochs for subject|
 |**wearFilteredVectorMagnitude**|Number|A daily aggregate of the Vector Magnitude values (of x, y, and x axis counts) from the non-partial epochs for subject which represent when subject was wearing the monitor|
 |**wearAwakeFilteredVectorMagnitude**|Number|A daily aggregate of the Vector Magnitude values (of x, y, and x axis counts) from the non-partial epochs for subject which represent when subject was wearing the monitor and awake|
-|**wearSleepFilteredVectorMagnitude**|Number|A  daily aggregate of the Vector Magnitude values (of x, y, and x axis counts) from the non-partial epochs for subject which represent when subject was wearing the monitor and awake|
+|**wearSleepFilteredVectorMagnitude**|Number|A  daily aggregate of the Vector Magnitude values (of x, y, and x axis counts) from the non-partial epochs for subject which represent when subject was wearing the monitor and alseep|
 |**firstEpochDateTimeUtc**|String (ISO8601 Date/Time)|Date Time in UTC timezone of first epoch recorded for this day|
 |**lastEpochDateTimeUtc**|String (ISO8601 Date/Time)|Date Time in UTC timezone of last epoch recorded for this day|
 |**firstEpochDateTimeLocal**|String (ISO8601 Date/Time)|Date Time in subject's timezone of first epoch recorded for this day|
