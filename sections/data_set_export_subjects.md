@@ -21,7 +21,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |-----|----|-----------|
 |studyId|Number|CentrePoint Study ID (see [Studies](studies.md))|
 |subjectId|Number|CentrePoint Subject ID (see [Subjects](subjects.md))|
-|lastRawUploadedTimeStamp|DateTimeOffset|Last Raw Data Uploaded Timestamp|
+|lastRawUploadedTimeStamp|DateTimeOffset|Last Raw Data Uploaded Timestamp. The value is null when value is unavailable.|
 |studyProgramExecutions|List|List of all the programs that were executed for the subject|
 
 The study program executions will have following fields.
@@ -30,7 +30,7 @@ The study program executions will have following fields.
 |-----|----|-----------|
 |studyProgramId|Guid|Study Program Id of a particular program|
 |studyProgramName|String|Study Program Name of a particular program|
-|lastSuccessfulProgramExecutionTimeStamp|DateTimeOffset|Timestamp when the program was successfully exscuted for the subject|
+|lastSuccessfulProgramExecutionTimeStamp|DateTimeOffset|Timestamp when the program was successfully executed for the subject. The value is null when value is unavailable.|
 
 ```examples
 /studies/234/subjects
@@ -88,7 +88,7 @@ No body parameters are required.
 |-----|----|-----------|
 |studyId|Number|CentrePoint Study ID (see [Studies](studies.md))|
 |subjectId|Number|CentrePoint Subject ID (see [Subjects](subjects.md))|
-|lastRawUploadedTimeStamp|DateTimeOffset|Last Raw Data Uploaded Timestamp|
+|lastRawUploadedTimeStamp|DateTimeOffset|Last Raw Data Uploaded Timestamp. The value is null when value is unavailable.|
 |studyProgramExecutions|List|List of all the programs that were executed for the subject|
 
 The study program executions will have following fields.
@@ -97,7 +97,7 @@ The study program executions will have following fields.
 |-----|----|-----------|
 |studyProgramId|Guid|Study Program Id of a particular program|
 |studyProgramName|String|Study Program Name of a particular program|
-|lastSuccessfulProgramExecutionTimeStamp|DateTimeOffset|Timestamp when the program was successfully exscuted for the subject|
+|lastSuccessfulProgramExecutionTimeStamp|DateTimeOffset|Timestamp when the program was successfully executed for the subject. The value is null when value is unavailable.|
 
 ```examples
 /studies/234/subjects/10820
