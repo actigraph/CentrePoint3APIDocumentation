@@ -128,7 +128,7 @@ Content-Type: application/json
     "weight": 100,
     "weightUnit": "Lbs",
     "height": 200,
-    "heightUnit": 'cm',
+    "heightUnit": "cm",
     "wearPosition": "Left Wrist"
 }
 ```
@@ -201,7 +201,7 @@ Content-Type: application/json
     "weight": 180,
     "weightUnit": "Lbs",
     "height": 200,
-    "heightUnit": 'cm',
+    "heightUnit": "cm",
     "wearPosition": "Left Wrist",
     "changeReason": "string"
 }
