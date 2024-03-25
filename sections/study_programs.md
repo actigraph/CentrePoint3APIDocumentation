@@ -1,4 +1,4 @@
-# CentrePoing Designer Study Programs
+# CentrePoint Designer Study Programs
 
 **NOTE: These requests require the *CentrePoint* API scope. (see [Scopes](scopes.md))**
 
