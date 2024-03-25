@@ -1,10 +1,10 @@
-# Retrival of Study Programs and Dataset Names
+# Retrieval of Study Programs and Dataset Names
 
 **NOTE: These requests require the *CentrePoint* API scope. (see [Scopes](scopes.md))**
 
 ## List of Study Programs
 
-Returns a list of study programs that are completed and not deprecated within your organization.
+Returns a list of study programs that are available within your organization.
 
 **Request:**
 
@@ -66,7 +66,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 
 ## Get a Study Program
 
-Returns a specific study program that is completed and not deprecated.
+Returns a specific study program that is available.
 
 **Request:**
 
@@ -101,7 +101,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 
 ## Get Study Program Dataset Names
 
-Returns a list of study program dataset names for study programs that are completed and not deprecated.
+Returns a list of study program dataset names for a particular study programs that is available.
 
 **Request:**
 
