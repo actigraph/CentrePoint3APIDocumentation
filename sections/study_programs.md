@@ -1,4 +1,4 @@
-# CentrePoint Designer Study Programs
+# Retrieval of Study Programs and Dataset Names
 
 **NOTE: These requests require the *CentrePoint* API scope. (see [Scopes](scopes.md))**
 
@@ -24,8 +24,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 
 |Field|Type|Description|
 |-----|----|-----------|
-|**studyId**|Number|CentrePoint Designer Study ID|
-|**studyProgramId**|Number|CentrePoint Designer StudyProgram ID|
+|**studyId**|Number|CentrePoint Study ID|
+|**studyProgramId**|Number|Study Program ID|
 |**studyProgramName**|String|Study Program Name|
 
 ```json
@@ -66,7 +66,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 
 ## Get a Study Program
 
-Returns a specific study program that is completed and not depreciated.
+Returns a specific study program that is completed and not deprecated.
 
 **Request:**
 
@@ -78,8 +78,8 @@ GET /Studies/{studyId}/programs/{studyProgramId}
 
 |Field|Type|Description|
 |-----|----|-----------|
-|**studyId**|Number|CentrePoint Designer Study ID|
-|**studyProgramId**|Number|CentrePoint Designer Study Program ID|
+|**studyId**|Number|CentrePoint Study ID|
+|**studyProgramId**|Number|ID of a particular Study Program|
 
 **Response:**
 
@@ -87,9 +87,9 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 
 |Field|Type|Description|
 |-----|----|-----------|
-|**studyId**|Number|CentrePoint Designer Study ID|
-|**studyProgramId**|Number|CentrePoint Designer Study Program ID|
-|**studyProgramName**|Number|CentrePoint Designer Study Program ID|
+|**studyId**|Number|CentrePoint Study ID|
+|**studyProgramId**|Number|ID of a particular Study Program|
+|**studyProgramName**|Number|Name of a particular Study Program|
 
 ```json
 {
@@ -101,12 +101,12 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 
 ## Get Study Program Dataset Names
 
-Returns a list of study program dataset names for study programs that are completed and not depreciated.
+Returns a list of study program dataset names for study programs that are completed and not deprecated.
 
 **Request:**
 
 ```http
-GET /Studies/{studyId}/programs/[studyProgramId]/datasets
+GET /Studies/{studyId}/programs/{studyProgramId}/datasets
 ```
 
 **Response:**
@@ -115,8 +115,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 
 |Field|Type|Description|
 |-----|----|-----------|
-|**studyProgramId**|Number|CentrePoint Designer Study ID|
-|**dataSetName**|Number|Study Program Dataset Name|
+|**studyProgramId**|Number|CentrePoint Study ID|
+|**dataSetName**|Number|Name of a particular Study Program Dataset|
 
 ```json
 
