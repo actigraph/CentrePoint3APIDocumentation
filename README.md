@@ -32,6 +32,11 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 * Retrieval of listing of webhook events. (see [Webhook Events](./sections/webhook_events.md))
 * Retrieval of a list of the webhook subscriptions for a particular study as well as the history or webhook requests. (see [Webhooks](./sections/webhooks.md))
 
+#### CentrePoint Designer
+
+* Retrieval of completed and not depreciated Study Programs. (see [Study Programs](./sections/study_program.md))
+
+
 #### Large Data File Access
 
 * Access to pre-made day files of large study data like raw accelerometer data. (see [Data Access Files](./sections/data_access_files.md))
@@ -40,6 +45,7 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 
 * Access to DataSet Export files for a particular Study Id, Study Program combination. (see [DataSet Export Files](./sections/data_set_files.md))
 * Access to DataSet Export subjects for a particular Study Id. (see [DataSet Export Subjects](./sections/data_set_export_subjects.md))
+
 
 #### Analytics/Algorithmic Data-Retrieval
 
