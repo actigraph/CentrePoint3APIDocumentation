@@ -4,7 +4,7 @@
 
 ## List of Study Programs
 
-Returns a list of study programs that are completed and not depreciated within your organization.
+Returns a list of study programs that are completed and not deprecated within your organization.
 
 **Request:**
 
