@@ -29,7 +29,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |-----|----|-----------|
 |**id**|Number|Dustin Tracy Sleep Period ID|
 |**subjectId**|Number|CentrePoint Subject ID (see [Subjects](subjects.md))|
-|**activityMonitorSerial**|Number|The Monitor Used to Collect the Data for the Sleep Period|
+|**activityMonitorSerial**|String|The Monitor Used to Collect the Data for the Sleep Period|
 |**studyId**|Number|CentrePoint Study ID (see [Studies](studies.md))|
 |**algorithmSettingId**|GUID of the Settings Used To Create the Dustin Tracy Sleep Period|
 |**inBedTime**|String (ISO8601 Date)|Start of the Sleep Period|
