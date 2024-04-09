@@ -41,8 +41,8 @@ Field|Type|Description|Notes
 **fileType**|String|Type of the data contained in the file||
 **totalRecords**|Number|Total number of records contained in the file||
 **recordsInserted**|Number|Total number of records inserted for storage in CentrePoint||
-**beginOfData**|Number|The start UTC timestamp of the data in the upload file||
-**endOfData**|Number|The end UTC timestamp of the data in the upload file||
+**beginOfData**|String (ISO8601 Date)|The start UTC timestamp of the data in the upload file||
+**endOfData**|String (ISO8601 Date)|The end UTC timestamp of the data in the upload file||
 
 **Response Example**
 
