@@ -20,6 +20,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |-----|----|-----------|
 |**serial**|String|Activity monitor serial number|
 |**studyId**|Number|CentrePoint Study ID (see [Studies](studies.md))|
+|**siteId**|Number|CentrePoint Site ID (see [Sites](sites.md))|
 |**assignmentId**|Number|Assignment ID if the activity monitor is assigned to a Subject (see [Assignments](assignments.md))|
 |**assignmentStatus**|String|Indicates if monitor is assigned or not|
 |**dataHubSerialNumber**|String|The CentrePoint DataHub (CDH) device serial number that was packaged/distributed with the activity monitor (if applicable)|
@@ -30,6 +31,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
         {
             "serial": "TAS1Z12345678",
             "studyId": 242,
+            "siteId": 123,
             "assignmentId": 23440,
             "assignmentStatus": "Assigned",
             "dataHubSerialNumber": "CDM1A06170010"
@@ -37,6 +39,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
         {
             "serial": "TAS1Z12345679",
             "studyId": 242,
+            "siteId": 123,
             "assignmentId": 23441,
             "assignmentStatus": "Assigned",
             "dataHubSerialNumber": "CDM1A06170011"
@@ -65,6 +68,7 @@ GET /centrepoint/v3/Studies/{studyId}/ActivityMonitors/{activityMonitorSerial}
 {
     "serial": "TAS1Z12345678",
     "studyId": 242,
+    "siteId": 123,
     "assignmentId": 23440,
     "assignmentStatus": "Assigned",
     "dataHubSerialNumber": "CDM1A06170010"
