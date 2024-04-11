@@ -1,13 +1,13 @@
-# DataSet Export Files
+# DataSet Files
 
 **NOTE: These requests require the *DataAccess* API scope. (see [Scopes](scopes.md))**
 
-## Query DataSet Export Files
+## Query DataSet Files
 
 **Request:**
 
 ```http
-GET /studies/{studyId}/datasetexportfiles
+GET /studies/{studyId}/datasetfiles
 ```
 
 **Body Parameters:**
@@ -28,14 +28,14 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |subjectId|Number|CentrePoint Subject ID (see [Subjects](subjects.md))|
 |studyProgramId|Guid|Study Program Id of a particular program|
 |dataSetName|String|DataSet Name present in Study Program|
-|fileName|String|Name of the dataset export file|
+|fileName|String|Name of the dataset file|
 |fileFormat|String|Values: csv|
 |modifiedDate|String (ISO8601 Date)|The date of the last modification of data|
-|fileUrl|String|The signed URL that can be used to download the dataset export file|
+|fileUrl|String|The signed URL that can be used to download the dataset file|
 |lastSuccessfulProgramExecutionTimeStamp|String (ISO8601 Date)|The date last successful execution of the study program happened|
 
 ```examples
-/studies/234/dataSetExportFiles
+/studies/234/dataSetFiles
 Body Parameters
 {
 } or
