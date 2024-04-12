@@ -41,7 +41,7 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 
 * Access to DataSet Export files for a particular Study Id, Study Program combination. (see [DataSet Export Files](./sections/data_set_files.md))
 * Access to DataSet Export subjects for a particular Study Id. (see [DataSet Export Subjects](./sections/data_set_export_subjects.md))
-* Access to available Study Programs and Dataset names. (see [Study Programs](./sections/study_program.md))
+* Access to available Study Programs and Dataset names. (see [Study Programs](./sections/study_programs.md))
 
 
 
