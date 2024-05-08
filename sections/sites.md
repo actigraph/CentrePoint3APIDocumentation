@@ -27,6 +27,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |requireGender|Boolean|Indicates if subject gender is required based on study/site configuration 
 |requireWeight|Boolean|Indicates if subject weight is required based on study/site configuration
 |requireHeight|Boolean|Indicates if subject height is required based on study/site configuration
+|defaultShipmentCountryCode|String|Default shipment country code for site
 
 ```json
 {
@@ -40,7 +41,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "requireDob": true,
             "requireGender": true,
             "requireWeight": true,
-            "requireHeight": true
+            "requireHeight": true,
+            "defaultShipmentCountryCode": "USA"
         },
         {
             "id": 2932,
@@ -50,7 +52,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "requireDob": false,
             "requireGender": false,
             "requireWeight": false,
-            "requireHeight": false
+            "requireHeight": false,
+            "defaultShipmentCountryCode": "PRI"
         }
     ],
     "links": {},
@@ -82,6 +85,7 @@ GET /centrepoint/v3/Studies/{studyId}/Sites/{siteId}
     "requireDob": true,
     "requireGender": true,
     "requireWeight": true,
-    "requireHeight": true
+    "requireHeight": true,
+    "defaultShipmentCountryCode": "USA"
 }
 ```
