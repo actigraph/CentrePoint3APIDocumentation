@@ -22,12 +22,13 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |studyId|Number|CentrePoint Study ID (see [Studies](studies.md))|
 |siteName|String|Site Name|
 |siteIdentifier|String|Unique site identifier (used as prefix to subject identifier)|
-|description|String|Site description
-|requireDob|Boolean|Indicates if subject date of birth is required based on study/site configuration 
-|requireGender|Boolean|Indicates if subject gender is required based on study/site configuration 
-|requireWeight|Boolean|Indicates if subject weight is required based on study/site configuration
-|requireHeight|Boolean|Indicates if subject height is required based on study/site configuration
-|defaultShipmentCountryCode|String|Default shipment country code for site
+|description|String|Site description|
+|requireDob|Boolean|Indicates if subject date of birth is required based on study/site configuration|
+|requireGender|Boolean|Indicates if subject gender is required based on study/site configuration|
+|requireWeight|Boolean|Indicates if subject weight is required based on study/site configuration|
+|requireHeight|Boolean|Indicates if subject height is required based on study/site configuration|
+|defaultShipmentCountryCode|String|Default shipment country code for site|
+|depot|Boolean|Indicates if selected site is Depot or not|
 
 ```json
 {
@@ -42,7 +43,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "requireGender": true,
             "requireWeight": true,
             "requireHeight": true,
-            "defaultShipmentCountryCode": "USA"
+            "defaultShipmentCountryCode": "USA",
+            "depot": true
         },
         {
             "id": 2932,
@@ -53,7 +55,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "requireGender": false,
             "requireWeight": false,
             "requireHeight": false,
-            "defaultShipmentCountryCode": "PRI"
+            "defaultShipmentCountryCode": "PRI",
+            "depot": false
         }
     ],
     "links": {},
@@ -86,6 +89,7 @@ GET /centrepoint/v3/Studies/{studyId}/Sites/{siteId}
     "requireGender": true,
     "requireWeight": true,
     "requireHeight": true,
-    "defaultShipmentCountryCode": "USA"
+    "defaultShipmentCountryCode": "USA",
+    "depot": true
 }
 ```
