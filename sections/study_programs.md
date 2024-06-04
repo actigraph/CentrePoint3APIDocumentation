@@ -1,6 +1,6 @@
 # Retrieval of Study Programs and Dataset Names
 
-**NOTE: These requests require the *CentrePoint* API scope. (see [Scopes](scopes.md))**
+**NOTE: These requests require the *DataAccess* API scope. (see [Scopes](scopes.md))**
 
 ## List of Study Programs
 
@@ -9,14 +9,14 @@ Returns a list of study programs that are available within your organization.
 **Request:**
 
 ```http
-GET /Studies/{studyId}/programs
+GET /dataaccess/v3/Studies/{studyId}/programs
 ```
 
-**Query Parameters:**
+**Route Parameters:**
 
 |Field|Type|Description|
 |-----|----|-----------|
-|**id**|Number|CentrePoint Study ID|
+|**studyId**|Number|CentrePoint Study ID|
 
 **Response:**
 
@@ -71,10 +71,10 @@ Returns a specific study program that is available.
 **Request:**
 
 ```http
-GET /Studies/{studyId}/programs/{studyProgramId}
+GET /dataaccess/v3/Studies/{studyId}/programs/{studyProgramId}
 ```
 
-**Query Parameters:**
+**Route Parameters:**
 
 |Field|Type|Description|
 |-----|----|-----------|
@@ -106,7 +106,7 @@ Returns a list of study program dataset names for a particular study programs th
 **Request:**
 
 ```http
-GET /Studies/{studyId}/programs/[studyProgramId]/datasets
+GET /dataaccess/v3/Studies/{studyId}/programs/{studyProgramId}/datasets
 ```
 
 **Response:**
