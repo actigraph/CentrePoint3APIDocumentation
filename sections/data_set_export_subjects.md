@@ -10,9 +10,6 @@
 GET /dataaccess/v3/studies/{studyId}/subjects
 ```
 
-**Body Parameters:**
-No body parameters are required.
-
 **Response:**
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
@@ -78,9 +75,6 @@ The study program executions will have following fields.
 ```http
 GET /dataaccess/v3/studies/{studyId}/subjects/{subjectId}
 ```
-
-**Body Parameters:**
-No body parameters are required.
 
 **Response:**
 

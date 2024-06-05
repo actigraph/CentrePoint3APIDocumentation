@@ -10,7 +10,7 @@
 GET /dataaccess/v3/studies/{studyId}/datasetfiles
 ```
 
-**Body Parameters:**
+**Query Parameters:**
 All body parameters are optional.
 |Field|Type|Description|
 |-----|----|-----------|
@@ -36,7 +36,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 
 ```examples
 /dataaccess/v3/studies/234/dataSetFiles
-Body Parameters
+Query Parameters
 {
 } or
 {
