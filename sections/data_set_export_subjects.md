@@ -7,7 +7,7 @@
 **Request:**
 
 ```http
-GET /studies/{studyId}/subjects
+GET /dataaccess/v3/studies/{studyId}/subjects
 ```
 
 **Body Parameters:**
@@ -33,7 +33,7 @@ The study program executions will have following fields.
 |lastSuccessfulProgramExecutionTimeStamp|DateTimeOffset|Timestamp when the program was successfully exscuted for the subject|
 
 ```examples
-/studies/234/subjects
+/dataaccess/v3/studies/234/subjects
 ```
 
 ```json
@@ -76,7 +76,7 @@ The study program executions will have following fields.
 **Request:**
 
 ```http
-GET /studies/{studyId}/subjects/{subjectId}
+GET /dataaccess/v3/studies/{studyId}/subjects/{subjectId}
 ```
 
 **Body Parameters:**
@@ -100,7 +100,7 @@ The study program executions will have following fields.
 |lastSuccessfulProgramExecutionTimeStamp|DateTimeOffset|Timestamp when the program was successfully exscuted for the subject|
 
 ```examples
-/studies/234/subjects/10820
+/dataaccess/v3/studies/234/subjects/10820
 ```
 
 ```json

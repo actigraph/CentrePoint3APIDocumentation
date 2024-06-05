@@ -7,7 +7,7 @@
 **Request:**
 
 ```http
-GET /studies/{studyId}/datasetfiles
+GET /dataaccess/v3/studies/{studyId}/datasetfiles
 ```
 
 **Body Parameters:**
@@ -35,7 +35,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |lastSuccessfulProgramExecutionTimeStamp|String (ISO8601 Date)|The date last successful execution of the study program happened|
 
 ```examples
-/studies/234/dataSetFiles
+/dataaccess/v3/studies/234/dataSetFiles
 Body Parameters
 {
 } or
