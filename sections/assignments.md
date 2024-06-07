@@ -95,6 +95,7 @@ GET /centrepoint/v3/Studies/{studyId}/Assignments/{assignmentId}
 ## Create Study Subject Activity Monitor Assignment
 
 Creates a subject activity monitor assignment to link an activity monitor to a subject.
+If the device monitor assigned to subject is incompatible with the device type associated with the study, then the assignment should be cancelled and appropriate message should be displayed.
 
 **Request:**
 
