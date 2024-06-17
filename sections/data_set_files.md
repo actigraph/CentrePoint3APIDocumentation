@@ -53,20 +53,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 ```examples
 /dataaccess/v3/studies/234/dataSetFiles
 Query Parameters
-{
-} or
-{
-    "studyProgramId": "5b342a11-2fb9-4ad9-a7be-4d410181f51c"
-} or
-{
-    "studyProgramId": "5b342a11-2fb9-4ad9-a7be-4d410181f51c",
-    "subjectId": 10821
-} or
-{
-    "studyProgramId": "5b342a11-2fb9-4ad9-a7be-4d410181f51c",
-    "subjectId": 10821,
-    "dataSetName": "ActivityDaily8"
-}
+
+?studyProgramId=5b342a11-2fb9-4ad9-a7be-4d410181f51c&subjectId=10821&dataSetName=ActivityDaily8
 ```
 
 ```json
