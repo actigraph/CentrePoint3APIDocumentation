@@ -1,10 +1,14 @@
 # Retrieval of Study Programs and Dataset Names
 
-**NOTE: These requests require the *DataAccess* API scope. (see [Scopes](scopes.md))**
+**NOTE: These requests require the *DataAccess* API scope (see [Scopes](scopes.md)). It is also required that Study Programs are configured based on your study contract and specifications. If you are unsure of what has been contracted and or programed, please reach out to your Project Manager.**
+
+Once the above confirmation and Study Programs have been applied, the following steps can be used to confirm the List of Study Programs. 
+
+If your Study Programs have not been configured the responses below will be empty.
 
 ## List of Study Programs
 
-Returns a list of study programs that are available within your organization.
+Returns a list of study programs that are available for the given Study ID.
 
 **Request:**
 
