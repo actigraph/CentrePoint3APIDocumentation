@@ -1,8 +1,10 @@
 # DataSet Export Subjects
 
-**NOTE: These requests require the *DataAccess* API scope (see [Scopes](scopes.md)) AND a request for processing should have already been submitted.  If a request for processing has not been submitted the responses below will be empty.**
+**NOTE: These requests require the *DataAccess* API scope (see [Scopes](scopes.md)) It is also required to submit a request for processing to see results from these API endpoints.**
 
 To submit a request for processing please email CPDprocessing@theactigraph.com. From there your request will be submitted and a confirmation email will be sent once completed.  Please allow 1-2 business days from the submission to process this request. At this time, we ask that only one user from your organization submit one request per study, once you have received confirmation that the request is closed at that time another request can be submitted.
+
+If a request for processing has not been submitted or is not yet complete, the responses below will be empty.
 
 ## Query Subjects
 

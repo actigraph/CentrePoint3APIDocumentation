@@ -1,6 +1,6 @@
 # DataSet Files
 
-**NOTE: These requests require the *DataAccess* API scope (see [Scopes](scopes.md)) AND a request for processing the specified Study Programs to the data sets before each query.**
+**NOTE: These requests require the *DataAccess* API scope (see [Scopes](scopes.md)). It is also required to submit a request for processing to see results from these API endpoints.**
 
 To submit a request for processing please email CPDprocessing@theactigraph.com with your: 
 
@@ -16,7 +16,7 @@ From there your request will be submitted and a confirmation email will be sent 
 
 To confirm that your request was processed you can refer to the Query Subjects page to see the last successful program execution timestamp. 
 
-If a request for processing has not been submitted or is not yet complete the responses below will be empty.
+If a request for processing has not been submitted or is not yet complete, the responses below will be empty.
 
 ## Query DataSet Files
 
