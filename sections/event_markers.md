@@ -47,7 +47,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "algorithmSettingId": "c8fee8c1-9fec-ea11-af8c-000d3a102b0e",
             "subjectId": 21669,
             "activityMonitorSerial": "CPW1A00000001",
-            "date": "2020-05-15T15:07:46+00:00",
+            "timestampUtc": "2020-05-15T15:07:46+00:00",
             "longPressCount": 0,
             "pressCount": 2,
             "releaseCount": 2
@@ -58,7 +58,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "algorithmSettingId": "1bf9b82f-d3f2-ea11-af8c-000d3a102b0e",
             "subjectId": 21669,
             "activityMonitorSerial": "CPW1A00000001",
-            "date": "2020-05-15T15:07:47+00:00",
+            "timestampUtc": "2020-05-15T15:07:47+00:00",
             "longPressCount": 0,
             "pressCount": 2,
             "releaseCount": 2
@@ -69,7 +69,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "algorithmSettingId": "c8fee8c1-9fec-ea11-af8c-000d3a102b0e",
             "subjectId": 21669,
             "activityMonitorSerial": "CPW1A00000001",
-            "date": "2020-05-15T15:07:48+00:00",
+            "timestampUtc": "2020-05-15T15:07:48+00:00",
             "longPressCount": 0,
             "pressCount": 1,
             "releaseCount": 0
