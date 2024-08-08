@@ -128,7 +128,7 @@ Content-Type: application/json
     "weight": 100,
     "weightUnit": "Lbs",
     "height": 200,
-    "heightUnit": 'cm',
+    "heightUnit": "cm",
     "wearPosition": "Left Wrist"
 }
 ```
@@ -201,7 +201,7 @@ Content-Type: application/json
     "weight": 180,
     "weightUnit": "Lbs",
     "height": 200,
-    "heightUnit": 'cm',
+    "heightUnit": "cm",
     "wearPosition": "Left Wrist",
     "changeReason": "string"
 }
@@ -340,5 +340,31 @@ This response is paginated. See [Pagination](pagination.md) for a description of
     "totalCount": 1,
     "limit": 100,
     "offset": 0
+}
+```
+
+## Create Subject Device PIN
+
+Creates a new PIN number that can be used to pair a mobile device with a subject.
+
+**Request:**
+
+```http
+POST /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}/DevicePin
+```
+
+**Response:**
+
+|Field|Type|Description|
+|-----|----|-----------|
+|**subjectId**|Number|CentrePoint Subject ID (see [Subjects](subjects.md))|
+|**pin**|String|New PIN for pairing|
+|**expireDate**|String (ISO8601 Date)|Timestamp of when the PIN will expire|
+
+```json
+{
+    "subjectId": 597,
+    "pin": "60932",
+    "expireDate": "2024-03-20T14:24:16.6070072Z"
 }
 ```

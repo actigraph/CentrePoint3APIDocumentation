@@ -8,8 +8,6 @@ API Base URL: [https://api.actigraphcorp.com](https://api.actigraphcorp.com)
 
 Authorization Base URL: [https://auth.actigraphcorp.com](https://auth.actigraphcorp.com)
 
-
-
 ## Enabling API Access
 
 Please contact [ActiGraph](http://www.actigraphcorp.com/support/contact-support/) for more information.
@@ -19,7 +17,6 @@ Please contact [ActiGraph](http://www.actigraphcorp.com/support/contact-support/
 The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization flow.
 
  Refer to the [Authorization](./sections/authorization.md) section for specifics and examples.
-
 
 ## API Resources
 
@@ -35,9 +32,17 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 * Retrieval of listing of webhook events. (see [Webhook Events](./sections/webhook_events.md))
 * Retrieval of a list of the webhook subscriptions for a particular study as well as the history or webhook requests. (see [Webhooks](./sections/webhooks.md))
 
+
 #### Large Data File Access
 
 * Access to pre-made day files of large study data like raw accelerometer data. (see [Data Access Files](./sections/data_access_files.md))
+
+#### Export DataSet Files
+
+* Query Study Programs and Data Sets on a study. (see [Study Programs](./sections/study_programs.md))
+* Access DataSet Export files for a particular study. (see [DataSet Export Files](./sections/data_set_files.md))
+* Query study and data information for subjects in a study. (see [DataSet Export Subjects](./sections/data_set_export_subjects.md))
+
 
 #### Analytics/Algorithmic Data-Retrieval
 
@@ -50,7 +55,6 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 #### RAW Sub-second Activity Data Retrieval
 
 * Generate raw (sub-second) activity data requests to retrieve raw activity data for a given subject. (see [Raw Data Activity Requests](./sections/raw_data_request.md)) **Note:** It is now recommended to use the [Data Access Files](./sections/data_access_files.md) for retrieving raw accelerometer data.
-
 
 ### JSON
 
