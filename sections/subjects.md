@@ -145,7 +145,7 @@ weight|Number|1|2000|Yes (if allowed by site)|||Study/site shall be configured t
 weightUnit|String|||Yes (if allowed by site)|lbs, kg||
 height|Number|1|300|Yes (if allowed by site)|||Study/site shall be configured to utilize this field
 heightUnit|String|||Yes (if allowed by site)|cm, in||
-wearPosition|String|||Yes (if changes allowed by study)|<ul><li>Non-Dominant Wrist</li><li>Dominant Wrist</li><li>Left Non-Dominant Wrist</li><li>Left Dominant Wrist</li><li>Right Non-Dominant Wrist</li><li>Right Dominant Wrist</li><li>Waist</li><li>Left Wrist</li><li>Right Wrist</li><li>Ankle</li></ul>||Study/site shall be configured in order to utilize this field
+wearPosition|String|||Yes (if changes allowed by study)|<ul><li>Non-Dominant Wrist</li><li>Dominant Wrist</li><li>Left Non-Dominant Wrist</li><li>Left Dominant Wrist</li><li>Right Non-Dominant Wrist</li><li>Right Dominant Wrist</li><li>Waist</li><li>Left Wrist</li><li>Right Wrist</li><li>Ankle</li><li>Left Upper Arm</li><li>Right Upper Arm</li><li>Dominant Upper Arm</li><li>Non-Dominant Upper Arm</li><li>Left Dominant Upper Arm</li><li>Right Dominant Upper Arm</li><li>Left Non-Dominant Upper Arm</li><li>Right Non-Dominant Upper Arm</li><li>Left Ankle</li><li>Right Ankle</li><li>Dominant Ankle</li><li>Non-Dominant Ankle</li><li>Left Dominant Ankle</li><li>Right Dominant Ankle</li><li>Left Non-Dominant Ankle</li><li>Right Non-Dominant Ankle</li><li>Waist - Left</li><li>Waist - Right</li><li>Waist - Front</li><li>Waist - Back</li></ul>||Study/site shall be configured in order to utilize this field
 
 **Additional Notes:**
 
@@ -161,6 +161,26 @@ wearPosition|String|||Yes (if changes allowed by study)|<ul><li>Non-Dominant Wri
   - Right Wrist
   - Waist
   - Ankle
+  - Left Upper Arm
+  - Right Upper Arm
+  - Dominant Upper Arm
+  - Non-Dominant Upper Arm
+  - Left Dominant Upper Arm
+  - Right Dominant Upper Arm
+  - Left Non-Dominant Upper Arm
+  - Right Non-Dominant Upper Arm
+  - Left Ankle
+  - Right Ankle
+  - Dominant Ankle
+  - Non-Dominant Ankle
+  - Left Dominant Ankle
+  - Right Dominant Ankle
+  - Left Non-Dominant Ankle
+  - Right Non-Dominant Ankle
+  - Waist - Left
+  - Waist - Right
+  - Waist - Front
+  - Waist - Back
 
 **Response:**
 
@@ -218,7 +238,7 @@ weight|Number|1|1000|Yes|||Study/site shall be configured to utilize this field
 weightUnit|String|||Yes|lbs or kg||Study/site shall be configured to utilize this field
 height|Number|1|300|Yes (if allowed by site)|||Study/site shall be configured to utilize this field
 heightUnit|String|||Yes (if allowed by site)|cm or in||
-wearPosition|String|||Yes|<ul><li>Non-Dominant Wrist</li><li>Dominant Wrist</li><li>Left Non-Dominant Wrist</li><li>Left Dominant Wrist</li><li>Right Non-Dominant Wrist</li><li>Right Dominant Wrist</li><li>Waist</li><li>Left Wrist</li><li>Right Wrist</li><li>Ankle</li></ul>||Study/site shall be configured to utilize this field
+wearPosition|String|||Yes|<ul><li>Non-Dominant Wrist</li><li>Dominant Wrist</li><li>Left Non-Dominant Wrist</li><li>Left Dominant Wrist</li><li>Right Non-Dominant Wrist</li><li>Right Dominant Wrist</li><li>Waist</li><li>Left Wrist</li><li>Right Wrist</li><li>Ankle</li><li>Left Upper Arm</li><li>Right Upper Arm</li><li>Dominant Upper Arm</li><li>Non-Dominant Upper Arm</li><li>Left Dominant Upper Arm</li><li>Right Dominant Upper Arm</li><li>Left Non-Dominant Upper Arm</li><li>Right Non-Dominant Upper Arm</li><li>Left Ankle</li><li>Right Ankle</li><li>Dominant Ankle</li><li>Non-Dominant Ankle</li><li>Left Dominant Ankle</li><li>Right Dominant Ankle</li><li>Left Non-Dominant Ankle</li><li>Right Non-Dominant Ankle</li><li>Waist - Left</li><li>Waist - Right</li><li>Waist - Front</li><li>Waist - Back</li></ul>||Study/site shall be configured to utilize this field
 changeReason|String|||Yes|||Study/site shall be configured to utilize this field. Captured in operator audit record in accordance  with FDA 21 CFR Part 11.
 
 **Additional Notes:**
@@ -235,6 +255,26 @@ changeReason|String|||Yes|||Study/site shall be configured to utilize this field
   - Right Wrist
   - Waist
   - Ankle
+  - Left Upper Arm
+  - Right Upper Arm
+  - Dominant Upper Arm
+  - Non-Dominant Upper Arm
+  - Left Dominant Upper Arm
+  - Right Dominant Upper Arm
+  - Left Non-Dominant Upper Arm
+  - Right Non-Dominant Upper Arm
+  - Left Ankle
+  - Right Ankle
+  - Dominant Ankle
+  - Non-Dominant Ankle
+  - Left Dominant Ankle
+  - Right Dominant Ankle
+  - Left Non-Dominant Ankle
+  - Right Non-Dominant Ankle
+  - Waist - Left
+  - Waist - Right
+  - Waist - Front
+  - Waist - Back
 - **changeReason** is required for all study configurations in CentrePoint.
 
 **Response:**
