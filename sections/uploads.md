@@ -12,39 +12,38 @@ Returns a list of all uploads for a subject.
 GET /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}/Uploads
 ```
 
-
-
 ### Response
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
 
 **Response Properties:**
 
-Field|Type|Description|Notes
------|----|-----------|-----
-**id**|Number|CentrePoint Upload ID||
-**studyId**|Number|CentrePoint Study ID (see [Studies](studies.md))||
-**subjectId**|Number|CentrePoint Subject ID (see [Subjects](subjects.md))||
-**activityMonitorSerial**|String|Serial of the recording monitor||
-**assignmentId**|Number|CentrePoint Assignment ID (see [Assignment](assignments.md))||
-**dateUploadedUtc**|String (ISO8601 Date)|Date when the upload was received||
-**activityMonitorBatteryVoltage**|Number|Voltage of the monitor when the upload was received||
-**activityMonitorFirmware**|String|Firmware version of the monitor when the upload was received||
-**activityMonitorSampleRateHz**|Number|Sample rate of the monitor when the upload was received||
-**uploadFiles**|Object Array (see UploadFile)|The file(s) received for the upload||
+Field|Type|Description|
+-----|----|-----------|
+**id**|Number|CentrePoint Upload ID|
+**studyId**|Number|CentrePoint Study ID (see [Studies](studies.md))|
+**subjectId**|Number|CentrePoint Subject ID (see [Subjects](subjects.md))|
+**activityMonitorSerial**|String|Serial of the recording monitor|
+**assignmentId**|Number|CentrePoint Assignment ID (see [Assignment](assignments.md))|
+**dateUploadedUtc**|String (ISO8601 Date)|Date when the upload was received|
+**activityMonitorBatteryVoltage**|Number|Voltage of the monitor when the upload was received|
+**activityMonitorBatteryPercentage**|Number|Battery Percentage of the monitor when the upload was received|
+**activityMonitorFirmware**|String|Firmware version of the monitor when the upload was received|
+**activityMonitorSampleRateHz**|Number|Sample rate of the monitor when the upload was received|
+**uploadFiles**|Object Array (see UploadFile)|The file(s) received for the upload|
 
 **Upload File Properties:**
 
-Field|Type|Description|Notes
------|----|-----------|-----
-**id**|Number|CentrePoint Upload File ID||
-**fileType**|String|Type of the data contained in the file||
-**totalRecords**|Number|Total number of records contained in the file||
-**recordsInserted**|Number|Total number of records inserted for storage in CentrePoint||
-**beginOfData**|String (ISO8601 Date)|The start UTC timestamp of the data in the upload file||
-**endOfData**|String (ISO8601 Date)|The end UTC timestamp of the data in the upload file||
+Field|Type|Description|
+-----|----|-----------|
+**id**|Number|CentrePoint Upload File ID|
+**fileType**|String|Type of the data contained in the file|
+**totalRecords**|Number|Total number of records contained in the file|
+**recordsInserted**|Number|Total number of records inserted for storage in CentrePoint|
+**beginOfData**|String (ISO8601 Date)|The start UTC timestamp of the data in the upload file|
+**endOfData**|String (ISO8601 Date)|The end UTC timestamp of the data in the upload file|
 
-**Response Example**
+**Response Example:**
 
 ```json
 {
@@ -57,6 +56,7 @@ Field|Type|Description|Notes
       "assignmentId": 3125,
       "dateUploadedUtc": "2020-10-26T18:39:57Z",
       "activityMonitorBatteryVoltage": 3.821,
+      "activityMonitorBatteryPercentage": "79%",
       "activityMonitorFirmware": "1.1.2",
       "activityMonitorSampleRateHz": 32,
       "uploadFiles": [
@@ -77,8 +77,6 @@ Field|Type|Description|Notes
   "offset": 0
 }
 ```
-
-
 
 ## Subject Upload Details
 
@@ -101,6 +99,7 @@ GET /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}/Uploads/{uploadId}
     "assignmentId": 3125,
     "dateUploadedUtc": "2020-10-26T18:39:57Z",
     "activityMonitorBatteryVoltage": 3.821,
+    "activityMonitorBatteryPercentage": "79%",
     "activityMonitorFirmware": "1.1.2",
     "activityMonitorSampleRateHz": 32,
     "uploadFiles": [
