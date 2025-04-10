@@ -24,6 +24,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |**assignmentId**|Number|Assignment ID if the activity monitor is assigned to a Subject (see [Assignments](assignments.md))|
 |**assignmentStatus**|String|Indicates if monitor is assigned or not|
 |**dataHubSerialNumber**|String|The CentrePoint DataHub (CDH) device serial number that was packaged/distributed with the activity monitor (if applicable)|
+|**description**|String|ActiGraph device model description that is used in a specific study|
 
 ```json
 {
@@ -34,7 +35,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "siteId": 123,
             "assignmentId": 23440,
             "assignmentStatus": "Assigned",
-            "dataHubSerialNumber": "CDM1A06170010"
+            "dataHubSerialNumber": "CDM1A06170010",
+            "description": "Link GT9X"
         },
         {
             "serial": "TAS1Z12345679",
@@ -42,7 +44,8 @@ This response is paginated. See [Pagination](pagination.md) for a description of
             "siteId": 123,
             "assignmentId": 23441,
             "assignmentStatus": "Assigned",
-            "dataHubSerialNumber": "CDM1A06170011"
+            "dataHubSerialNumber": "CDM1A06170011",
+            "description": "Link GT9X"
         }
     ],
     "links": {},
@@ -71,6 +74,7 @@ GET /centrepoint/v3/Studies/{studyId}/ActivityMonitors/{activityMonitorSerial}
     "siteId": 123,
     "assignmentId": 23440,
     "assignmentStatus": "Assigned",
-    "dataHubSerialNumber": "CDM1A06170010"
+    "dataHubSerialNumber": "CDM1A06170010",
+    "description": "Link GT9X"
 }
 ```
