@@ -33,6 +33,7 @@ This response is paginated. See [Pagination](pagination.md) for a description of
 |defaultWeightUnit|String|The default weight unit for the site. It can be Lbs or Kg|
 |defaultHeightUnit|String|The default weight unit for the site. It can be cm or in|
 |timezone|String|The timezone for the site and its subjects|
+|requireSiteIdentifier|String|If the study requires site identifier validation and the site identifier is available, then the 'RequireSiteIdentifier' property will be set to true else it will be false|
 
 ```json
 {
