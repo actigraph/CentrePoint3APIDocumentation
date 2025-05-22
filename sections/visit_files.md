@@ -190,6 +190,8 @@ GET /centrepoint/v3/Studies/523/ActualVisitFiles/Imports/3?DetailedErrors=true
 
 ## Visit File Format and Guidelines
 
+**Note:**  *All visit files stored in CentrePoint storage have a retention period of 90 days. After this time has lapsed for a file, the file and its associated metadata will be permanently removed from all ActiGraph resources.*
+
 Visit files imported into ActiGraph's CentrePoint system must be in the format described below:
 
 * All visit files must contain a header with each of the following columns spelled exactly as written:
@@ -206,12 +208,12 @@ Visit files imported into ActiGraph's CentrePoint system must be in the format d
 * All dates - subject status date, visit date - are expected to be in the form **dd-MMM-yyyy**, but can be in any standard national date format.
 * A max of 10 (ten) duplicate errors will be stored and returned from our GET endpoints.  The remaining duplicates will be truncated.
 * Only **.csv** files will be accepted by the API.  An exception will be returned otherwise.
-* The study used in the file upload/import must be an active study (not hardlocked).
+* The study used in the file upload/import must be an active study (not hard locked).
 * Visits must be defined in study configurations (this configuration value must be set to true). Contact ActiGraph support for changes in this configuration.
 
 **Validation:**
 
-All visit files will undergo a process of validation before entries are inserted into the database.  These validation errors will be reported on each import, with details such as the row number of the invalid record along with all errors found. All records that are considered 'wear' visits must have a cooresponding visit name and subject status in ActiGraph storage prior to the import. 
+All visit files will undergo a process of validation before entries are inserted into the database.  These validation errors will be reported on each import, with details such as the row number of the invalid record along with all errors found. All records that are considered 'wear' visits must have a corresponding visit name and subject status in ActiGraph storage prior to the import.
 
 The following list describes some of the possible validation errors that can be returned:
 
@@ -233,3 +235,4 @@ The following list describes some of the possible validation errors that can be 
 * **OutOfOrderDays -** "The visit day '{0}' or its corresponding visit date '{1}' in this record is in an unexpected order compared to these same properties in other records. Visit days and their dates should be ordered sequentially."
 * **CompletedStatusDateChanged -** "Subject '{0}' in Site '{1}' has a Completed status date '{2}' that has changed from a previous record's Completed status date of '{3}'. Completed status dates cannot change."
 * **VisitDateBeyondStatusCompleteDate -** "The visit date '{0}' in this record is beyond the subject status change to a 'Completed' date of '{1}'. A visit date cannot be after a Completed status date."
+* **StudyIsHardlocked -** "Study {0} is hard locked. Importing or modifying visit files in a hard locked study is not allowed."
