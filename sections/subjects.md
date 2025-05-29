@@ -368,3 +368,51 @@ POST /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}/DevicePin
     "expireDate": "2024-03-20T14:24:16.6070072Z"
 }
 ```
+
+## Get Subject Client Devices
+
+Gets the list of active client devices that have been added for the subject to upload data from device using CPC.
+
+**Request:**
+
+```http
+GET /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}/ClientDevices
+```
+
+**Response:**
+
+|Field|Type|Description|
+|-----|----|-----------|
+|**subjectId**|Number|CentrePoint Subject ID|
+|**device**|String|Device and software information of the client device|
+|**software**|String|Software and version of the application on the client device|
+|**firstSync**|String (ISO8601 Date)|Timestamp of the first sync from the device|
+|**lastSync**|String (ISO8601 Date)|Timestamp of the last sync from the device|
+|**isDisabled**|Boolean|Whether the client device is disabled or not|
+
+```json
+{
+    "items": [
+        {
+            "subjectId": 12345,
+            "device": "SM-A236U (Android)",
+            "software": "CentrePoint Connect 2.1.0",
+            "firstSync": "2025-04-11T15:52:10.3666667+00:00",
+            "lastSync": "2025-04-11T15:52:10.3666667+00:00",
+            "isDisabled": false
+        },
+        {
+            "subjectId": 12345,
+            "device": "Pixel 8 (Android)",
+            "software": "CentrePoint Connect 2.1.0",
+            "firstSync": null,
+            "lastSync": null,
+            "isDisabled": false
+        }
+    ],
+    "links": {},
+    "totalCount": 2,
+    "limit": 100,
+    "offset": 0
+}
+```
