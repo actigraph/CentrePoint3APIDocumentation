@@ -1,6 +1,10 @@
 # Data Access Files
 
-**NOTE: These requests require the *DataAccess* API scope. (see [Scopes](scopes.md))**
+**NOTE:**
+
+- **These requests require the *DataAccess* API scope. (see [Scopes](scopes.md))**
+- **Downloaded files in CSV format will be a ZIP folder containing a GZipped CSV file.  GZipped folders can be unzipped using Windows File Explorer or any Unzipping utility.**
+- **Downloaded files in AVRO format will be a ZIP folder containing the AVRO folder.**
 
 ## Query Subject Data Files
 
