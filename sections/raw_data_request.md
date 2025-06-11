@@ -3,7 +3,19 @@
 **IMPORTANT:**
 It is now recommended to use the [Data Access Files](data_access_files.md) for retrieving raw accelerometer data.
 
-RAW data retrieval requests SHALL NOT be performed to retrieve ALL the historic RAW data for all subjects in a given study. Instead, requests shall be used in conjunction with the [raw-processing-complete](https://github.com/actigraph/CentrePointWebhookDocumentation/blob/main/event_types.md#raw-processing-complete-event) webhook to support the retrieval of raw data for a given upload as it is uploaded/processed in a near real-time fashion. To this end, a maximum of 10 active requests are allowed at one time. Due to the heavy computation required to create a file in the GT3X format, the time range for GT3X format requests is limited to 15 days.
+NOTE: It is now recommended to use the [Data Access Files](data_access_files.md) endpoint instead of the Data Retrieval endpoint for retrieving all raw accelerometer data. There may be fees associated for historical data access file generation if the study has not been previously setup.
+
+RAW data retrieval requests SHALL NOT be performed to retrieve ALL the historic RAW data for all subjects in a given study. Instead, requests shall be used in conjunction with the raw-processing-complete webhook to support the retrieval of raw data for a given upload as it is uploaded/processed in a near real-time fashion. Due to the heavy computation required to create a file in the GT3X format, the time range for GT3X format requests is limited to 15 days.
+
+A maximum of 10 active requests are allowed at one time. If attempting to submit more than 10 active requests, the following error will be received:
+
+"There are currently 10 active requests. The maximum concurrent active requests limit is 10."
+
+Status requests can be made for the tracking id's to identify the status of the individual requests.
+
+The webhook [data_retrieval_complete](https://github.com/actigraph/CentrePointWebhookDocumentation/blob/main/Event%20Types/data_retrieval_complete_event.md) can be used to receive notifications of when a request has completed.
+
+Data retrieval requests will be automatically cancelled if they reach a 6 hour execution time from the time they begin processing. If this occurs, a new request can be submitted with a shorter date range.
 
 **NOTE: These requests require the *DataRetrieval* API scope. (see [Scopes](scopes.md))**
 

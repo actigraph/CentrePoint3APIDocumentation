@@ -2,7 +2,7 @@
 
 **NOTE: These requests require the *DataAccess* API scope (see [Scopes](scopes.md)). It is also required to submit a request for processing to see results from these API endpoints.**
 
-To submit a request for processing please email CPDprocessing@theactigraph.com with your: 
+To submit a request for processing please email CPDprocessing@theactigraph.com with your:
 
 Study name/ID  
 
@@ -14,9 +14,11 @@ Please note if there are any specific sites/subjects that should be excluded
 
 From there your request will be submitted and a confirmation email will be sent once completed.  Please allow 1-2 business days from the submission to process this request. At this time, we ask that only one user from your organization submit one request per study, once you have received confirmation that the request is closed at that time another request can be submitted.  
 
-To confirm that your request was processed you can refer to the Query Subjects page to see the last successful program execution timestamp. 
+To confirm that your request was processed you can refer to the Query Subjects page to see the last successful program execution timestamp.
 
 If a request for processing has not been submitted or is not yet complete, the responses below will be empty.
+
+Downloaded files from CPD Processing will be in CSV format in a ZIP folder containing a GZipped CSV file.  The GZipped folders can be unzipped using Windows File Explorer or any Unzipping utility.
 
 ## Query DataSet Files
 
