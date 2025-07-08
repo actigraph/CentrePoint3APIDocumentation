@@ -236,3 +236,4 @@ The following list describes some of the possible validation errors that can be 
 * **CompletedStatusDateChanged -** "Subject '{0}' in Site '{1}' has a Completed status date '{2}' that has changed from a previous record's Completed status date of '{3}'. Completed status dates cannot change."
 * **VisitDateBeyondStatusCompleteDate -** "The visit date '{0}' in this record is beyond the subject status change to a 'Completed' date of '{1}'. A visit date cannot be after a Completed status date."
 * **StudyIsHardlocked -** "Study {0} is hard locked. Importing or modifying visit files in a hard locked study is not allowed."
+* **UniqueSubjectVisitNamesRequired -** "Each subject must have a unique visit name attributed to their unique visit day. This record's visit name '{0}' matches a visit name already processed in this import."
