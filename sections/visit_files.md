@@ -231,7 +231,6 @@ The following list describes some of the possible validation errors that can be 
 * **NullStudyName -** "An empty or null study name was identified in the record. Because we cannot identify the study this record applies to, an accurate visit history of any subject in the study cannot be determined."
 * **StudyNameChanged -** "The study name in the visit file changed. Each visit file should have an association with only one study. An accurate visit history of any subject in the study cannot be determined."
 * **MissingSubjectIdentifier -** "Subject is null or empty. It is not possible to determine an accurate visit history of this subject or for what subject this record applies to - Unable to process file."
-* **NoBaselineVisits -** "Subject '{0}' does not have a baseline visit. All subjects must have a baseline visit."
 * **OutOfOrderDays -** "The visit day '{0}' or its corresponding visit date '{1}' in this record is in an unexpected order compared to these same properties in other records. Visit days and their dates should be ordered sequentially."
 * **CompletedStatusDateChanged -** "Subject '{0}' in Site '{1}' has a Completed status date '{2}' that has changed from a previous record's Completed status date of '{3}'. Completed status dates cannot change."
 * **VisitDateBeyondStatusCompleteDate -** "The visit date '{0}' in this record is beyond the subject status change to a 'Completed' date of '{1}'. A visit date cannot be after a Completed status date."
