@@ -210,6 +210,7 @@ Visit files imported into ActiGraph's CentrePoint system must be in the format d
 * Only **.csv** files will be accepted by the API.  An exception will be returned otherwise.
 * The study used in the file upload/import must be an active study (not hard locked).
 * Visits must be defined in study configurations (this configuration value must be set to true). Contact ActiGraph support for changes in this configuration.
+* A study visit version must be created for the study in which you wish to perform the upload with. This version must coincide with a visit structure created in Study Planned Visits in CentrePoint Portal
 
 **Validation:**
 
