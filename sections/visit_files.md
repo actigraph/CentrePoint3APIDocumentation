@@ -205,7 +205,7 @@ Visit files imported into ActiGraph's CentrePoint system must be in the format d
 * Any other columns in the file will be ignored.
 * The fields under the Study ID, Site, and Subject columns in the visit file are the **CentrePoint** identifiers for study, site, and subject (IE name of the study, subject, and site stored in the **CentrePoint system**).
 * There is a max file size of **10MB** for files uploaded to the public API. It is expected the content of these visit files should never surpass this.
-* All dates - subject status date, visit date - are expected to be in the form **dd-MMM-yyyy**, but can be in any standard national date format.
+* All dates - subject status date, visit date - are expected to be in the form **dd-MMM-yyyy**, but can be in any format following "en-US" (English - United States) format and is stored in the ISO8601 Date format.
 * A max of 10 (ten) duplicate errors will be stored and returned from our GET endpoints.  The remaining duplicates will be truncated.
 * Only **.csv** files will be accepted by the API.  An exception will be returned otherwise.
 * The study used in the file upload/import must be an active study (not hard locked).
