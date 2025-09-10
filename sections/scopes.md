@@ -29,6 +29,7 @@ The CentrePoint scope allows for:
 * Adding, editing, and retrieving information about subjects in a CentrePoint study. (see [Subjects](subjects.md))
 * Retrieval of listing of webhook events. (see [Webhook Events](webhook_events.md))
 * Retrieval of a list of the webhook subscriptions for a particular study as well as the history or webhook requests. (see [Webhooks](webhooks.md))
+* Uploading and retrieval of visit files and associated metadata into and out of a CentrePoint study. (see [Visit Files](./sections/visit_files.md))
 
 ### DataAccess Scope
 

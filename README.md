@@ -31,6 +31,7 @@ The CentrePoint API uses [OAuth 2.0](https://oauth.net/2/) for its authorization
 * Retrieval of information about milestones in a CentrePoint study. (see [Study Milestones](./sections/study_milestones.md))
 * Retrieval of listing of webhook events. (see [Webhook Events](./sections/webhook_events.md))
 * Retrieval of a list of the webhook subscriptions for a particular study as well as the history or webhook requests. (see [Webhooks](./sections/webhooks.md))
+* Uploading and retrieval of visit files and associated metadata into and out of a CentrePoint study. (see [Visit Files](./sections/visit_files.md))
 
 
 #### Large Data File Access
