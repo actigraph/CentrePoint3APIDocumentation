@@ -9,7 +9,7 @@ Returns the visit version, status and the list of planned visits in that visit v
 **Request:**
 
 ```http
-GET /centrepoint/v3/Visits/{studyId}/PlannedVisits
+GET /centrepoint/v3/Studies/{studyId}/Visits/PlannedVisits
 ```
 
 **Response:**
