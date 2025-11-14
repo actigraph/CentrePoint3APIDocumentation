@@ -140,7 +140,7 @@ Query parameters include opional filters that can be applied to narrow the searc
 
 |Field|Type|Description|Default Value|
 |-----|----|-----------|-------------|
-|**visitversion**|Number|When specified, returns planned visits for that version|latest locked version for the study|
+|**visitversion**|Number|When specified, returns planned visits for that version|Latest locked version for the study|
 |**includewearonly**|Boolean|When true, returns only the wear visits|false|
 
 **Example Filtered Request:**
@@ -246,7 +246,7 @@ GET /centrepoint/v3/Studies/{studyId}/Visits/PlannedVisits?visitversion=6&includ
 
 ## List Actual Visits
 
-Returns a list actual visits in the study.
+Returns a list of actual visits in the study.
 
 ### Request
 
