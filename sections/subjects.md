@@ -15,6 +15,7 @@ GET /centrepoint/v3/Studies/{studyId}/Subjects
 ### Response
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+The items are ordered by Id and the sort order is ascending.
 
 ```json
 {
@@ -294,6 +295,7 @@ GET /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}/milestones
 **Response:**
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+The items are ordered by Id and the sort order is ascending.
 
 |Field|Type|Description|
 |-----|----|-----------|
@@ -360,6 +362,7 @@ GET /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}/TimezoneHistory
 **Response:**
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+The items are ordered by Effective Date Utc and the sort order is ascending.
 
 |Field|Type|Description|
 |-----|----|-----------|
