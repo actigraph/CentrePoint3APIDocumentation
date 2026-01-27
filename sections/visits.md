@@ -21,6 +21,7 @@ GET /centrepoint/v3/Studies/{studyId}/Visits/PlannedVisits
 |**studyPlannedVisits**|List|List of planned visits in the study version|
 
 For the fields in each item of studyPlannedVisits, refer below table.
+The items are ordered by Study Planned Visit Id and the sort order is ascending.
 
 |Field|Type|Nullable|Description|
 |-----|----|--------|-----------|
@@ -257,6 +258,7 @@ GET /centrepoint/v3/Studies/{studyId}/Visits/ActualVisits
 ### Response
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+The items are ordered by Subject Id and then by Visit Date and the sort order is ascending.
 
 |Field|Type|Description|
 |-----|----|-----------|

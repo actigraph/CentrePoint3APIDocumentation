@@ -117,6 +117,8 @@ POST /centrepoint/v3/Studies/{studyId}/Assignments
 
 **Response:**
 
+The items are ordered by Id and the sort order is ascending.
+
 ```json
 {
   "id": 1,

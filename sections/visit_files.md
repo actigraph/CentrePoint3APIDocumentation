@@ -58,6 +58,7 @@ GET /centrepoint/v3/Studies/{studyId}/ActualVisitFiles/Imports
 **Response:**
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+The items are ordered by Actual Visit File Import Id and the sort order is ascending.
 
 |Field|Type|Description|
 |-----|----|-----------|
