@@ -23,6 +23,7 @@ GET /analytics/v3/Studies/{studyId}/Subjects/{subjectId}/EventMarkers
 **Response:**
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+The items are ordered by Timestamp and the sort order is ascending.
 
 |Field|Type|Description|
 |-----|----|-----------|
@@ -102,6 +103,7 @@ GET /analytics/v3/Studies/{studyId}/EventMarkerSettings
 **Response:**
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+The items are ordered by Algorithm Type Id and then by Name and the sort order is ascending.
 
 |Field|Type|Description|
 |-----|----|-----------|

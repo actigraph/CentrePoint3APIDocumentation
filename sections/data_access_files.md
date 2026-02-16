@@ -41,6 +41,7 @@ All query parameters are optional.
 **Response:**
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+The items are ordered by Date and the sort order is ascending.
 
 |Field|Type|Description|
 |-----|----|-----------|

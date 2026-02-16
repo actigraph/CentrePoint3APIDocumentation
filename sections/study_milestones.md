@@ -15,6 +15,7 @@ GET /centrepoint/v3/Studies/{studyId}/Milestones
 **Response:**
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+The items are ordered by Id and the sort order is ascending.
 
 |Field|Type|Description|
 |-----|----|-----------|
