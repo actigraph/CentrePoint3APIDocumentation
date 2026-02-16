@@ -28,7 +28,7 @@ Field|Type|Description|
 **assignmentId**|Number|CentrePoint Assignment ID (see [Assignment](assignments.md))|
 **dateUploadedUtc**|String (ISO8601 Date)|Date when the upload was received|
 **activityMonitorBatteryVoltage**|Number|Voltage of the monitor when the upload was received|
-**activityMonitorBatteryPercentage**|Number|Battery Percentage of the monitor when the upload was received|
+**activityMonitorBatteryPercentage**|String|Battery Percentage of the monitor when the upload was received|
 **activityMonitorFirmware**|String|Firmware version of the monitor when the upload was received|
 **activityMonitorSampleRateHz**|Number|Sample rate of the monitor when the upload was received|
 **uploadFiles**|Object Array (see UploadFile)|The file(s) received for the upload|
