@@ -27,6 +27,7 @@ The items are ordered by Id and the sort order is ascending.
 |**defaultWearPosition**|String|The default wear position for the study.|
 |**wearPositions**|Array(String)|The wear positions allowed by the study.|
 |**monitorDataCollectionMode**|String|Indicates if monitors are collection Raw data, Epoch data, or both for the study.|
+|**canChangeWearPosition**|Boolean|Indicates if study allows changing of wear position.|
 
 ```json
 {
@@ -41,7 +42,8 @@ The items are ordered by Id and the sort order is ascending.
             "wearPositions": [
                 "Left Non-Dominant Wrist"
             ],
-            "monitorDataCollectionMode": "Raw Only"
+            "monitorDataCollectionMode": "Raw Only",
+            "canChangeWearPosition": true
         },
         {
             "id": 2,
@@ -53,7 +55,8 @@ The items are ordered by Id and the sort order is ascending.
             "wearPositions": [
                 "Left Non-Dominant Wrist"
             ],
-            "monitorDataCollectionMode": "Epoch+Raw"
+            "monitorDataCollectionMode": "Epoch+Raw",
+            "canChangeWearPosition": false
         }
     ],
     "links": {},
@@ -86,5 +89,6 @@ GET /centrepoint/v3/Studies/{studyId}
     "wearPositions": [
         "Left Non-Dominant Wrist"
     ],
-    "monitorDataCollectionMode": "Raw Only"
+    "monitorDataCollectionMode": "Raw Only",
+    "canChangeWearPosition": false
 }
