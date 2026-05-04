@@ -40,6 +40,7 @@ All body parameters are optional.
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
 The items are ordered by Id and the sort order is ascending.
+A single dataset may have multiple files if the size of data is greater than 500 MB. The file name will have '_0', '_1', etc. appended.
 
 |Field|Type|Description|
 |-----|----|-----------|
@@ -69,11 +70,24 @@ Query Parameters
             "studyProgramId": "5b342a11-2fb9-4ad9-a7be-4d410181f51c",
             "dataSetName": "ActivityDaily8",
             "subjectId": 10821,
-            "fileName": "10821_0bbb9509-f20c-468b-8361-1684f7a50819_activitydaily8.csv.gz",
+            "fileName": "10821_0bbb9509-f20c-468b-8361-1684f7a50819_activitydaily8_0.csv.gz",
             "fileFormat": "csv",
             "modifiedDate": "2024-03-05T13:15:37.6848275+00:00",
             "lastSuccessfulProgramExecutionTimeStamp": "2024-03-05T13:10:06.4396436+00:00",
-            "fileUrl": "https://datafiles.actigraphcorp.com/study-0000000234/subject-0000010821/datasetexports/5b342a11-2fb9-4ad9-a7be-4d410181f51c/activitydaily8/10821_0bbb9509-f20c-468b-8361-1684f7a50819_activitydaily8.csv.gz?skoid=444eeefb-b1cf-4b7b-804f-65129cd5fa9e&sktid=c004fd6f-8ed9-42bd-9303-191038d839e2&skt=2024-03-05T14%3A31%3A23Z&ske=2024-03-05T18%3A31%3A23Z&sks=b&skv=2022-11-02&sv=2022-11-02&se=2024-03-05T18%3A31%3A23Z&sr=b&sp=r&sig=eX7aeQRVUNleF%2FIFXv6kOwgaA7yJtVpRITvtGEZl4kU%3D",
+            "fileUrl": "https://datafiles.actigraphcorp.com/study-0000000234/subject-0000010821/datasetexports/5b342a11-2fb9-4ad9-a7be-4d410181f51c/activitydaily8/10821_0bbb9509-f20c-468b-8361-1684f7a50819_activitydaily8_0.csv.gz?skoid=444eeefb-b1cf-4b7b-804f-65129cd5fa9e&sktid=c004fd6f-8ed9-42bd-9303-191038d839e2&skt=2024-03-05T14%3A31%3A23Z&ske=2024-03-05T18%3A31%3A23Z&sks=b&skv=2022-11-02&sv=2022-11-02&se=2024-03-05T18%3A31%3A23Z&sr=b&sp=r&sig=eX7aeQRVUNleF%2FIFXv6kOwgaA7yJtVpRITvtGEZl4kU%3D",
+            "downloadUrlExpiresOn": "2024-03-05T18:31:23+00:00"
+        },
+        {
+            "studyId": 234,
+            "studyVersion": 48,
+            "studyProgramId": "5b342a11-2fb9-4ad9-a7be-4d410181f51c",
+            "dataSetName": "ActivityDaily8",
+            "subjectId": 10821,
+            "fileName": "10821_0bbb9509-f20c-468b-8361-1684f7a50819_activitydaily8_1.csv.gz",
+            "fileFormat": "csv",
+            "modifiedDate": "2024-03-05T13:15:38.6848300+00:00",
+            "lastSuccessfulProgramExecutionTimeStamp": "2024-03-05T13:10:06.4396436+00:00",
+            "fileUrl": "https://datafiles.actigraphcorp.com/study-0000000234/subject-0000010821/datasetexports/5b342a11-2fb9-4ad9-a7be-4d410181f51c/activitydaily8/10821_0bbb9509-f20c-468b-8361-1684f7a50819_activitydaily8_1.csv.gz?skoid=444eeefb-b1cf-4b7b-804f-65129cd5fa9e&sktid=c004fd6f-8ed9-42bd-9303-191038d839e2&skt=2024-03-05T14%3A31%3A23Z&ske=2024-03-05T18%3A31%3A23Z&sks=b&skv=2022-11-02&sv=2022-11-02&se=2024-03-05T18%3A31%3A23Z&sr=b&sp=r&sig=eX7aeQRVUNleF%2FIFXv6kOwgaA7yJtVpRITvtGEZl4kU%3D",
             "downloadUrlExpiresOn": "2024-03-05T18:31:23+00:00"
         },
         {
@@ -82,11 +96,11 @@ Query Parameters
             "studyProgramId": "5b342a11-2fb9-4ad9-a7be-4d410181f51c",
             "dataSetName": "ActivityEpochs10",
             "subjectId": 10821,
-            "fileName": "10821_0bbb9509-f20c-468b-8361-1684f7a50819_activityepochs10.csv.gz",
+            "fileName": "10821_0bbb9509-f20c-468b-8361-1684f7a50819_activityepochs10_0.csv.gz",
             "fileFormat": "csv",
             "modifiedDate": "2024-03-05T13:15:39.0782758+00:00",
             "lastSuccessfulProgramExecutionTimeStamp": "2024-03-05T13:10:06.4396436+00:00",
-            "fileUrl": "https://datafiles.actigraphcorp.com/study-0000000234/subject-0000010821/datasetexports/5b342a11-2fb9-4ad9-a7be-4d410181f51c/activityepochs10/10821_0bbb9509-f20c-468b-8361-1684f7a50819_activityepochs10.csv.gz?skoid=444eeefb-b1cf-4b7b-804f-65129cd5fa9e&sktid=c004fd6f-8ed9-42bd-9303-191038d839e2&skt=2024-03-05T14%3A31%3A23Z&ske=2024-03-05T18%3A31%3A23Z&sks=b&skv=2022-11-02&sv=2022-11-02&se=2024-03-05T18%3A31%3A23Z&sr=b&sp=r&sig=7AP6Qv2E3HQa0jG0Vi7NYNvQEnes7JtKNs5n6%2FhdYvc%3D",
+            "fileUrl": "https://datafiles.actigraphcorp.com/study-0000000234/subject-0000010821/datasetexports/5b342a11-2fb9-4ad9-a7be-4d410181f51c/activityepochs10/10821_0bbb9509-f20c-468b-8361-1684f7a50819_activityepochs10_0.csv.gz?skoid=444eeefb-b1cf-4b7b-804f-65129cd5fa9e&sktid=c004fd6f-8ed9-42bd-9303-191038d839e2&skt=2024-03-05T14%3A31%3A23Z&ske=2024-03-05T18%3A31%3A23Z&sks=b&skv=2022-11-02&sv=2022-11-02&se=2024-03-05T18%3A31%3A23Z&sr=b&sp=r&sig=7AP6Qv2E3HQa0jG0Vi7NYNvQEnes7JtKNs5n6%2FhdYvc%3D",
             "downloadUrlExpiresOn": "2024-03-05T18:31:23+00:00"
         }
     ],
