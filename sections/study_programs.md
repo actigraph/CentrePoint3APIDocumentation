@@ -116,6 +116,7 @@ GET /dataaccess/v3/Studies/{studyId}/programs/{studyProgramId}/datasets
 **Response:**
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+The items are ordered by Data Set Name and the sort order is ascending.
 
 |Field|Type|Description|
 |-----|----|-----------|

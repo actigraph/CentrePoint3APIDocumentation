@@ -23,6 +23,7 @@ GET /analytics/v3/Studies/{studyId}/Subjects/{subjectId}/MinuteSummaries
 **Response:**
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+The items are ordered by Subject Id and then by TimestampUtc and the sort order is ascending.
 
 |Field|Type|Description|
 |-----|----|-----------|
@@ -511,6 +512,7 @@ GET /analytics/v3/Studies/{studyId}/MinuteSummarySettings
 **Response:**
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+The items are ordered by Id and the sort order is ascending.
 
 |Field|Type|Description|
 |-----|----|-----------|

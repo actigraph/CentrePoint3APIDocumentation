@@ -24,6 +24,7 @@ GET /analytics/v3/Studies/{studyId}/Subjects/{subjectId}/DustinTracySleepPeriods
 **Response:**
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+The items are ordered by InBedTime and the sort order is ascending.
 
 |Field|Type|Description|
 |-----|----|-----------|
@@ -140,6 +141,7 @@ GET /analytics/v3/Studies/{studyId}/DustinTracySleepPeriodSettings
 **Response:**
 
 This response is paginated. See [Pagination](pagination.md) for a description of pagination related fields returned.
+The items are ordered by Algorithm Type Id and then by Name and the sort order is ascending.
 
 |Field|Type|Description|
 |-----|----|-----------|
