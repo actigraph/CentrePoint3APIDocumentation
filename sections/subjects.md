@@ -414,7 +414,7 @@ POST /centrepoint/v3/Studies/{studyId}/Subjects/{subjectId}/DevicePin
 
 ## Get Subject Client Devices
 
-Gets the list of active client devices that have been added for the subject to upload data from device using CPC.
+Gets the list of active client devices currently in the system for the given subject, through which a user can upload data via CentrePoint Connect (CPC).
 
 **Request:**
 

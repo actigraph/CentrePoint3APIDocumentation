@@ -20,7 +20,7 @@ GET /centrepoint/v3/Studies/{studyId}/Visits/PlannedVisits
 |**status**|String|Status of the Visit Version. Locked/CheckedOut|
 |**studyPlannedVisits**|List|List of planned visits in the study version|
 
-For the fields in each item of studyPlannedVisits, refer below table.
+For the fields in each item of studyPlannedVisits, refer to the below table.
 The items are ordered by Study Planned Visit Id and the sort order is ascending.
 
 |Field|Type|Nullable|Description|
@@ -269,7 +269,7 @@ The items are ordered by Subject Id and then by Visit Date and the sort order is
 |**visitDate**|Date|Visit Date|
 |**wearPeriod**|Object|Wear Period for the visit. If wear period is not available, it will be null|
 
-For the fields in wearPeriod, refer below table.
+For the fields in wearPeriod, refer to the below table.
 
 |Field|Type|Description|
 |-----|----|-----------|
